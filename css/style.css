@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/*开心盟首页*/
+.line1{border:1px solid #01aa7f;}
+.nav1 li{width:140px;height:43px;line-height:43px;margin-top:-2px;}
+.nav1 li.active{background-color:#00422e;border-top:2px solid #f4dc00;}
