@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开心盟-为你挑选最好的在线娱乐合营项目</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="shortcut icon" href="#"/>
+    <link rel="apple-touch-icon" href="#"/>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 头部 start -->
+    <div class="header fullwidth bg-littleGreen">
+        <div class="layout">
+            <div class="pt20 pb10 clearfix">
+                <a class="inblo fl ml10"><img src="../images/meng_logo.png" width="110" height="60" alt="开心盟logo"></a>
+                <img class="fl ml10 mt10" src="../images/meng_description.png" width="290" height="35" alt="开心盟简介">
+                <div class="fr">
+                    <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4">
+                        <label for="account" class="text-littleGreen2">账号:</label>
+                        <input type="text" name="account" id="account" class="w100 text-littleGreen3 bg-green2">
+                    </span>
+                    <span class="inblo bg-green2 ml10 pl10 pr10 pt5 pb5 bor4">
+                        <label for="account" class="text-littleGreen2">密码:</label>
+                        <input type="text" name="password" id="password" class="w60 bg-green2 text-littleGreen3">
+                        <a href="#" class="text-littleYellow">忘记？</a>
+                    </span>
+                    <input type="submit" name="login" value="登录" class="text-green bg-yellow2 ml10 pl10 pr10 pt5 pb5 bor4 hand">
+                    <a href="meng_register.html" class="text-yellow2 ml15 mr10">注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="line1"></div>
+        <div class="layout">
+            <ul class="nav1 clearfix">
+                <li class="fl"><a href="index.html" class="inblo tc text-yellow3">首页</a></li>
+                <li class="fl"><a href="meng_onlineProject.html" class="inblo tc text-yellow3">在线项目</a></li>
+                <li class="fl"><a href="meng_jointProject.html" class="inblo tc text-yellow3">合营项目</a></li>
+                <li class="fl"><a href="meng_bossPlan.html" class="inblo tc text-yellow3">Boss计划</a></li>
+                <li class="fl"><a href="meng_contactUs.html" class="active inblo tc text-yellow3">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-t"></div>
+    <!-- 头部 end -->
+    <!-- 联系我们tab start -->
+    <div class="layout bg-littleGreen mt30">
+        <div class="pt40 pl30 pr30">
+            <div id="dituContent" class="h200"></div>
+            <p class="bossPlan-con pt20 fs14 lh4 text-littleGreen3">
+                开心盟 销售QQ：89894567<br/>             
+                办公时间：13:00 - 18:00 （周一 至 周五）
+            </p>
+        </div>
+    </div>
+    <!-- 联系我们tab end -->
+    <!-- 底部 start -->
+    <div class="footer pt50 pb30">
+        <p class="text-yellow2 fs14 tc lh1">@2013 - 2016 开心盟 版权所有</p>
+    </div>
+    <!-- 底部 end -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?ak=5k3PCWnFOd4GYvGlzWC6wkVvGrj2fzI3&v=2.0"></script>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMarker();//向地图中添加marker
+        }
+        
+        //创建地图函数：
+        function createMap(){
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+            var point = new BMap.Point(113.954033,22.561122);//定义一个中心点坐标
+            map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+        }
+        
+        //地图事件设置函数：
+        function setMapEvent(){
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+        }
+        
+        //地图控件添加函数：
+        function addMapControl(){
+            //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+                    //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+        }
+        
+        //标注点数组
+        var markerArr = [{title:"开心盟科技股份有限公司",content:"一家专门做游戏的网站",point:"113.954145|22.560747",isOpen:1,icon:{w:23,h:25,l:0,t:21,x:9,lb:12}}
+             ];
+        //创建marker
+        function addMarker(){
+            for(var i=0;i<markerArr.length;i++){
+                var json = markerArr[i];
+                var p0 = json.point.split("|")[0];
+                var p1 = json.point.split("|")[1];
+                var point = new BMap.Point(p0,p1);
+                var iconImg = createIcon(json.icon);
+                var marker = new BMap.Marker(point,{icon:iconImg});
+                var iw = createInfoWindow(i);
+                var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                marker.setLabel(label);
+                map.addOverlay(marker);
+                label.setStyle({
+                            borderColor:"#808080",
+                            color:"#333",
+                            cursor:"pointer"
+                });
+                
+                (function(){
+                    var index = i;
+                    var _iw = createInfoWindow(i);
+                    var _marker = marker;
+                    _marker.addEventListener("click",function(){
+                        this.openInfoWindow(_iw);
+                    });
+                    _iw.addEventListener("open",function(){
+                        _marker.getLabel().hide();
+                    })
+                    _iw.addEventListener("close",function(){
+                        _marker.getLabel().show();
+                    })
+                    label.addEventListener("click",function(){
+                        _marker.openInfoWindow(_iw);
+                    })
+                    if(!!json.isOpen){
+                        label.hide();
+                        _marker.openInfoWindow(_iw);
+                    }
+                })()
+            }
+        }
+        //创建InfoWindow
+        function createInfoWindow(i){
+            var json = markerArr[i];
+            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+            return iw;
+        }
+        //创建一个Icon
+        function createIcon(json){
+            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+            return icon;
+        }
+        
+        initMap();//创建和初始化地图
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
