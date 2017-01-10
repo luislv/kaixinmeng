@@ -50,7 +50,7 @@
     <!-- 头部 end -->
     <!-- 账户注册 start -->
     <div class="layout bg-littleGreen mt30">
-        <div class="pt40 pl20 pr20">
+        <div class="pt40 pl20 pr20 registerContainer">
             <h2 class="pb20 text-yellow3 fn fs24 lh1">
                 快速注册通道
                 <a href="index.html" class="fr fs16 text-yellow mr10">已有账号，立即登录</a>
@@ -59,10 +59,69 @@
             <form action="#" method="post" class="mt20">
                 <fieldset>
                     <legend class="hide">注册表单</legend>
-                    <p>
-                        <label for="account">*注册账号:</label>
-                        <input type="text" id="account" name="account">
-                        <i>账号以a_开头(a后面是下划线_)，由3-15个数字或字母组成，例:a_long8</i>
+                    <p class="pb10">
+                        <label for="registerAccount" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;加盟账号:</label>
+                        <input type="text" id="registerAccount" name="registerAccount" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">账号以a_开头(a后面是下划线_)，由3-15个数字或字母组成，例:a_long8</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="registerPass" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;登录密码:</label>
+                        <input type="password" id="registerPass" name="registerPass" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">请填写8-12个英文字母或数字</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="confirmPass" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;确认密码:</label>
+                        <input type="password" id="confirmPass" name="confirmPass" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">请再次填写登录密码</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="registerName" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;真实姓名:</label>
+                        <input type="text" id="registerName" name="registerName" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">必须与银行账户姓名相同，否则“无法提款”</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="registerUrl" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;加盟网址:</label>
+                        <input type="url" id="registerUrl" name="registerUrl" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">备注：只需填写2-6位数字或者是字母，无需填写后缀</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="registerEmail" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;电子邮箱:</label>
+                        <input type="email" id="registerEmail" name="registerEmail" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">例：QQ邮箱12345678@qq.com</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="registerTel" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;联系电话:</label>
+                        <input type="tel" id="registerTel" name="registerTel" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                        <i class="ml10 text-littleGreen3">(此号码不与游戏账号所填手机号冲突，可一致)加盟负责人会通过电话核实。</i>
+                    </p>
+                    <p class="pb10">
+                        <label for="registerQQ" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;QQ:</label>
+                        <input type="text" id="registerQQ" name="registerQQ" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                    </p>
+                    <p class="pb10">
+                        <label for="registerWechat" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;微信号:</label>
+                        <input type="text" id="registerWechat" name="registerWechat" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                    </p>
+                    <p class="pb10">
+                        <label for="registerRecommend" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;加盟推荐码:</label>
+                        <input type="text" id="registerRecommend" name="registerRecommend" class="registerCon fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                    </p>
+                    <p class="pb20">
+                        <label for="registerVerify" class="registerTitle inblo tr fs14 text-white pr5">*&nbsp;&nbsp;验证码:</label>
+                        <input type="text" id="registerVerify" name="registerVerify" class="registerCon registerCon2 fs16 bg-darkGreen2 inblo text-white pl10 pr10">
+                    </p>
+                    <p class="pb10 checkboxWrap">
+                        <input type="checkbox" name="overageCon" id="overageCon" class="fl bg-littleGreen hand" checked>
+                        <label for="overageCon" class="fs14 lh1 text-littleGreen3 ml10">我已经年满18岁</label>
+                    </p>
+                    <p class="pb30 checkboxWrap">
+                        <input type="checkbox" name="protocolCon" id="protocolCon" class="fl bg-littleGreen hand" checked>
+                        <label for="protocolCon" class="fs14 lh1 text-littleGreen3 ml10">我已阅读并同意恒赢游戏 <a href="#" class="text-yellow3">用户协议</a> 和 <a href="#" class="text-yellow3">隐私条款</a></label>
+                    </p>
+                    <div class="line2 mr300"></div>
+                    <p class="mt30 submitWrap">
+                        <input type="submit" name="registerSubmit" value="提交" class="registerSubmit inblo bg-yellow bor4 tc fs16 text-gray1 fb hand">
+                        <input type="button" name="registerReset" value="重置" class="registerSubmit inblo ml10 bg-gray bor4 tc fs16 text-gray1 fb hand">
                     </p>
                 </fieldset>
             </form>

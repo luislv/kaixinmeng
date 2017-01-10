@@ -32,3 +32,12 @@
 .bossPlan-con{height:620px;}
 
 /*联系我们页面*/
+
+/*注册页面*/
+.registerContainer{height:1075px;}
+.registerTitle{width:145px;height:36px;line-height:36px;}
+.registerCon{width:190px;height:36px;line-height:36px;}
+.registerCon2{width:80px;}
+.checkboxWrap{padding-left:155px;}
+.registerSubmit{width:120px;height:36px;}
+.submitWrap{margin-left:90px;}
