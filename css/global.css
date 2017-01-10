@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{background-color:#004633;}
 .bg-yellow{background-color:#ffee25;}
+.bg-green{background-color:#004633;}
 .bg-green2{background-color:#00563d;}
 .bg-littleGreen{background-color:#007a5b;}
 .bg-yellow2{background-color:#ffd100;}
@@ -24,13 +25,16 @@ body{background-color:#004633;}
 .lh5 {line-height:200% }
 .fullwidth{width:100%;}
 .w60{width:60px;}
+.mt30{margin-top:30px !important;}
+.fs24{font-size:24px;}
 .hand{cursor:pointer;}
 
 /*布局*/
 .layout{width:960px;margin:0 auto;}
 
 /*公共头部*/
-.header {position:fixed;top:0;z-index: 999;}
+.header{position:fixed;top:0;z-index:999;}
+.header-t{height:140px;}
 
 
 /*figure{margin:0;padding:0;}
@@ -86,25 +90,25 @@ body{background-color:#004633;}
 .ml3p{margin-left:3%;}
 
 /*公共头部*/
-.header {line-height: 20px;position:fixed;top:0;z-index: 999;}
-.head-t  {height:40px;}
+/* .header {line-height: 20px;position:fixed;top:0;z-index: 999;}
+.head-t  {height:40px;} */
 /*公共底部*/
-.footer-t {height:54px;}
+/* .footer-t {height:54px;}
 .footer {position:fixed;bottom:0;height:54px;border-top:1px solid #ededed;z-index:999;}
-.footer .item{display:inline-block;float:left;padding:5px 0;}
+.footer .item{display:inline-block;float:left;padding:5px 0;} */
 /*支付栏*/
-.paybar-t {height:40px;}
-.paybar {height:40px;line-height: 40px;position: fixed;}
+/* .paybar-t {height:40px;}
+.paybar {height:40px;line-height: 40px;position: fixed;} */
 
 /*scroll样式重置*/
-.mbsc-ios .mbsc-fr-btn {font-family:微软雅黑, "Microsoft YaHei", 宋体;font-size:16px;}
+/* .mbsc-ios .mbsc-fr-btn {font-family:微软雅黑, "Microsoft YaHei", 宋体;font-size:16px;}
 .mbsc-ios .mbsc-fr-btn0 {color:#0079fd;}
 .mbsc-ios .mbsc-fr-btn1 {color:#848484;}
-.mbsc-ios .mbsc-fr-w {font-family:微软雅黑, "Microsoft YaHei", 宋体;}
+.mbsc-ios .mbsc-fr-w {font-family:微软雅黑, "Microsoft YaHei", 宋体;} */
 /*顶部*/
 /*底部导航*/
 
-/*banner幻灯*/
+/* banner幻灯
 .pagination { position: absolute; left: 0; text-align: center; bottom:5px; width: 100%; z-index:999; }
 .swiper-pagination-bullet { display: inline-block; width: 8px; height: 8px; border-radius: 8px; background: #999; margin: 0 3px; cursor: pointer; opacity:.8; }
-.swiper-pagination-bullet-active { background: #00d3c2; }*/
+.swiper-pagination-bullet-active { background: #00d3c2; } */

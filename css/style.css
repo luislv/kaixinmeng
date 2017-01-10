@@ -1,6 +1,25 @@
 @charset "utf-8";
 
 /*开心盟首页*/
-.line1{border:1px solid #01aa7f;}
+.line1{border-top:2px outset #01aa7f;box-shadow:0 1px 0 rgba(0,0,0,.2) inset,0 -1px 0 rgba(255,255,255,.2) inset;}
 .nav1 li{width:140px;height:43px;line-height:43px;margin-top:-2px;}
 .nav1 li.active{background-color:#00422e;border-top:2px solid #f4dc00;}
+/*焦点图*/
+.hotPic .arrow-left,.hotPic .arrow-right{width:45px;height:110px; background-color:#007a5b;opacity:0.6; background-repeat:no-repeat;background-position:center center;position:absolute;top:50%;margin-top:-55px;z-index:9;}
+.hotPic .arrow-left:hover,.hotPic .arrow-right:hover{background-color:#ffd100;opacity:1;}
+.hotPic .arrow-left { background-image:url(../images/arrows_left.png);left:0;}
+.hotPic .arrow-right { background-image:url(../images/arrows_right.png);right:0;}
+.pagination { position: absolute; left: 0; bottom:20px; width: 88%; padding:0 5%; z-index: 99; }
+.swiper-pagination-bullet { display: inline-block; width: 12px; height: 12px; border-radius: 12px; background: #dfdfdf; margin: 0 5px; cursor: pointer; opacity: 0.8; }
+.swiper-pagination-bullet-active { background: #004633; }
+
+/*在线项目页面*/
+.onlineProject-desc{padding-left:120px;padding-right:120px;}
+.line2{border-top:1px solid #062d23;opacity:0.6;}
+.mainProduct-list{margin-right:-10px;}
+.mainProduct-list li{width:217px;height:116px;}
+
+/*合营计划页面*/
+
+/*boss计划页面*/
+.bossPlan-con{height:620px;}
