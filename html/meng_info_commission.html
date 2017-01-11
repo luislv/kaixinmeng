@@ -74,7 +74,7 @@
             <div class="infoCon bg-green pt20 pl20 pr20 h750">
                 <!-- 导航 -->
                 <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix">
-                    <li class="active fl pl20 pr20 pt10 pb10 hand text-darkGreen">额度记录</li>
+                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">额度记录</li>
                 </ul>
                 <div class="mt20 ml30">
                     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="infoTable">
@@ -98,11 +98,46 @@
                 <div class="line4 mt20"></div>
                 <div class="mt20">
                     <span class="inblo">
-                        <label for="startTime" class="">开始时间:</label>
-                        <input type="datetime-local" id="startTime">
-                        <i class="iconfont"></i>
+                        <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                        <div class="inblo bg-darkGreen bor4 ml10 p8">
+                            <input type="datetime-local" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                            <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                        </div>
                     </span>
-                </div>  
+                    <span class="inblo ml15">
+                        <label for="startTime" class="fs14 text-yellow4">结束时间:</label>
+                        <div class="inblo bg-darkGreen bor4 ml10 p8">
+                            <input type="datetime-local" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                            <i class="iconfont text-littleGreen3 bor-left-green pl3 hand">&#xe611;</i>
+                        </div>
+                    </span>
+                    <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml10 pl30 pr30 pt10 pb10 bor4 hand">
+                </div> 
+                <div class="line4 mt20"></div>
+                <div class="mt10">
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                        <caption class="hide">佣金方案</caption>
+                        <thead>
+                            <tr>
+                                <th width="20%">等级</th><th width="30%">当月活跃会员数</th><th width="30%">当月净利润(RMB)</th><th width="20%">佣金比例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-darkGreen">
+                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
             </div>
         </div>
     </div>
