@@ -18,14 +18,8 @@
 .mainProduct-list li{width:217px;height:116px;}
 
 /*合营计划页面*/
-.jointMain{height:800px;}
-.jointNav{width:150px;}
-.jointNav li{height:50px;line-height:50px;}
 .jointCon{margin-left:150px;}
 .commissionProject{height:630px;}
-.commissionTable{color:#07a67e;}
-.commissionTable th{padding-top:10px;padding-bottom:10px;font-weight:normal;}
-.commissionTable td{padding-top:10px;padding-bottom:10px;color:#ba9e26;text-align:center;border-top:1px solid #004633;}
 .commissionSettle{margin-right:180px;}
 
 /*boss计划页面*/
@@ -41,3 +35,10 @@
 .checkboxWrap{padding-left:155px;}
 .registerSubmit{width:120px;height:36px;}
 .submitWrap{margin-left:90px;}
+.verifyCode{height:36px;}
+
+/*日结佣金页面*/
+.infoCon{margin-left:170px;}
+
+
+

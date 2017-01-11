@@ -22,6 +22,10 @@ fieldset{border:0 none;}
 .text-littleGreen3, a.text-littleGreen3{color:#72e3c4 !important;}
 .text-littleYellw, a.text-littleYellow{color:#b89e11;}
 .text-gray1, a.text-gray1{color:#202f28;}
+.bor-bottom-yellow{border-bottom:solid 1px #ffee25;}
+.bor-top-yellow{border-top:solid 1px #ffee25;}
+.bor-left-yellow{border-left:solid 1px #ffee25;}
+.bor-right-yellow{border-right:solid 1px #ffee25;}
 .bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;}
 .lh1 {line-height:100% }
 .lh2 {line-height:125% }
@@ -30,30 +34,56 @@ fieldset{border:0 none;}
 .lh5 {line-height:200% }
 .fullwidth{width:100%;}
 .w60{width:60px;}
+.h750{height:750px;}
 .mt30{margin-top:30px !important;}
 .ml25{margin-left:25px;}
 .mr300{margin-right:300px;}
+.pb3{padding-bottom:3px;}
 .fs24{font-size:24px;}
 .hand{cursor:pointer;}
 .tl{text-align:left !important;}
+.vb{vertical-align:bottom;}
+.vt{vertical-align:top;}
 
-/*布局*/
+/*布局类*/
 .layout{width:960px;margin:0 auto;}
+.mainHeight{height:800px;}
+
+/*图标类*/
+.icon-triangle-right{display:inline-block;width:0;height:0;border:4px solid transparent;border-left-color:#ffee25;}
+.icon-refresh{display:inline-block;width:21px;height:17px;background:url(../images/icon_refresh.png) no-repeat center center;}
+
+/*按钮*/
+
+/*分割线*/
+.line1{border-top:2px outset #01aa7f;box-shadow:0 1px 0 rgba(0,0,0,.2) inset,0 -1px 0 rgba(255,255,255,.2) inset;}
+.line2{border-top:1px solid #062d23;opacity:0.6;}
+.line3{border-top:1px solid #044f39;}
+.line4{border-top:1px solid #202f28;}
+
+/*表单样式*/
+input[type="checkbox"]{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;appearance: none;-webkit-appearance: none;}
+input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-repeat 2px 3px;}
 
 /*公共头部*/
 .header{position:fixed;top:0;z-index:999;}
 .header-t{height:140px;}
 
-/*图标类*/
-.icon-triangle-right{display:inline-block;width:0;height:0;border:4px solid transparent;border-left-color:#ffee25;}
+/*导航*/
+.nav01{width:170px;}
+.nav02{width:150px;}
+.nav01 li a p, .nav02 li{height:50px;line-height:50px;}
+.nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
+.nav03{height:36px;}
+.nav03 li.active{border:solid 1px #ffee25;border-bottom:none;color:#ffee25;background-color:#004633;}
 
-/*分割线*/
-.line1{border-top:2px outset #01aa7f;box-shadow:0 1px 0 rgba(0,0,0,.2) inset,0 -1px 0 rgba(255,255,255,.2) inset;}
-.line2{border-top:1px solid #062d23;opacity:0.6;}
-
-/*多选框样式*/
-input[type="checkbox"]{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;appearance: none;-webkit-appearance: none;}
-input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-repeat 2px 3px;}
+/*表格*/
+.commissionTable{color:#07a67e;}
+.commissionTable th{padding-top:10px;padding-bottom:10px;font-weight:normal;}
+.commissionTable td{padding-top:10px;padding-bottom:10px;color:#ba9e26;text-align:center;border-top:1px solid #004633;}
+.infoTable{}
+.infoTable th{font-weight:normal;font-size:12px;color:#07a67e;padding-bottom:3px;text-align:left;}
+.infoTable td{color:#ffee25;font-size:16px;}
 
 
 /*figure{margin:0;padding:0;}
