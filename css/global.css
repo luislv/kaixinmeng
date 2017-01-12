@@ -16,7 +16,7 @@ fieldset{border:0 none;}
 .text-yellow2, a.text-yellow2{color:#ffd100;}
 .text-yellow3, a.text-yellow3{color:#f4dc00;}
 .text-green, a.text-green{color:#004633;}
-.text-darkGreen, a.text-darkGreen{color:#ba9e26;}
+.text-yellow4, a.text-yellow4{color:#ba9e26;}
 .text-littleGreen, a.text-littleGreen{color:#07a67e;}
 .text-littleGreen2, a.text-littleGreen2{color:#64c8ac;}
 .text-littleGreen3, a.text-littleGreen3{color:#72e3c4 !important;}
@@ -26,6 +26,7 @@ fieldset{border:0 none;}
 .bor-top-yellow{border-top:solid 1px #ffee25;}
 .bor-left-yellow{border-left:solid 1px #ffee25;}
 .bor-right-yellow{border-right:solid 1px #ffee25;}
+.bor-left-green{border-left:solid 1px #2f6b59;}
 .bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;}
 .lh1 {line-height:100% }
 .lh2 {line-height:125% }
@@ -38,6 +39,8 @@ fieldset{border:0 none;}
 .mt30{margin-top:30px !important;}
 .ml25{margin-left:25px;}
 .mr300{margin-right:300px;}
+.p8{padding:8px;}
+.pl3{padding-left:3px;}
 .pb3{padding-bottom:3px;}
 .fs24{font-size:24px;}
 .hand{cursor:pointer;}
@@ -84,6 +87,15 @@ input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-rep
 .infoTable{}
 .infoTable th{font-weight:normal;font-size:12px;color:#07a67e;padding-bottom:3px;text-align:left;}
 .infoTable td{color:#ffee25;font-size:16px;}
+
+/*分页组件*/
+.holder{}
+.holder a{display:inline-block;height:12px;line-height:12px;font-size: 12px;cursor: pointer;padding: 0 8px;color: #ba9e26;border-right:solid 1px #ba9e26;}
+/*.holder a:hover{background-color: #ffd100;color: #07a67e;}*/
+.holder a.jp-current, a.jp-current:hover{color: #FF4242;font-weight: bold;}
+.holder a.jp-disabled, a.jp-disabled:hover{color: #666;}
+.holder a.jp-current, a.jp-current:hover, .holder a.jp-disabled, a.jp-disabled:hover{cursor: default;background: none;}
+.holder span{display:inline-block;height:12px;line-height:12px;padding: 0 5px;color:#ba9e26;border-right:solid 1px #ba9e26;}
 
 
 /*figure{margin:0;padding:0;}

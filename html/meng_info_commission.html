@@ -20,8 +20,8 @@
             <div class="pt20 pb10 clearfix">
                 <a class="inblo fl ml10"><img src="../images/meng_logo.png" width="110" height="60" alt="开心盟logo"></a>
                 <img class="fl ml10 mt10" src="../images/meng_description.png" width="290" height="35" alt="开心盟简介">
-                <div class="fr">
-                    <!-- <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4">
+                <div class="J_notLogin fr" style="display:none;">
+                    <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4">
                         <label for="account" class="text-littleGreen2">账号:</label>
                         <input type="text" name="account" id="account" class="w100 text-littleGreen3 bg-green2">
                     </span>
@@ -31,7 +31,9 @@
                         <a href="#" class="text-littleYellow">忘记？</a>
                     </span>
                     <input type="submit" name="login" value="登录" class="text-green bg-yellow2 ml10 pl10 pr10 pt5 pb5 bor4 hand">
-                    <a href="meng_register.html" class="text-yellow2 ml15 mr10">注册</a> -->
+                    <a href="meng_register.html" class="text-yellow2 ml15 mr10">注册</a>
+                </div>
+                <div class="J_login fr">
                     <span class="inblo text-yellow">
                         用户名:<br/>
                         <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
@@ -99,19 +101,19 @@
                 <div class="mt20">
                     <span class="inblo">
                         <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
-                        <div class="inblo bg-darkGreen bor4 ml10 p8">
-                            <input type="datetime-local" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                        <div class="inblo bg-darkGreen bor4 ml5 p8">
+                            <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
                             <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
                         </div>
                     </span>
                     <span class="inblo ml15">
                         <label for="startTime" class="fs14 text-yellow4">结束时间:</label>
-                        <div class="inblo bg-darkGreen bor4 ml10 p8">
-                            <input type="datetime-local" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                            <i class="iconfont text-littleGreen3 bor-left-green pl3 hand">&#xe611;</i>
+                        <div class="inblo bg-darkGreen bor4 ml5 p8">
+                            <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
                         </div>
                     </span>
-                    <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml10 pl30 pr30 pt10 pb10 bor4 hand">
+                    <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
                 </div> 
                 <div class="line4 mt20"></div>
                 <div class="mt10">
@@ -119,24 +121,200 @@
                         <caption class="hide">佣金方案</caption>
                         <thead>
                             <tr>
-                                <th width="20%">等级</th><th width="30%">当月活跃会员数</th><th width="30%">当月净利润(RMB)</th><th width="20%">佣金比例</th>
+                                <th width="5%">序号</th>
+                                <th width="10%">代理账号</th>
+                                <th width="5%">平台</th>
+                                <th width="10%">数据日期</th>
+                                <th width="10%">输赢额度</th>
+                                <th width="10%">优惠额度</th>
+                                <th width="10%">洗码额度</th>
+                                <th width="10%">日佣金</th>
+                                <th width="10%">是否派发</th>
+                                <th width="20%">创建时间</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="itemContainer">
                             <tr class="bg-darkGreen">
-                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
                             </tr>
                             <tr class="bg-darkGreen">
-                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
                             </tr>
                             <tr class="bg-darkGreen">
-                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
                             </tr>
                             <tr class="bg-darkGreen">
-                                <td width="20%" class="text-littleGreen3">1</td><td width="30%">≥3</td><td width="30%">0-300,000</td><td width="20%">30%</td>
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                            </tr><tr class="bg-darkGreen">
+                                <td width="5%" class="text-littleGreen3">1</td>
+                                <td width="10%">001</td>
+                                <td width="5%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="10%">1</td>
+                                <td width="10%">001</td>
+                                <td width="10%">888</td>
+                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
                             </tr>
                         </tbody>
                     </table>
+                    <!-- 分页条 -->
+                    <div class="tc mt20">
+                        <div class="holder inblo">
+                            <!-- <a class="jp-previous jp-disabled">← previous</a>
+                            <a class="jp-current">1</a>
+                            <span class="jp-hidden">...</span>
+                            <a>2</a>
+                            <a>3</a>
+                            <a>4</a>
+                            <a>5</a>
+                            <a class="jp-hidden">6</a>
+                            <a class="jp-hidden">7</a>
+                            <a class="jp-hidden">8</a>
+                            <a class="jp-hidden">9</a>
+                            <span>...</span>
+                            <a>10</a>
+                            <a class="jp-next">next →</a> -->
+                        </div>
+                    </div>
                 </div> 
             </div>
         </div>
@@ -147,6 +325,30 @@
         <p class="text-yellow2 fs14 tc lh1">@2013 - 2016 开心盟 版权所有</p>
     </div>
     <!-- 底部 end -->
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/jPages.min.js"></script>
+    <script type="text/javascript">
+        // 分页
+        $("div.holder").jPages({
+            containerID  : 'itemContainer',
+            first: '第1页',
+            last: '最后1页',
+            previous: '上一页',
+            next: '下一页',
+            perPage: 2,  // 每页条数
+            startPage: 1,
+            startRange: 0,
+            midRange: 4,
+            endRange: 0,
+            animation: 'wobble',
+            keyBrowse: true,
+            callback: function( pages, items ){
+                $(".holder").find(".jp-last").css("border-right", "none");
+                // items.showing.find("img").trigger("turnPage");
+                // items.oncoming.find("img").trigger("turnPage");
+            }
+        });
+    </script>
 </body>
 </html>
 
