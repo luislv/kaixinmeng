@@ -205,7 +205,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -216,7 +217,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -227,7 +229,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -238,7 +241,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -249,7 +253,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -260,7 +265,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -271,7 +277,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -282,7 +289,8 @@
                                 <td width="10%">001</td>
                                 <td width="10%">888</td>
                                 <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr><tr class="bg-darkGreen">
+                            </tr>
+                            <tr class="bg-darkGreen">
                                 <td width="5%" class="text-littleGreen3">1</td>
                                 <td width="10%">001</td>
                                 <td width="5%">888</td>
@@ -343,9 +351,19 @@
             animation: 'wobble',
             keyBrowse: true,
             callback: function( pages, items ){
+                var currentPage = $(".jp-current").text();
+                var nextText = $(".jp-current").next().next().text();
                 $(".holder").find(".jp-last").css("border-right", "none");
-                // items.showing.find("img").trigger("turnPage");
-                // items.oncoming.find("img").trigger("turnPage");
+                if(currentPage == 1) {
+                    $(".jp-previous").addClass("jp-hidden");
+                }else{
+                    $(".jp-previous").removeClass("jp-hidden");
+                }
+                if(nextText == "下一页") {
+                    $(".jp-next").addClass("jp-hidden");
+                } else{
+                    $(".jp-next").removeClass("jp-hidden");
+                }
             }
         });
     </script>
