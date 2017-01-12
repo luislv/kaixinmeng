@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{background-color:#004633;}
-fieldset{border:0 none;}
+fieldset{border:0 none;margin:0;padding:0;}
 .bg-green{background-color:#004633;}
 .bg-green2{background-color:#00563d;}
 .bg-darkGreen{background-color:#13382c;}
@@ -15,8 +15,8 @@ fieldset{border:0 none;}
 .text-yellow, a.text-yellow{color:#ffee25;}
 .text-yellow2, a.text-yellow2{color:#ffd100;}
 .text-yellow3, a.text-yellow3{color:#f4dc00;}
-.text-green, a.text-green{color:#004633;}
 .text-yellow4, a.text-yellow4{color:#ba9e26;}
+.text-green, a.text-green{color:#004633;}
 .text-littleGreen, a.text-littleGreen{color:#07a67e;}
 .text-littleGreen2, a.text-littleGreen2{color:#64c8ac;}
 .text-littleGreen3, a.text-littleGreen3{color:#72e3c4 !important;}
