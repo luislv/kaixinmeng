@@ -73,10 +73,10 @@
                 <li><a href="meng_info_letter.html"><p class="pl40 bg-littleGreen text-white fs16">站内信</p></a><div class="line3 ml20 mr15"></div></li>
             </ul>
             <!-- 日结佣金 -->
-            <div class="infoCon bg-green pt20 pl20 pr20 h750">
+            <div class="infoCon bg-green pt20 pl20 pr20 h750" id="tab">
                 <!-- 导航 -->
-                <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix">
-                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4"><a href=""></a>额度记录</li>
+                <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
+                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">会员输赢</li>
                     <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">会员存款</li>
                     <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">会员提款</li>
                     <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">会员反水</li>
@@ -102,149 +102,163 @@
                     </table>
                 </div>
                 <div class="line4 mt20"></div>
-                <div class="mt20">
-                    <span class="inblo">
-                        <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
-                        <div class="inblo bg-darkGreen bor4 ml5 p8">
-                            <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                            <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
-                        </div>
-                    </span>
-                    <span class="inblo ml15">
-                        <label for="startTime" class="fs14 text-yellow4">结束时间:</label>
-                        <div class="inblo bg-darkGreen bor4 ml5 p8">
-                            <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                        </div>
-                    </span>
-                    <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
-                </div> 
-                <div class="line4 mt20"></div>
-                <div class="mt10">
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
-                        <caption class="hide">佣金方案</caption>
-                        <thead>
-                            <tr>
-                                <th width="16%">序号</th>
-                                <th width="16%">操作类型</th>
-                                <th width="16%">额度变量</th>
-                                <th width="16%">改变前额度</th>
-                                <th width="16%">改变后额度</th>
-                                <th width="20%">加入时间</th>
-                            </tr>
-                        </thead>
-                        <tbody id="itemContainer">
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td width="16%" class="text-littleGreen3">1</td>
-                                <td width="16%">001</td>
-                                <td width="16%">888</td>
-                                <td width="16%">1</td>
-                                <td width="16%">001</td>
-                                <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- 分页条 -->
-                    <div class="tc mt20">
-                        <div class="holder inblo"></div>
+                <div id="tabcon">
+                    <!-- 会员输赢 -->
+                    <div class="J_tabcon_item mt20 hide" style="display:block;">
+                        <div class="">
+                            <span class="inblo">
+                                <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                                <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                    <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                                    <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                                </div>
+                            </span>
+                            <span class="inblo ml15">
+                                <label for="startTime" class="fs14 text-yellow4">结束时间:</label>
+                                <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                    <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                                    <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                </div>
+                            </span>
+                            <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                        </div> 
+                        <div class="line4 mt20"></div>
+                        <div class="mt10">
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                <caption class="hide">佣金方案</caption>
+                                <thead>
+                                    <tr>
+                                        <th width="16%">序号</th>
+                                        <th width="16%">操作类型</th>
+                                        <th width="16%">额度变量</th>
+                                        <th width="16%">改变前额度</th>
+                                        <th width="16%">改变后额度</th>
+                                        <th width="20%">加入时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="itemContainer">
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td width="16%" class="text-littleGreen3">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="16%">888</td>
+                                        <td width="16%">1</td>
+                                        <td width="16%">001</td>
+                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 分页条 -->
+                            <div class="tc mt20">
+                                <div class="holder inblo"></div>
+                            </div>
+                        </div> 
                     </div>
-                </div> 
+                    <div class="J_tabcon_item mt20 hide">
+                        tab2
+                    </div>
+                    <div class="J_tabcon_item mt20 hide">
+                        tab3
+                    </div>
+                    <div class="J_tabcon_item mt20 hide">
+                        tab4
+                    </div>    
+                </div>  
             </div>
         </div>
     </div>
@@ -256,35 +270,40 @@
     <!-- 底部 end -->
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="../js/jPages.min.js"></script>
+    <script scr="../js/global.js"></script>
     <script type="text/javascript">
-        // 分页
-        $("div.holder").jPages({
-            containerID  : 'itemContainer',
-            first: '第1页',
-            last: '最后1页',
-            previous: '上一页',
-            next: '下一页',
-            perPage: 2,  // 每页条数
-            startPage: 1,
-            startRange: 0,
-            midRange: 4,
-            endRange: 0,
-            animation: 'wobble',
-            keyBrowse: true,
-            callback: function(pages, items){
-                $(".holder").find(".jp-last").css("border-right", "none");
-                if(pages.current == 1) {
-                    $(".jp-previous").addClass("jp-hidden");
-                }else{
-                    $(".jp-previous").removeClass("jp-hidden");
+        $(function() {
+            // tab切换
+            new Tab({'root':$('#tab')});
+            // 分页
+            $("div.holder").jPages({
+                containerID  : 'itemContainer',
+                first: '第1页',
+                last: '最后1页',
+                previous: '上一页',
+                next: '下一页',
+                perPage: 2,  // 每页条数
+                startPage: 1,
+                startRange: 0,
+                midRange: 4,
+                endRange: 0,
+                animation: 'wobble',
+                keyBrowse: true,
+                callback: function(pages, items){
+                    $(".holder").find(".jp-last").css("border-right", "none");
+                    if(pages.current == 1) {
+                        $(".jp-previous").addClass("jp-hidden");
+                    }else{
+                        $(".jp-previous").removeClass("jp-hidden");
+                    }
+                    if(pages.current == pages.count) {
+                        $(".jp-next").addClass("jp-hidden");
+                    } else{
+                        $(".jp-next").removeClass("jp-hidden");
+                    }
                 }
-                if(pages.current == pages.count) {
-                    $(".jp-next").addClass("jp-hidden");
-                } else{
-                    $(".jp-next").removeClass("jp-hidden");
-                }
-            }
-        });
+            });
+        });   
     </script>
 </body>
 </html>

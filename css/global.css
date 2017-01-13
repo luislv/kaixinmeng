@@ -5,6 +5,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bg-green2{background-color:#00563d;}
 .bg-darkGreen{background-color:#13382c;}
 .bg-darkGreen2{background-color:#005a41;}
+.bg-gray1{background-color:#202f28;}
 .bg-littleGreen{background-color:#007a5b;}
 .bg-yellow{background-color:#ffee25;}
 .bg-yellow2{background-color:#ffd100;}
@@ -54,6 +55,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 
 /*布局类*/
 .layout{width:960px;margin:0 auto;}
+.layout2{width:400px;margin:0 auto;}
 .mainHeight{height:800px;}
 
 /*图标类*/

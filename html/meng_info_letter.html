@@ -69,16 +69,15 @@
                 <li><a href="meng_info_finance.html"><p class="pl40 bg-littleGreen text-white fs16">会员财务</p></a><div class="line3 ml20 mr15"></div></li>
                 <li><a href="meng_info_vip.html"><p class="pl40 bg-littleGreen text-white fs16">下线会员</p></a><div class="line3 ml20 mr15"></div></li>
                 <li><a href="meng_info_withdraw.html"><p class="pl40 bg-littleGreen text-white fs16">申请提款</p></a><div class="line3 ml20 mr15"></div></li>
-                <li><a href="meng_info_center.html"><p class="active pl40 bg-littleGreen text-white fs16">个人中心</p></a><div class="line3 ml20 mr15"></div></li>
-                <li><a href="meng_info_letter.html"><p class="pl40 bg-littleGreen text-white fs16">站内信</p></a><div class="line3 ml20 mr15"></div></li>
+                <li><a href="meng_info_center.html"><p class="pl40 bg-littleGreen text-white fs16">个人中心</p></a><div class="line3 ml20 mr15"></div></li>
+                <li><a href="meng_info_letter.html"><p class="active pl40 bg-littleGreen text-white fs16">站内信</p></a><div class="line3 ml20 mr15"></div></li>
             </ul>
             <!-- 日结佣金 -->
-            <div class="infoCon bg-green pt20 pl20 pr20 h750">
+            <div class="infoCon bg-green pt20 pl20 pr20 h750" id="tab">
                 <!-- 导航 -->
-                <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix">
-                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">个人中心</li>
-                    <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">修改密码</li>
-                    <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">推广链接</li>
+                <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
+                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">收件箱</li>
+                    <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">发件箱</li>
                 </ul>
                 <div class="mt20 ml30">
                     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="infoTable">
@@ -100,44 +99,56 @@
                     </table>
                 </div>
                 <div class="line4 mt20"></div>
-                <div class="J_inbox mt20">
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
-                        <caption class="hide">站内信收件箱</caption>
-                        <thead>
-                            <tr>
-                                <th width="80%"></th>
-                                <th width="20%"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-darkGreen">
-                                <td class="tl pl10 pt5 pb5">
-                                    <a href="#" class="inblo text-yellow4 fullwidth">
-                                       欢迎加入幸运博，最专业老虎机娱乐网站！
-                                        <i class="iconfont vm">&#xe63e;</i> 
-                                    </a>
-                                </td>
-                                <td class="pt5 pb5 text-littleGreen3">
-                                    2016-12-12 12:00
-                                </td>
-                            </tr>
-                            <tr class="bg-darkGreen">
-                                <td class="tl pl10 pt5 pb5">
-                                    <a href="#" class="inblo text-yellow4 fullwidth">
-                                       欢迎加入幸运博，最专业老虎机娱乐网站！
-                                        <i class="iconfont vm">&#xe652;</i> 
-                                    </a>
-                                </td>
-                                <td class="pt5 pb5 text-littleGreen3">
-                                    2016-12-12 12:00
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="J_send mt30">
-                    
-                </div>        
+                <div id="tabcon">
+                    <!-- 收件箱tab -->
+                    <div class="J_tabcon_item mt20 hide" style="display:block;">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                            <caption class="hide">站内信收件箱</caption>
+                            <thead>
+                                <tr>
+                                    <th width="80%"></th>
+                                    <th width="20%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-darkGreen">
+                                    <td class="tl pl10 pt5 pb5">
+                                        <a href="#" class="inblo text-yellow4 fullwidth">
+                                           欢迎加入幸运博，最专业老虎机娱乐网站！
+                                            <i class="iconfont vm">&#xe63e;</i> 
+                                        </a>
+                                    </td>
+                                    <td class="pt5 pb5 text-littleGreen3">
+                                        2016-12-12 12:00
+                                    </td>
+                                </tr>
+                                <tr class="bg-darkGreen">
+                                    <td class="tl pl10 pt5 pb5">
+                                        <a href="#" class="inblo text-yellow4 fullwidth">
+                                           欢迎加入幸运博，最专业老虎机娱乐网站！
+                                            <i class="iconfont vm">&#xe652;</i> 
+                                        </a>
+                                    </td>
+                                    <td class="pt5 pb5 text-littleGreen3">
+                                        2016-12-12 12:00
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="J_tabcon_item mt30 hide">
+                        <div class="layout2">
+                            <h2 class="fn bg-gray1 fs14 lh1 pt10 pr15 pb10 pl10 bor4">
+                                <label for="account" class="text-yellow4">账号:</label>
+                                <input type="text" name="account" id="account" class="w100 text-littleGreen3 bg-gray1 pl5" placeholder="您的父亲的名字是什么？">
+                            </h2>
+                            <p class="mt10">
+                                <textarea name="personalGame" class="sentbox block pt10 pb10 pl15 pr15 bg-darkGreen bor4 fs12 lh3 text-littleGreen3"></textarea>
+                            </p>
+                        </div>
+                            
+                    </div>
+                </div>     
             </div>
         </div>
     </div>
@@ -148,36 +159,12 @@
     </div>
     <!-- 底部 end -->
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="../js/jPages.min.js"></script>
+    <script src="../js/global.js"></script>
     <script type="text/javascript">
-        // 分页
-        $("div.holder").jPages({
-            containerID  : 'itemContainer',
-            first: '第1页',
-            last: '最后1页',
-            previous: '上一页',
-            next: '下一页',
-            perPage: 2,  // 每页条数
-            startPage: 1,
-            startRange: 0,
-            midRange: 4,
-            endRange: 0,
-            animation: 'wobble',
-            keyBrowse: true,
-            callback: function(pages, items){
-                $(".holder").find(".jp-last").css("border-right", "none");
-                if(pages.current == 1) {
-                    $(".jp-previous").addClass("jp-hidden");
-                }else{
-                    $(".jp-previous").removeClass("jp-hidden");
-                }
-                if(pages.current == pages.count) {
-                    $(".jp-next").addClass("jp-hidden");
-                } else{
-                    $(".jp-next").removeClass("jp-hidden");
-                }
-            }
-        });
+        $(function(){
+            // tab切换
+            new Tab({'root':$('#tab')});
+        })
     </script>
 </body>
 </html>
