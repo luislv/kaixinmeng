@@ -68,15 +68,16 @@
                 <li><a href="meng_info_quota.html"><p class="pl40 bg-littleGreen text-white fs16">额度记录</p></a><div class="line3 ml20 mr15"></div></li>
                 <li><a href="meng_info_finance.html"><p class="pl40 bg-littleGreen text-white fs16">会员财务</p></a><div class="line3 ml20 mr15"></div></li>
                 <li><a href="meng_info_vip.html"><p class="pl40 bg-littleGreen text-white fs16">下线会员</p></a><div class="line3 ml20 mr15"></div></li>
-                <li><a href="meng_info_withdraw.html"><p class="active pl40 bg-littleGreen text-white fs16">申请提款</p></a><div class="line3 ml20 mr15"></div></li>
+                <li><a href="meng_info_withdraw.html"><p class="pl40 bg-littleGreen text-white fs16">申请提款</p></a><div class="line3 ml20 mr15"></div></li>
                 <li><a href="meng_info_center.html"><p class="pl40 bg-littleGreen text-white fs16">个人中心</p></a><div class="line3 ml20 mr15"></div></li>
-                <li><a href="meng_info_letter.html"><p class="pl40 bg-littleGreen text-white fs16">站内信</p></a><div class="line3 ml20 mr15"></div></li>
+                <li><a href="meng_info_letter.html"><p class="active pl40 bg-littleGreen text-white fs16">站内信</p></a><div class="line3 ml20 mr15"></div></li>
             </ul>
             <!-- 日结佣金 -->
             <div class="infoCon bg-green pt20 pl20 pr20 h750">
                 <!-- 导航 -->
                 <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix">
-                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">申请提款</li>
+                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">收件箱</li>
+                    <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">发件箱</li>
                 </ul>
                 <div class="mt20 ml30">
                     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="infoTable">
@@ -101,48 +102,37 @@
                 <div class="mt20">
                     <form action="#" method="post">
                         <fieldset>
-                            <legend class="hide">提款表单</legend>
+                            <legend class="hide">个人中心表单</legend>
                             <p class="pb10">
-                                <label for="withdrawPassword" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">密码:</label>
-                                <input type="password" id="withdrawPassword" name="withdrawPassword" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
+                                <label for="personalName" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">用户昵称:</label>
+                                <input type="text" id="personalName" name="personalName" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
                             </p>
                             <p class="pb10">
-                                <label for="withdrawBank" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">银行名称:</label>
+                                <label for="personalBirthday" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">出生日期:</label>
                                 <span class="inblo bg-darkGreen bor4 p8">
-                                    <input type="text" id="withdrawBank" name="withdrawBank" class="widthdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
+                                    <input type="text" id="personalBirthday" name="personalBirthday" class="widthdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
                                     <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
                                 </span>
                             </p>
-                            <!-- <p class="pb10">
-                                <label for="withdrawBank" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">银行名称:</label>
-                                <select name="" id="" class="inblo bg-darkGreen bor4 p8 bor" style="border:0 none;width:200px;">
-                                    <option value="0">请选择</option>
-                                    <option value="0">银行1</option>
-                                    <option value="0">银行1</option>
-                                </select>    
-                            </p> -->
                             <p class="pb10">
-                                <label for="withdrawCard" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">卡/折号:</label>
-                                <input type="text" id="withdrawCard" name="withdrawCard" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
+                                <label for="personalQQ" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">QQ号码:</label>
+                                <input type="text" id="personalQQ" name="personalQQ" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
                             </p>
                             <p class="pb10">
-                                <label for="withdrawType" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">提款类型:</label>
+                                <label for="personalTel" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">联系电话:</label>
                                 <span class="inblo bg-darkGreen bor4 p8">
-                                    <input type="text" id="withdrawType" name="withdrawType" class="widthdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
+                                    <input type="text" id="personalTel" name="personalTel" class="widthdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
                                     <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
                                 </span>
                             </p>
                             <p class="pb15">
-                                <label for="withdrawMoney" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">提款金额:</label>
-                                <input type="text" id="withdrawMoney" name="withdrawMoney" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
-                            </p>
-                            <p class="checkboxWrap2">
-                                <input type="checkbox" name="overageCon" id="overageCon" class="fl bg-littleGreen hand" checked>
-                                <label for="overageCon" class="fs14 lh1 text-littleGreen3 ml10">我已读过《提款须知》，并已清除了解其规则</label>
-                            </p>   
+                                <label for="personalGame" class="withdrawTitle inblo tr fs14 text-yellow4 pr5 vt">电子游戏:</label>
+                                <textarea id="personalGame" name="personalGame" class="gameText p10 bg-darkGreen bor4 fs14 lh3 text-white"></textarea>
+                                <!-- <input id="personalGame" name="personalGame" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10"> -->
+                            </p>  
                             <div class="line4 mt20"></div>
                             <p class="mt20 submitWrap2">
-                                <input type="submit" name="withdrawSubmit" value="提交" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
+                                <input type="submit" name="personalSubmit" value="保存" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
                             </p>     
                         </fieldset>
                     </form>

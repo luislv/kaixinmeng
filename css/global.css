@@ -35,13 +35,17 @@ fieldset{border:0 none;margin:0;padding:0;}
 .lh5 {line-height:200% }
 .fullwidth{width:100%;}
 .w60{width:60px;}
+.w300{width:300px;}
+.h90{height:90px;}
 .h750{height:750px;}
 .mt30{margin-top:30px !important;}
 .ml25{margin-left:25px;}
 .mr300{margin-right:300px;}
 .p8{padding:8px;}
+.pt5{padding-top:5px !important;}
 .pl3{padding-left:3px;}
 .pb3{padding-bottom:3px;}
+.pb5{padding-bottom:5px !important;}
 .fs24{font-size:24px;}
 .hand{cursor:pointer;}
 .tl{text-align:left !important;}
@@ -67,6 +71,11 @@ fieldset{border:0 none;margin:0;padding:0;}
 /*表单样式*/
 input[type="checkbox"]{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;appearance: none;-webkit-appearance: none;}
 input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-repeat 2px 3px;}
+.withdrawTitle{width:110px;height:36px;line-height:36px;}
+.withdrawCon{width:180px;height:36px;line-height:36px;}
+.widthdrawCon2{width:160px;}
+.submitWrap2{margin-left:60px;}
+.gameText{width: 280px;height: 70px;border: none;}
 
 /*公共头部*/
 .header{position:fixed;top:0;z-index:999;}
@@ -91,7 +100,6 @@ input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-rep
 /*分页组件*/
 .holder{}
 .holder a{display:inline-block;height:12px;line-height:12px;font-size: 12px;cursor: pointer;padding: 0 8px;color: #ba9e26;border-right:solid 1px #ba9e26;}
-/*.holder a:hover{background-color: #ffd100;color: #07a67e;}*/
 .holder a.jp-current, a.jp-current:hover{color: #FF4242;font-weight: bold;}
 .holder a.jp-disabled, a.jp-disabled:hover{color: #666;}
 .holder a.jp-current, a.jp-current:hover, .holder a.jp-disabled, a.jp-disabled:hover{cursor: default;background: none;}
