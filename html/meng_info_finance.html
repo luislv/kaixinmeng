@@ -72,7 +72,7 @@
                 <li><a href="meng_info_center.html"><p class="pl40 bg-littleGreen text-white fs16">个人中心</p></a><div class="line3 ml20 mr15"></div></li>
                 <li><a href="meng_info_letter.html"><p class="pl40 bg-littleGreen text-white fs16">站内信</p></a><div class="line3 ml20 mr15"></div></li>
             </ul>
-            <!-- 日结佣金 -->
+            <!-- 会员账务 -->
             <div class="infoCon bg-green pt20 pl20 pr20 h750" id="tab">
                 <!-- 导航 -->
                 <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
@@ -106,26 +106,43 @@
                     <!-- 会员输赢 -->
                     <div class="J_tabcon_item mt20 hide" style="display:block;">
                         <div class="">
-                            <span class="inblo">
-                                <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
-                                <div class="inblo bg-darkGreen bor4 ml5 p8">
-                                    <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                                    <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
-                                </div>
-                            </span>
-                            <span class="inblo ml15">
-                                <label for="startTime" class="fs14 text-yellow4">结束时间:</label>
-                                <div class="inblo bg-darkGreen bor4 ml5 p8">
-                                    <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                                    <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                </div>
-                            </span>
-                            <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                            <div>
+                                <span class="inblo">
+                                    <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="startTime" name="startTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="endTime" class="fs14 text-yellow4">结束时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="endTime" name="endTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>    
+                            </div>
+                            <div class="mt10">
+                                <span class="inblo">
+                                    <label for="vipAccount" class="fs14 text-yellow4">会员账号:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="vipAccount" name="vipAccount" class="inblo w150 bg-darkGreen w125 fs12 text-littleGreen3">
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="gamePlatform" class="fs14 text-yellow4">游戏平台:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="gamePlatform" name="gamePlatform" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>
+                                <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                            </div>    
                         </div> 
                         <div class="line4 mt20"></div>
                         <div class="mt10">
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
-                                <caption class="hide">佣金方案</caption>
+                                <caption class="hide">会员输赢</caption>
                                 <thead>
                                     <tr>
                                         <th width="16%">序号</th>
@@ -138,108 +155,116 @@
                                 </thead>
                                 <tbody id="itemContainer">
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                     <tr class="bg-darkGreen">
-                                        <td width="16%" class="text-littleGreen3">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="16%">888</td>
-                                        <td width="16%">1</td>
-                                        <td width="16%">001</td>
-                                        <td width="20%" class="text-littleGreen3">2016-10-10 09:00</td>
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -249,14 +274,682 @@
                             </div>
                         </div> 
                     </div>
+                    <!-- 会员存款 -->
                     <div class="J_tabcon_item mt20 hide">
-                        tab2
+                        <div class="">
+                            <div>
+                                <span class="inblo">
+                                    <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="startTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="endTime" class="fs14 text-yellow4">结束时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="endTime" name="endTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>    
+                            </div>
+                            <div class="mt10">
+                                <span class="inblo">
+                                    <label for="vipAccount" class="fs14 text-yellow4">会员账号:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="vipAccount" name="vipAccount" class="inblo w150 bg-darkGreen w125 fs12 text-littleGreen3">
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="startTime" class="fs14 text-yellow4">游戏平台:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="startTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>
+                                <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                            </div>    
+                        </div> 
+                        <div class="line4 mt20"></div>
+                        <div class="mt10">
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                <caption class="hide">会员存款</caption>
+                                <thead>
+                                    <tr>
+                                        <th width="16%">序号</th>
+                                        <th width="16%">操作类型</th>
+                                        <th width="16%">额度</th>
+                                        <th width="16%">红利</th>
+                                        <th width="16%">提案类型</th>
+                                        <th width="20%">加入时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="itemContainer">
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 分页条 -->
+                            <div class="tc mt20">
+                                <div class="holder inblo"></div>
+                            </div>
+                        </div> 
                     </div>
+                    <!-- 会员提款 -->
                     <div class="J_tabcon_item mt20 hide">
-                        tab3
+                        <div class="">
+                            <div>
+                                <span class="inblo">
+                                    <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="startTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="endTime" class="fs14 text-yellow4">结束时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="endTime" name="endTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>    
+                            </div>
+                            <div class="mt10">
+                                <span class="inblo">
+                                    <label for="vipAccount" class="fs14 text-yellow4">会员账号:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="vipAccount" name="vipAccount" class="inblo w150 bg-darkGreen w125 fs12 text-littleGreen3">
+                                    </div>
+                                </span>
+                                <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                            </div>    
+                        </div> 
+                        <div class="line4 mt20"></div>
+                        <div class="mt10">
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                <caption class="hide">会员提款</caption>
+                                <thead>
+                                    <tr>
+                                        <th width="16%">序号</th>
+                                        <th width="16%">操作类型</th>
+                                        <th width="16%">额度</th>
+                                        <th width="16%">红利</th>
+                                        <th width="16%">提案类型</th>
+                                        <th width="20%">加入时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="itemContainer">
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 分页条 -->
+                            <div class="tc mt20">
+                                <div class="holder inblo"></div>
+                            </div>
+                        </div> 
                     </div>
+                    <!-- 会员反水 -->
                     <div class="J_tabcon_item mt20 hide">
-                        tab4
+                        <div class="">
+                            <div>
+                                <span class="inblo">
+                                    <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="startTime" name="startTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="endTime" class="fs14 text-yellow4">结束时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="endTime" name="endTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>    
+                            </div>
+                            <div class="mt10">
+                                <span class="inblo">
+                                    <label for="vipAccount" class="fs14 text-yellow4">会员账号:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="vipAccount" name="vipAccount" class="inblo w150 bg-darkGreen w125 fs12 text-littleGreen3">
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="rebateType" class="fs14 text-yellow4">反水类型:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="rebateType" name="rebateType" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span> 
+                                <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                            </div>    
+                        </div> 
+                        <div class="line4 mt20"></div>
+                        <div class="mt10">
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                <caption class="hide">会员反水</caption>
+                                <thead>
+                                    <tr>
+                                        <th width="16%">序号</th>
+                                        <th width="16%">操作类型</th>
+                                        <th width="16%">额度</th>
+                                        <th width="16%">红利</th>
+                                        <th width="16%">提案类型</th>
+                                        <th width="20%">加入时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="itemContainer">
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 分页条 -->
+                            <div class="tc mt20">
+                                <div class="holder inblo"></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- 会员优惠 -->
+                    <div class="J_tabcon_item mt20 hide">
+                        <div class="">
+                            <div>
+                                <span class="inblo">
+                                    <label for="startTime" class="fs14 text-yellow4">开始时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="startTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-yellow4 hand vm">&#xe64f;</i>
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="endTime" class="fs14 text-yellow4">结束时间:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="endTime" name="endTime" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span>    
+                            </div>
+                            <div class="mt10">
+                                <span class="inblo">
+                                    <label for="vipAccount" class="fs14 text-yellow4">会员账号:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="vipAccount" name="vipAccount" class="inblo w150 bg-darkGreen w125 fs12 text-littleGreen3">
+                                    </div>
+                                </span>
+                                <span class="inblo ml15">
+                                    <label for="couponType" class="fs14 text-yellow4">优惠类型:</label>
+                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
+                                        <input type="text" id="couponType" name="couponType" class="inblo w130 bg-darkGreen w125 fs12 text-littleGreen3">
+                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                    </div>
+                                </span> 
+                                <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml5 pl30 pr30 pt10 pb10 bor4 hand">
+                            </div>    
+                        </div> 
+                        <div class="line4 mt20"></div>
+                        <div class="mt10">
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                <caption class="hide">会员优惠</caption>
+                                <thead>
+                                    <tr>
+                                        <th width="16%">序号</th>
+                                        <th width="16%">操作类型</th>
+                                        <th width="16%">额度</th>
+                                        <th width="16%">红利</th>
+                                        <th width="16%">提案类型</th>
+                                        <th width="20%">加入时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="itemContainer">
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-littleGreen3">1</td>
+                                        <td>001</td>
+                                        <td>888</td>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 分页条 -->
+                            <div class="tc mt20">
+                                <div class="holder inblo"></div>
+                            </div>
+                        </div> 
                     </div>    
                 </div>  
             </div>
@@ -270,7 +963,7 @@
     <!-- 底部 end -->
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="../js/jPages.min.js"></script>
-    <script scr="../js/global.js"></script>
+    <script src="../js/global.js"></script>
     <script type="text/javascript">
         $(function() {
             // tab切换

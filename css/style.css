@@ -44,9 +44,12 @@
 .checkboxWrap2{padding-left:95px;}
 
 /*个人中心页面*/
+.sponsorURL{width:380px;}
 
 /*收件箱*/
-.sentbox{height:185px;border:0 none;}
+.sentTit{width:320px;}
+.sentbox{width:370px;height:185px;border:0 none;}
+.sentSubmit{padding-left:85px;padding-right:85px;}
 
 
 

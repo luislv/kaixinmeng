@@ -18,6 +18,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .text-yellow3, a.text-yellow3{color:#f4dc00;}
 .text-yellow4, a.text-yellow4{color:#ba9e26;}
 .text-green, a.text-green{color:#004633;}
+.text-darkGreen, a.text-darkGreen{color:#13382c;}
 .text-littleGreen, a.text-littleGreen{color:#07a67e;}
 .text-littleGreen2, a.text-littleGreen2{color:#64c8ac;}
 .text-littleGreen3, a.text-littleGreen3{color:#72e3c4 !important;}
@@ -36,6 +37,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .lh5 {line-height:200% }
 .fullwidth{width:100%;}
 .w60{width:60px;}
+.w130{width:130px;}
+.w150{width:150px;}
 .w300{width:300px;}
 .h90{height:90px;}
 .h750{height:750px;}
@@ -52,6 +55,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .tl{text-align:left !important;}
 .vb{vertical-align:bottom;}
 .vt{vertical-align:top;}
+.ti{text-indent:2em;}
+.tdu{text-decoration:underline;}
 
 /*布局类*/
 .layout{width:960px;margin:0 auto;}
@@ -69,6 +74,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .line2{border-top:1px solid #062d23;opacity:0.6;}
 .line3{border-top:1px solid #044f39;}
 .line4{border-top:1px solid #202f28;}
+.line5{border-top:1px solid #024936;}
 
 /*表单样式*/
 input[type="checkbox"]{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;appearance: none;-webkit-appearance: none;}
