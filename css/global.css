@@ -113,6 +113,9 @@ input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-rep
 .holder a.jp-current, a.jp-current:hover, .holder a.jp-disabled, a.jp-disabled:hover{cursor: default;background: none;}
 .holder span{display:inline-block;height:12px;line-height:12px;padding: 0 5px;color:#ba9e26;border-right:solid 1px #ba9e26;}
 
+/*layer弹出层样式*/
+body .demo-class .layui-layer-btn{padding:0;}
+body .demo-class .layui-layer-btn .layui-layer-btn0{display:block;margin:0;padding:20px 0;border-radius:0;font-size:16px;line-height:1;border:none;background-color:#13382c;color:#ffee25;text-align:center;}
 
 /*figure{margin:0;padding:0;}
 .bg-hui-q{ background-color:#fafafa;}
