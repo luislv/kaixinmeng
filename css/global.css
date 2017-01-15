@@ -3,6 +3,7 @@ body{background-color:#004633;}
 fieldset{border:0 none;margin:0;padding:0;}
 .bg-green{background-color:#004633;}
 .bg-green2{background-color:#00563d;}
+.bg-green3{background-color:#036047;}
 .bg-darkGreen{background-color:#13382c;}
 .bg-darkGreen2{background-color:#005a41;}
 .bg-gray1{background-color:#202f28;}
@@ -25,7 +26,9 @@ fieldset{border:0 none;margin:0;padding:0;}
 .text-littleYellw, a.text-littleYellow{color:#b89e11;}
 .text-gray1, a.text-gray1{color:#202f28;}
 .bor-bottom-yellow{border-bottom:solid 1px #ffee25;}
+.bor-bottom-yellow2{border-bottom:solid 1px #004633;}
 .bor-top-yellow{border-top:solid 1px #ffee25;}
+.bor-top-yellow2{border-top:solid 1px #004633;}
 .bor-left-yellow{border-left:solid 1px #ffee25;}
 .bor-right-yellow{border-right:solid 1px #ffee25;}
 .bor-left-green{border-left:solid 1px #2f6b59;}
@@ -40,6 +43,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .w130{width:130px;}
 .w150{width:150px;}
 .w300{width:300px;}
+.w355{width:355px;}
 .h90{height:90px;}
 .h750{height:750px;}
 .mt30{margin-top:30px !important;}
@@ -53,6 +57,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .fs24{font-size:24px;}
 .hand{cursor:pointer;}
 .tl{text-align:left !important;}
+.tr{text-align:right !important;}
 .vb{vertical-align:bottom;}
 .vt{vertical-align:top;}
 .ti{text-indent:2em;}
@@ -96,6 +101,8 @@ input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-rep
 .nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
 .nav03{height:36px;}
 .nav03 li.active{border:solid 1px #ffee25;border-bottom:none;color:#ffee25;background-color:#004633;}
+.nav04 li.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
+.infoCon{margin-left:170px;}
 
 /*表格*/
 .commissionTable{color:#07a67e;}
@@ -104,6 +111,9 @@ input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-rep
 .infoTable{}
 .infoTable th{font-weight:normal;font-size:12px;color:#07a67e;padding-bottom:3px;text-align:left;}
 .infoTable td{color:#ffee25;font-size:16px;}
+
+/*信息专栏*/
+.
 
 /*分页组件*/
 .holder{}
