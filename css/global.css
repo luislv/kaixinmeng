@@ -45,10 +45,13 @@ fieldset{border:0 none;margin:0;padding:0;}
 .top {top:0;}
 .bottom {bottom:0;}
 .fullwidth{width:100%;}
+.w15{width:15px;}
+.w30{width:30px;}
 .w60{width:60px;}
+.w90{width:90px !important;}
 .w130{width:130px;}
 .w150{width:150px;}
-.w300{width:300px;}
+.w300{width:300px !important;}
 .w355{width:355px;}
 .h90{height:90px;}
 .h750{height:750px;}
@@ -59,8 +62,11 @@ fieldset{border:0 none;margin:0;padding:0;}
 .mr5-m{margin-right:-5px;}
 .mb3-m{margin-bottom:-3px;}
 .p8{padding:8px;}
+.pt3{padding-top:3px;}
 .pt5{padding-top:5px !important;}
+.pr8{padding-right:8px;}
 .pl3{padding-left:3px;}
+.pl8{padding-left:8px;}
 .pb3{padding-bottom:3px;}
 .pb5{padding-bottom:5px !important;}
 .fs24{font-size:24px;}
@@ -91,13 +97,17 @@ fieldset{border:0 none;margin:0;padding:0;}
 .line5{border-top:1px solid #024936;}
 
 /*表单样式*/
-input[type="checkbox"]{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;appearance: none;-webkit-appearance: none;}
+input[type="checkbox"]{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;appearance: none;-webkit-appearance: none;}
 input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-repeat 2px 3px;}
+input[type="radio"]{width:12px;height:12px;border:1px solid #ffee25;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;appearance: none;-webkit-appearance: none;}
+input[type="radio"]:checked{background:url(../images/icon_radio_checked.png) no-repeat 2px 2px;}
 .withdrawTitle{width:110px;height:36px;line-height:36px;}
 .withdrawCon{width:180px;height:36px;line-height:36px;}
-.widthdrawCon2{width:160px;}
+.withdrawCon2{width:160px;}
+.withdrawCon3{width:140px;height:24px;line-height:24px;}
 .submitWrap2{margin-left:60px;}
-.gameText{width: 280px;height: 70px;border: none;}
+.textarea01{width: 280px;height: 70px;border: none;}
+.textarea02{width: 200px;height: 75px;border: none;margin-left:308px;}
 
 /*公共头部*/
 .header{position:fixed;top:0;z-index:999;}
@@ -107,10 +117,10 @@ input[type="checkbox"]:checked{background:url(../images/icon_checked.png) no-rep
 .nav01{width:170px;}
 .nav02{width:150px;}
 .nav01 li a p, .nav02 li{height:50px;line-height:50px;}
-.nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
+.nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633 !important;}
 .nav03{height:36px;}
 .nav03 li.active{border:solid 1px #ffee25;border-bottom:none;color:#ffee25;background-color:#004633;}
-.nav04 li.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
+.nav04 li a span.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
 .infoCon{margin-left:170px;}
 
 /*表格*/
