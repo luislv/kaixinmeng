@@ -6,3 +6,7 @@
 
 /*个人中心-基本资料页面*/
 
+/*个人中心-绑定银行卡*/
+.inputDiv{width:140px;margin-left:308px;}
+.btn-submit-container{margin-left:260px;}
+.btn-submit{padding-left:70px;padding-right:70px;}

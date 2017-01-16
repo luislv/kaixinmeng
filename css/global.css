@@ -7,6 +7,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bg-darkGreen{background-color:#13382c;}
 .bg-darkGreen2{background-color:#005a41;}
 .bg-gray1{background-color:#202f28;}
+.bg-gray2{background-color:#212121;}
 .bg-transparent-gray{background-color:#000;background:rgba(0,0,0,0.6);filter:alpha(opacity=60);}
 .bg-littleGreen{background-color:#007a5b;}
 .bg-yellow{background-color:#ffee25;}
@@ -27,6 +28,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .text-littleGreen3, a.text-littleGreen3{color:#72e3c4 !important;}
 .text-littleYellw, a.text-littleYellow{color:#b89e11;}
 .text-gray1, a.text-gray1{color:#202f28;}
+.text-darkYellow, a.text-darkYellow{color:#7d6b1e;}
 .bor-bottom-yellow{border-bottom:solid 1px #ffee25;}
 .bor-bottom-yellow2{border-bottom:solid 1px #004633;}
 .bor-top-yellow{border-top:solid 1px #ffee25;}
@@ -49,11 +51,13 @@ fieldset{border:0 none;margin:0;padding:0;}
 .w30{width:30px;}
 .w60{width:60px;}
 .w90{width:90px !important;}
+.w120{width:120px;}
 .w130{width:130px;}
 .w150{width:150px;}
 .w300{width:300px !important;}
 .w355{width:355px;}
 .h90{height:90px;}
+.h100{height:100px;}
 .h750{height:750px;}
 .mt30{margin-top:30px !important;}
 .ml25{margin-left:25px;}
@@ -106,8 +110,10 @@ input[type="radio"]:checked{background:url(../images/icon_radio_checked.png) no-
 .withdrawCon2{width:160px;}
 .withdrawCon3{width:140px;height:24px;line-height:24px;}
 .submitWrap2{margin-left:60px;}
-.textarea01{width: 280px;height: 70px;border: none;}
-.textarea02{width: 200px;height: 75px;border: none;margin-left:308px;}
+.textarea01{width:280px;height:70px;border:none;}
+.textarea02{width:200px;height:75px;border:none;margin-left:308px;}
+.btn_upload{width:235px;height:100px;background:#212121 url(../images/bg_creditCard.png) no-repeat right top;}
+.btn_upload_filePrew{width: 235px;height:100px;font-size: 100px;/* 增大不同浏览器的可点击区域*/opacity: 0;filter:alpha(opacity=0);} 
 
 /*公共头部*/
 .header{position:fixed;top:0;z-index:999;}
