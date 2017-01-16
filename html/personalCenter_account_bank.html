@@ -126,12 +126,24 @@
                                 <a href="javascript:void(0);" class="fr">
                                     <div class="btn_upload pr block cf fs16 text-yellow4 tc bg-gray2 bor4">
                                         <p class="mt15"><i class="iconfont text-yellow fs24">&#xe607;</i></p>
-                                        <p class="lh1 mt5">添加图片</p>
+                                        <p class="lh1 mt5">添加银行卡</p>
                                         <p class="fs12 text-darkYellow lh1 mt5">最多可以绑定3张，你还可以绑定<b>3</b>张</p>
                                     </div>
                                     <input class="btn_upload_filePrew block pa left top" title="最多可以绑定3张" type="file" size="3" name="filePrew">
-                                </a> 
-                                <div class="pt20 pl10">
+                                </a>
+                                <a href="#" class="fl">
+                                    <div class="btn_upload bor4">
+                                        <h2 class="text-yellow pl15 fs18 pt20 fn">中国工商银行</h2>
+                                        <p class="text-yellow4 pl15 fs18 mt10">1234 **** **** **** 314</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="fl ml10">
+                                    <div class="btn_upload bor4">
+                                        <h2 class="pl15 text-yellow fs18 pt20 fn">中国工商银行</h2>
+                                        <p class="pl15 text-yellow4 fs18 mt10">1234 **** **** **** 314</p>
+                                    </div>
+                                </a>     
+                                <div class="pt20 pl10 hide">
                                     <h2 class="fn fs18 text-yellow lh1">已绑定银行卡：</h2>
                                     <p class="fs14 text-yellow4 lh1 mt5">你还没有绑定银行卡，请点击右方 + 进行绑定！</p>
                                 </div>  
@@ -193,8 +205,69 @@
                                 </div>    
                             </div>
                         </div>
+                        <!-- 支付宝绑定 -->
                         <div class="J_tabcon_item mt20 hide">
-                            tab3
+                            <div class="pb20 h100 hide">
+                                <a href="javascript:void(0);" class="fr">
+                                    <div class="btn_upload2 pr block cf fs16 text-yellow4 tc bg-gray2 bor4">
+                                        <p class="mt15"><i class="iconfont text-yellow fs24">&#xe607;</i></p>
+                                        <p class="lh1 mt5">添加支付宝</p>
+                                        <p class="fs12 text-darkYellow lh1 mt5">最多可以绑定1张，你还可以绑定<b>1</b>张</p>
+                                    </div>
+                                    <input class="btn_upload_filePrew block pa left top" title="最多可以绑定1张" type="file" size="3" name="filePrew">
+                                </a>    
+                                <div class="pt20 pl10">
+                                    <h2 class="fn fs18 text-yellow lh1">已绑定支付宝：</h2>
+                                    <p class="fs14 text-yellow4 lh1 mt5">你还没有绑定支付宝，请点击右方 + 进行绑定！</p>
+                                </div>  
+                            </div>
+                            <div class="pb20 h100">
+                                <a href="#" class="fl ml10">
+                                    <div class="btn_upload bor4">
+                                        <h2 class="pl15 text-yellow fs18 pt20 fn">中王**名</h2>
+                                        <p class="pl15 text-yellow4 fs18 mt10">1234 **** **@qq.com</p>
+                                    </div>
+                                </a>
+                                <div class="fr pr20 w355">
+                                    <span class="fr inblo p5 ml15 bg-white"><img class="mb3-m" src="../images/alipay_qrCode.png" width="92" height="92"></span>
+                                    <h2 class="fn fs18 tr text-yellow pt20">扫码存款</h2>
+                                    <p class="tr text-yellow4 mt15">
+                                        使用扫码存款请注意，<br>
+                                        支付账号必须为已绑定的支付宝账号。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt20">
+                                <h2 class="fn fs16 text-yellow bg-gray1 p10 lh1">
+                                    填写支付宝信息
+                                    <span class="text-yellow4 fs12 ml10">
+                                        在上方“已绑定支付宝” 中，选中你需要修改的支付宝，并修改。
+                                    </span>
+                                </h2>
+                                <div class="mt15">
+                                    <form action="#" method="">
+                                        <fieldset>
+                                            <legend class="hide">绑定银行卡信息</legend>
+                                            <p>
+                                                <label for="payee" class="withdrawTitle w300 inblo tr fs14 text-yellow4 pr5">开户名:</label>
+                                                <input type="text" id="payee" name="payee" class="withdrawCon3 fs12 bg-darkGreen bor4 inblo text-littleGreen3 text-white pl10 pr10" value="王小米">
+                                            </p>
+                                            <p>
+                                                <label for="alipayAccount" class="withdrawTitle w300 inblo tr fs14 text-yellow4 pr5">支付宝账号:</label>
+                                                <input type="text" id="alipayAccount" name="alipayAccount" class="withdrawCon3 fs12 bg-darkGreen bor4 text-littleGreen3 inblo text-white pl10 pr10" value="8998 9839 8291 123">
+                                            </p>
+                                            <p>
+                                                <label for="confirmAlipay" class="withdrawTitle w300 inblo tr fs14 text-yellow4 pr5">确认账号:</label>
+                                                <input type="text" id="confirmAlipay" name="confirmAlipay" class="withdrawCon3 fs12 bg-darkGreen bor4 text-littleGreen3 inblo text-white pl10 pr10" value="8998 9839 8291 123">
+                                            </p>
+                                            <p class="mt20 btn-submit-container">
+                                                <input type="submit" name="alipaySubmit" value="确认提交" class="btn-submit inblo bg-yellow bor4 tc fs14 text-green fb pt10 pb10 lh1 hand">
+                                            </p>
+                                        </fieldset>
+                                    </form>  
+                                </div>    
+                            </div>
                         </div>     
                     </div> 
                 </div>     
