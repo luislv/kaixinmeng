@@ -21,6 +21,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .text-yellow3, a.text-yellow3{color:#f4dc00;}
 .text-yellow4, a.text-yellow4{color:#ba9e26;}
 .text-yellow5, a.text-yellow5{color:#ffd000;}
+.text-yellow6, a.text-yellow6{color:#9d8419;}
 .text-green, a.text-green{color:#004633;}
 .text-darkGreen, a.text-darkGreen{color:#13382c;}
 .text-littleGreen, a.text-littleGreen{color:#07a67e;}
@@ -59,15 +60,18 @@ fieldset{border:0 none;margin:0;padding:0;}
 .h90{height:90px;}
 .h100{height:100px;}
 .h750{height:750px;}
+.mt1{margin-top:1px;}
 .mt30{margin-top:30px !important;}
 .ml25{margin-left:25px;}
 .ml5-m{margin-left:-5px;}
+.ml10-m{margin-left:-10px;}
 .mr300{margin-right:300px;}
 .mr5-m{margin-right:-5px;}
 .mb3-m{margin-bottom:-3px;}
 .p8{padding:8px;}
 .pt3{padding-top:3px;}
 .pt5{padding-top:5px !important;}
+.pt8{padding-top:8px;}
 .pr8{padding-right:8px;}
 .pl3{padding-left:3px;}
 .pl8{padding-left:8px;}
@@ -130,8 +134,10 @@ fieldset{border:0 none;margin:0;padding:0;}
 .nav01 li a p, .nav02 li{height:50px;line-height:50px;}
 .nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633 !important;}
 .nav03{height:36px;}
-.nav03 li.active{border:solid 1px #ffee25;border-bottom:none;color:#ffee25;background-color:#004633;}
+.nav03 li.active, .nav05 li.active{border:solid 1px #ffee25;border-bottom:none;color:#ffee25;background-color:#004633;}
 .nav04 li a span.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
+.nav05{height:40px;}
+.nav05 li.active h2, .nav05 li.active p{color:#ffee25;}
 .infoCon{margin-left:170px;}
 
 /*表格*/
@@ -147,6 +153,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .sentbox{width:370px;height:185px;border:0 none;}
 .sentSubmit{padding-left:85px;padding-right:85px;}
 
+/*支付方式卡片*/
+.card01{width:230px;background:#212121 url(../images/bg_alipay.png) no-repeat right top;}
 
 /*分页组件*/
 .holder{}
