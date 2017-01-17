@@ -63,8 +63,10 @@ fieldset{border:0 none;margin:0;padding:0;}
 .h750{height:750px;}
 .mt1{margin-top:1px;}
 .mt30{margin-top:30px !important;}
+.mt60{margin-top:60px;}
 .ml25{margin-left:25px;}
 .ml90{margin-left:90px;}
+.ml3-m{margin-left:-3px;}
 .ml5-m{margin-left:-5px;}
 .ml10-m{margin-left:-10px;}
 .mr300{margin-right:300px;}
@@ -76,8 +78,10 @@ fieldset{border:0 none;margin:0;padding:0;}
 .pt5{padding-top:5px !important;}
 .pt8{padding-top:8px;}
 .pr8{padding-right:8px;}
+.pr80{padding-right:80px;}
 .pl3{padding-left:3px;}
 .pl8{padding-left:8px;}
+.pl80{padding-left:80px;}
 .pb3{padding-bottom:3px;}
 .pb5{padding-bottom:5px !important;}
 .pb8{padding-bottom:8px;}
@@ -89,6 +93,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .vt{vertical-align:top;}
 .ti{text-indent:2em;}
 .tdu{text-decoration:underline;}
+.zx1{z-index:1;}
+.zx2{z-index:2;}
 
 /*布局类*/
 .layout{width:960px;margin:0 auto;}
@@ -142,7 +148,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .nav04 li a span.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
 .nav05{height:40px;}
 .nav05 li.active h2, .nav05 li.active p{color:#ffee25;}
-.nav-cover{width:170px;height:200px;}
+.nav-cover{width:170px;height:400px;}
 .infoCon{margin-left:170px;}
 
 /*表格*/

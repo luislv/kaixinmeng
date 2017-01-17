@@ -64,9 +64,9 @@
         <div class="pt20 pr20 pb20">
             <!-- 个人中心 -->
             <div class="bg-green clearfix pr">
-                <div class="nav-cover bg-littleGreen pa left bottom"></div>
+                <div class="nav-cover bg-littleGreen pa left bottom zx1"></div>
                 <!-- 导航侧栏 -->
-                <ul class="nav01 fl bg-littleGreen pb240">
+                <ul class="nav01 fl bg-littleGreen pb240 pr zx2">
                     <li>
                         <a href="personalCenter_index.html"><span class="block pl20 pt10 bg-littleGreen text-white fs18">Asdfqwef889</span></a>
                         <a href="#"><span class="block pl20 pt10 pb20 fs12 text-yellow lh1 bg-littleGreen">【新会员】<i class="iconfont text-yellow fs12">&#xe67a;</i></span></a>
@@ -125,7 +125,7 @@
                     </ul>
                     <div id="tabcon">
                         <!-- 支付宝支付 -->
-                        <div class="J_tabcon_item mt20 hide" style="display:block;">
+                        <div class="J_tabcon_item mt20 pb20 hide" style="display:block;">
                             <ul class="cf ml10-m mr10-m card card01">
                                 <li class="active ml10 mr10 pb20 tc fl pr">
                                     <div class="card-checked hide">
@@ -180,10 +180,10 @@
                             <div class="mt25 ml90">
                                 <input type="submit" name="rechargeSubmit" value="充值" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
                             </div>
-                            <p class="mt175 fs12 text-yellow4 tc lh pb20">如有支付成功但未到账情况，请联系我们的在线客服!</p>
+                            <p class="mt175 fs12 text-yellow4 tc lh1">如有支付成功但未到账情况，请联系我们的在线客服!</p>
                         </div>
                         <!-- 微信支付 -->
-                        <div class="J_tabcon_item mt20 hide">
+                        <div class="J_tabcon_item mt20 pb20 hide">
                             <ul class="cf ml10-m mr10-m card card02">
                                 <li class="active ml10 mr10 pb20 tc fl pr">
                                     <div class="card-checked hide">
@@ -229,10 +229,10 @@
                             <div class="mt25 ml90">
                                 <input type="submit" name="rechargeSubmit" value="充值" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
                             </div>
-                            <p class="mt175 fs12 text-yellow4 tc lh pb20">如有支付成功但未到账情况，请联系我们的在线客服!</p>
+                            <p class="mt175 fs12 text-yellow4 tc lh1">如有支付成功但未到账情况，请联系我们的在线客服!</p>
                         </div>
                         <!-- 在线支付 -->
-                        <div class="J_tabcon_item mt20 hide">
+                        <div class="J_tabcon_item mt20 pb20 hide">
                             <ul class="cf ml10-m mr10-m card card03">
                                 <li class="active ml10 mr10 pb20 tc fl pr">
                                     <div class="card-checked hide">
@@ -283,10 +283,10 @@
                             <div class="mt25 ml90">
                                 <input type="submit" name="rechargeSubmit" value="充值" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
                             </div>
-                            <p class="mt175 fs12 text-yellow4 tc lh pb20">如有支付成功但未到账情况，请联系我们的在线客服!</p>
+                            <p class="mt175 fs12 text-yellow4 tc lh1">如有支付成功但未到账情况，请联系我们的在线客服!</p>
                         </div>
                         <!-- 网银支付 -->
-                        <div class="J_tabcon_item mt20 hide">
+                        <div class="J_tabcon_item mt20 pb20 hide">
                             <p class="pb20 fs12 lh3 text-yellow4">
                                 存款过程中有任何疑问请联系我们的在线客服或者QQ客服。
                             </p>
@@ -303,25 +303,121 @@
                                 </dl>
                                 <dl class="mt20 dl-recharge01">
                                     <dt class="inblo fs14 text-yellow4">银行账号信息：</dt>
-                                    <dd class="inblo">
+                                    <dd class="inblo w250">
                                         <p>
-                                            <label for="accountName" class="fs14 text-yellow4">账户名:</label>
-                                            <input type="text" name="accountName" id="accountName" value="蔡敏" class="text-littleGreen3 bg-green fs14" readonly>
-                                            <input type="button" name="copy" value="复制" class="text-darkGreen bg-littleGreen3 fs12 ml5 pl5 pr5 pt10 pb10 bor4 hand">
+                                            <label for="accountName" class="fs14 text-yellow4 lh1 pt5 pb5">账户名:</label>
+                                            <input type="text" name="accountName" id="accountName" value="蔡敏" class="ml5 w100 text-littleGreen3 bg-green fs14 lh1 pt5 pb5" readonly>
+                                            <input type="button" name="copy" value="复制" class="fr text-darkGreen bg-littleGreen3 fs12 ml5 pl10 pr10 pt5 pb5 bor4 hand">
                                         </p>
-                                        <p>
-                                            <label for="accountName">账户名:</label>
-                                            <input type="text" name="accountName" id="accountName" value="蔡敏" readonly>
-                                            <input type="button" name="copy" value="复制" class="text-darkGreen bg-yellow2 fs14 ml5 pl10 pr10 pt10 pb10 bor4 hand">
+                                        <p class="mt5">
+                                            <label for="accountBank" class="fs14 text-yellow4 lh1 pt5 pb5">开户行:</label>
+                                            <input type="text" name="accountBank" id="accountBank" value="工商银行" class="ml5 w100 text-littleGreen3 bg-green fs14 lh1 pt5 pb5" readonly>
+                                        </p>
+                                        <p class="mt5">
+                                            <label for="accountEmail" class="fs14 text-yellow4 lh1 pt5 pb5">EMAIL账号:</label>
+                                            <input type="text" name="accountEmail" id="accountEmail" value="fn08@long8.cc" class="ml5 w100 text-littleGreen3 bg-green fs14 lh1 pt5 pb5" readonly>
+                                            <input type="button" name="copy" value="复制" class="fr text-darkGreen bg-littleGreen3 fs12 ml5 pl10 pr10 pt5 pb5 bor4 hand">
+                                        </p>
+                                        <p class="mt5">
+                                            <label for="accountEmail" class="fs14 text-yellow4 lh1 pt5 pb5">用户账号:</label>
+                                            <input type="text" name="accountEmail" id="accountEmail" value="xi8long" class="ml5 w100 text-littleGreen3 bg-green fs14 lh1 pt5 pb5" readonly>
+                                        </p>
+                                        <p class="mt5">
+                                            <label for="accountMessage" class="fs14 text-yellow4 lh1 pt5 pb5">附言:</label>
+                                            <input type="text" name="accountMessage" id="accountMessage" value="" class="ml5 w60 text-littleGreen3 bg-gray1 fs14 lh1 pt5 pb5 pl10 pr10" readonly>
+                                            <span class="verifyCode inblo vm ml3-m hand"><img src="" alt="验证码" width="50" height="24"></span>
+                                            <a href="javascript:void(0);" class="inblo ml40 mt20 pt5 pb5 bor4 bg-yellow pl10 pr10 text-darkGreen">点击此处获取附言</a>
+                                        </p>
+                                        <p class="mt15">
+                                            <label for="accountName" class="fs12 text-yellow4 lh1 pt5 pb5">您的附言是：</label>
+                                            <input type="text" name="accountName" id="accountName" value="   uvjda" class="ml5 w60 text-littleGreen3 bg-gray1 fs12 lh1 pt5 pb5 pl10 pb10" readonly>
+                                            <input type="button" name="copy" value="复制" class="fr text-darkGreen bg-littleGreen3 fs12 ml5 pl10 pr10 pt5 pb5 bor4 hand">
                                         </p>
                                     </dd>
                                 </dl>
                             </div>
                             <div class="line4"></div>
-                            <div class="mt25 ml90">
-                                <input type="submit" name="rechargeSubmit" value="充值" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
+                            <div class="mt20">
+                                <h2 class="fn text-yellow fs14">操作步骤：</h2>
+                                <p class="fs12 text-yellow4 lh3">
+                                    1、请您登录工行网银 www.icbc.com.cn，点击左侧个人网银用户，输入帐号和密码进行登录，点击转账汇款按钮，选择EMAIL汇款。输入L8的收款卡姓名和账户EMAIL，您存款的金额以及验证码及在附言输入 （点击“获取附言”按钮）<br>（注意：一个附言只用于一次存款，多次存款请重新获取，附言有大小写区别），确定，完成支付，稍等两分钟您就可以查到您的存款记录了。<br>
+                                    2.、不接受跨行转账。建议您去办理一张工行卡，存款取款都会非常方便快捷。如果您暂时还没有开通工行网银，建议您去工行柜台或者工行ATM机进行转账。<br>
+                                    3、附言写错游戏账户或忘了写游戏账户，请您把你的游戏账户及该笔存款的回单或相关信息，提交给我们的客服人员，我们财务人员将进行补单或改单处理，处理后我们将第一时间通知到您。
+                                </p>
                             </div>
-                            <p class="mt175 fs12 text-yellow4 tc lh pb20">如有支付成功但未到账情况，请联系我们的在线客服!</p>
+                        </div>
+                        <!-- 点卡支付 -->
+                        <div class="J_tabcon_item mt20 pb20 hide">
+                            <p class="pb20 fs12 lh3 text-yellow4">
+                                温馨提示：建议您使用其他充值方式，因为使用一卡通、充值卡、游戏点卡充值，需要扣除高额的手续费，导致到账金额比实际存款金额少。手续费比例 请查页面底部费率表。
+                            </p>
+                            <div class="line4 pb30"></div>
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <legend class="hide">个人中心表单</legend>
+                                    <p class="pb10">
+                                        <label for="pointCard" class="withdrawTitle w90 inblo tr fs14 text-yellow4 pr5">支付点卡</label>
+                                        <span class="inblo bg-darkGreen bor4 p8">
+                                            <input type="text" id="pointCard" name="pointCard" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
+                                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                        </span>
+                                    </p>
+                                    <p class="pb10">
+                                        <label for="pointCard-quota" class="withdrawTitle w90 inblo tr fs14 text-yellow4 pr5">支付面额</label>
+                                        <span class="inblo bg-darkGreen bor4 p8">
+                                            <input type="text" id="pointCard-quota" name="pointCard-quota" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
+                                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                        </span>
+                                    </p> 
+                                    <p class="pb10">
+                                        <label for="pointCard2" class="withdrawTitle w90 inblo tr fs14 text-yellow4 pr5">支付点卡</label>
+                                        <input type="text" id="pointCard2" name="pointCard2" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
+                                    </p>
+                                    <p class="pb10">
+                                        <label for="pointCard-quota2" class="withdrawTitle w90 inblo tr fs14 text-yellow4 pr5">支付面额</label>
+                                        <input type="text" id="pointCard-quota2" name="pointCard-quota2" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
+                                    </p>
+                                    <p class="mt20 ml50">
+                                        <input type="submit" name="pointSubmit" value="确认充值" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl80 pr80 lh1 hand">
+                                    </p>     
+                                </fieldset>
+                            </form>
+                            <p class="mt60 fs12 text-yellow4 tc lh pb20">如有支付成功但未到账情况，请联系我们的在线客服!</p>
+                            <h2 class="fn fs16 text-yellow bg-gray1 p10 lh1">
+                                点卡支付业务费率
+                            </h2>
+                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                <caption class="hide">点卡支付业务费率</caption>
+                                <thead>
+                                    <tr>
+                                        <th width="30%">卡的类型</th>
+                                        <th width="40%"></th>
+                                        <th width="30%">费率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-yellow">YDSZX=“YDSZX”,//移动神州行</td>
+                                        <td></td>
+                                        <td class="text-littleGreen3">0.05</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-yellow">YDSZX=“YDSZX”,//移动神州行</td>
+                                        <td></td>
+                                        <td class="text-littleGreen3">0.05</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-yellow">YDSZX=“YDSZX”,//移动神州行</td>
+                                        <td></td>
+                                        <td class="text-littleGreen3">0.05</td>
+                                    </tr>
+                                    <tr class="bg-darkGreen">
+                                        <td class="text-yellow">YDSZX=“YDSZX”,//移动神州行</td>
+                                        <td></td>
+                                        <td class="text-littleGreen3">0.05</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div> 
                 </div>     
