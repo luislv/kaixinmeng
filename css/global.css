@@ -6,6 +6,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bg-green3{background-color:#036047;}
 .bg-darkGreen{background-color:#13382c;}
 .bg-darkGreen2{background-color:#005a41;}
+.bg-littleGreen3{background-color:#72e3c4;}
 .bg-gray1{background-color:#202f28;}
 .bg-gray2{background-color:#212121;}
 .bg-transparent-gray{background-color:#000;background:rgba(0,0,0,0.6);filter:alpha(opacity=60);}
@@ -158,12 +159,18 @@ fieldset{border:0 none;margin:0;padding:0;}
 .sentSubmit{padding-left:85px;padding-right:85px;}
 
 /*支付方式卡片*/
-.card01 li{width:230px;background:#212121 url(../images/bg_alipay.png) no-repeat right top;}
-.card01 li.active{background:#ffee25 url(../images/bg_alipay2.png) no-repeat right top;}
-.card01 li.active h2{color:#202f28;}
-.card01 li.active p{color:#746d1a;}
-.card01 li.active .card01-checked{display:block;}
-.card-checked{left:5px;top:5px;}
+.card li{width:230px;background-color:#212121;background-repeat:no-repeat;background-position:98% 5%;}
+.card li.active{background:#ffee25;background-repeat:no-repeat;background-position:98% 5%;}
+.card li.active h2{color:#202f28;}
+.card li.active p{color:#746d1a;}
+.card li.active .card-checked{display:block;}
+.card01 li{background-image:url(../images/bg_alipay.png);}
+.card01 li.active{background-image:url(../images/bg_alipay2.png);}
+.card02 li{background-image:url(../images/bg_wechat.png);}
+.card02 li.active{background-image:url(../images/bg_wechat2.png);}
+.card03 li{background-image:url(../images/bg_online.png);}
+.card03 li.active{background-image:url(../images/bg_online2.png);}
+.card-checked-selected{left:5px;top:5px;}
 
 /*分页组件*/
 .holder{}
