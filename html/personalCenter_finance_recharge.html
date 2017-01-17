@@ -63,7 +63,8 @@
     <div class="layout bg-littleGreen mt30">
         <div class="pt20 pr20 pb20">
             <!-- 个人中心 -->
-            <div class="bg-littleGreen clearfix">
+            <div class="bg-green clearfix pr">
+                <div class="nav-cover bg-littleGreen pa left bottom"></div>
                 <!-- 导航侧栏 -->
                 <ul class="nav01 fl bg-littleGreen pb240">
                     <li>
@@ -104,7 +105,7 @@
                             <li><a href="personalCenter_coupon_rescue.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助救援金</span></a></li>
                             <li><a href="personalCenter_coupon_premote.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助晋级</span></a></li>
                             <li><a href="personalCenter_coupon_coupon.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">优惠券专区</span></a></li>
-                            <li><a href="personalCenter_coupon_tiger.html"><span class="block pl40 text-littleGren pt10 pb10 fs12 hand">老虎暴走</span></a></li>
+                            <li><a href="personalCenter_coupon_tiger.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">老虎暴走</span></a></li>
                             <li><a href="personalCenter_coupon_recommend.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">推荐好友</span></a></li>
                             <li><a href="personalCenter_coupon_prize.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">通关送彩金</span></a></li>
                         </ul>
@@ -125,12 +126,61 @@
                     <div id="tabcon">
                         <!-- 支付宝 -->
                         <div class="J_tabcon_item mt20 hide" style="display:block;">
-                            <ul class="cf ml10-m">
-                                <li class="card01 ml10 mr10 pb20 tc">
+                            <ul class="cf ml10-m mr10-m card01">
+                                <li class="active ml10 mr10 pb20 tc fl pr">
+                                    <div class="card01-checked hide">
+                                        <img src="../images/card_subscript.png" alt="角标" class="pa left top">
+                                        <img src="../images/icon_checked.png" alt="" class="card-checked pa"> 
+                                    </div>
                                     <h2 class="text-yellow fs18 pt25 fn lh1">支付宝扫码支付</h2>
                                     <p class="text-yellow4 fs14 mt10 lh1">无需手续费</p>
                                 </li>
+                                <li class="ml10 mr10 pb20 tc fl pr">
+                                    <div class="card01-checked hide">
+                                        <img src="../images/card_subscript.png" alt="角标" class="pa left top">
+                                        <img src="../images/icon_checked.png" alt="" class="card-checked pa"> 
+                                    </div>
+                                    <h2 class="text-yellow fs18 pt25 fn lh1">支付宝在线支付</h2>
+                                    <p class="text-yellow4 fs14 mt10 lh1">支付宝收取 0.9% 手续费</p>
+                                </li>
+                                <li class="ml10 mr10 pb20 tc fl pr">
+                                    <div class="card01-checked hide">
+                                        <img src="../images/card_subscript.png" alt="角标" class="pa left top">
+                                        <img src="../images/icon_checked.png" alt="" class="card-checked pa"> 
+                                    </div>
+                                    <h2 class="text-yellow fs18 pt25 fn lh1">支付宝附言支付</h2>
+                                    <p class="text-yellow4 fs14 mt10 lh1">无需手续费</p>
+                                </li>
                             </ul>
+                            <p class="pt10 pb20 fs12 lh3 text-yellow4">
+                                温馨提示：需要在账户设置>支付宝存款绑定，填写您自己的支付宝。再点击扫描支付宝存<br>
+                                款即可。若提示“没有合适的支付宝帐号”，请暂时使用其他存款渠道。
+                            </p>
+                            <div class="line4"></div>
+                            <div class="pt30 pb30">
+                                <dl class="dl-recharge">
+                                    <dt class="inblo fs14 text-yellow4">快速选择金额</dt>
+                                    <dd class="inblo recharge-list">
+                                        <span class="active inblo ml5 pt8 pb8 pl15 pr15 bor4 bg-gray1 fs16 text-yellow lh1">100<b class="ml5 fs12">元</b></span>
+                                        <span class="inblo ml5 pt8 pb8 pl15 pr15 bor4 bg-gray1 fs16 text-yellow lh1">200<b class="ml5 fs12">元</b></span>
+                                        <span class="inblo ml5 pt8 pb8 pl15 pr15 bor4 bg-gray1 fs16 text-yellow lh1">500<b class="ml5 fs12">元</b></span>
+                                        <span class="inblo ml5 pt8 pb8 pl15 pr15 bor4 bg-gray1 fs16 text-yellow lh1">1000<b class="ml5 fs12">元</b></span>
+                                    </dd>
+                                </dl>
+                                <dl class="mt20 dl-recharge">
+                                    <dt class="inblo fs14 text-yellow4">其他金额</dt>
+                                    <dd class="inblo">
+                                        <input type="text" name="rechargeNum" class="bg-gray1 fs14 text-yellow pt10 pb10 pl15 pr15 w100">
+                                        <span class="ml5 fs14 text-yellow">元</span>
+                                        <span class="ml5 fs12 text-yellow4">温馨提示：最低单笔充值100元，最高单笔充值45,000元</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="line4"></div>
+                            <div class="mt25 ml90">
+                                <input type="submit" name="rechargeSubmit" value="充值" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl100 pr100 lh1 hand">
+                            </div>
+                            <p class="mt175 fs12 text-yellow4 tc lh pb20">如有支付成功但未到账情况，请联系我们的在线客服!</p>
                         </div>     
                     </div> 
                 </div>     

@@ -63,10 +63,12 @@ fieldset{border:0 none;margin:0;padding:0;}
 .mt1{margin-top:1px;}
 .mt30{margin-top:30px !important;}
 .ml25{margin-left:25px;}
+.ml90{margin-left:90px;}
 .ml5-m{margin-left:-5px;}
 .ml10-m{margin-left:-10px;}
 .mr300{margin-right:300px;}
 .mr5-m{margin-right:-5px;}
+.mr10-m{margin-right:-10px;}
 .mb3-m{margin-bottom:-3px;}
 .p8{padding:8px;}
 .pt3{padding-top:3px;}
@@ -77,6 +79,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .pl8{padding-left:8px;}
 .pb3{padding-bottom:3px;}
 .pb5{padding-bottom:5px !important;}
+.pb8{padding-bottom:8px;}
 .fs24{font-size:24px;}
 .hand{cursor:pointer;}
 .tl{text-align:left !important;}
@@ -138,6 +141,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .nav04 li a span.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
 .nav05{height:40px;}
 .nav05 li.active h2, .nav05 li.active p{color:#ffee25;}
+.nav-cover{width:170px;height:200px;}
 .infoCon{margin-left:170px;}
 
 /*表格*/
@@ -154,7 +158,12 @@ fieldset{border:0 none;margin:0;padding:0;}
 .sentSubmit{padding-left:85px;padding-right:85px;}
 
 /*支付方式卡片*/
-.card01{width:230px;background:#212121 url(../images/bg_alipay.png) no-repeat right top;}
+.card01 li{width:230px;background:#212121 url(../images/bg_alipay.png) no-repeat right top;}
+.card01 li.active{background:#ffee25 url(../images/bg_alipay2.png) no-repeat right top;}
+.card01 li.active h2{color:#202f28;}
+.card01 li.active p{color:#746d1a;}
+.card01 li.active .card01-checked{display:block;}
+.card-checked{left:5px;top:5px;}
 
 /*分页组件*/
 .holder{}
