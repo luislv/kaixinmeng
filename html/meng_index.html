@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>开心大道-首页</title>
+    <title>开心盟-首页-为你挑选最好的在线娱乐合营项目</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/dadao.css">
     <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="../js/idangerous.swiper.min.js"></script>
 </head>
@@ -63,7 +62,45 @@
     </div>
     <div class="header-t"></div>
     <!-- 头部 end -->
-
+    <!-- 首页tab start -->
+    <!--焦点图-->
+    <div class="hotPic cf pr">
+        <a class="arrow-left" href="#"></a>
+        <a class="arrow-right" href="#"></a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="../images/meng_banner01.png" width="100%"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/meng_banner01.png" width="100%"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/meng_banner01.png" width="100%"/></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/meng_banner01.png" width="100%"/></a></div>
+            </div>
+        </div>
+        <div class="pagination tc"></div>
+    </div>
+    <!-- 首页tab end -->
+    <div class="footer pt50 pb30">
+        <p class="text-yellow2 fs14 tc lh1">@2013 - 2016 开心盟 版权所有</p>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            //焦点
+            var mySwiper = new Swiper('.swiper-container', {
+                pagination: '.pagination',
+                loop: true,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplay: 3000
+            });
+            $('.arrow-left').on('click', function(e){
+                e.preventDefault()
+                mySwiper.swipePrev()
+            });
+            $('.arrow-right').on('click', function(e){
+                e.preventDefault()
+                mySwiper.swipeNext()
+            });
+        });
+    </script>
 </body>
 </html>
 
