@@ -116,55 +116,180 @@
                 <div class="infoCon pt20 pl20 pr20" id="tab">
                     <!-- 导航 -->
                     <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
-                        <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">修改密码</li>
-                        <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">密保问题</li>
+                        <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">订阅信息</li>
                     </ul>
                     <div id="tabcon">
+                        <!-- 订阅信息 -->
                         <div class="J_tabcon_item mt20 hide" style="display:block;">
-                            <!-- 修改密码 -->
-                            <h2 class="tc fn fs14 text-yellow4 pb10">温馨提示：为了你的账户安全，建议你定期修改密码。</h2>
-                            <form action="#" method="">
-                                <fieldset>
-                                    <legend class="hide">修改密码</legend>
-                                    <p class="mt5">
-                                        <label for="oldPass" class="withdrawTitle3 inblo tr fs14 text-yellow4 pr5">旧密码:</label>
-                                        <input type="password" id="oldPass" name="oldPass" class="withdrawCon3 fs12 bg-darkGreen bor4 inblo text-littleGreen3 text-white pl10 pr10">
-                                    </p>
-                                    <p class="mt5">
-                                        <label for="newPass" class="withdrawTitle3 inblo tr fs14 text-yellow4 pr5">新密码:</label>
-                                        <input type="password" id="newPass" name="newPass" class="withdrawCon3 fs12 bg-darkGreen bor4 text-littleGreen3 inblo text-white pl10 pr10">
-                                    </p>
-                                    <p class="mt5">
-                                        <label for="confirmPass" class="withdrawTitle3 inblo tr fs14 text-yellow4 pr5">确认新密码:</label>
-                                        <input type="password" id="confirmPass" name="confirmPass" class="withdrawCon3 fs12 bg-darkGreen bor4 text-littleGreen3 inblo text-white pl10 pr10">
-                                    </p>
-                                    <p class="mt20 btn-submit-container">
-                                        <input type="submit" name="cardSubmit" value="确认提交" class="btn-submit inblo bg-yellow bor4 tc fs14 text-green fb pt10 pb10 lh1 hand">
-                                    </p>
-                                </fieldset>
-                            </form>  
-                        </div>
-                        <!-- 支付宝绑定 -->
-                        <div class="J_tabcon_item mt20 hide">
-                            <form action="#" method="">
-                                <fieldset>
-                                    <legend class="hide">密保问题</legend>
-                                    <p>
-                                        <label for="securityQuestion" class="withdrawTitle3 inblo tr fs14 text-yellow4 pr5">密保问题:</label>
-                                        <span class="inblo bg-darkGreen bor4 pt3 pb3 pl8 pr8">
-                                            <input type="text" id="securityQuestion" name="securityQuestion" class="bg-darkGreen w120 fs12 text-littleGreen3" value="您的父亲名称是什么？">
-                                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                        </span>
-                                    </p>
-                                    <p class="mt5">
-                                        <label for="securityAnswer" class="withdrawTitle3 inblo tr fs14 text-yellow4 pr5">密保答案:</label>
-                                        <input type="text" id="securityAnswer" name="securityAnswer" class="withdrawCon3 fs12 bg-darkGreen bor4 inblo text-littleGreen3 text-white pl10 pr10" value="王小米">
-                                    </p>
-                                    <p class="mt20 btn-submit-container">
-                                        <input type="submit" name="alipaySubmit" value="确认提交" class="btn-submit inblo bg-yellow bor4 tc fs14 text-green fb pt10 pb10 lh1 hand">
-                                    </p>
-                                </fieldset>
-                            </form>  
+                            <p class="fs12 lh3 text-yellow4">
+                                温馨提示：订阅信息可提高你账户的安全性，同时第1时间接收到我们的最新优惠信息！<br>
+                                邮件订阅：我们将会把你订阅的信息，第1时间发送到你的绑定邮箱。
+                            </p>
+                            <div class="mt40">
+                                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                                    <caption class="hide">订阅信息</caption>
+                                    <thead>
+                                        <tr>
+                                            <th width="25%">订阅内容</th>
+                                            <th width="25%">短信订阅</th>
+                                            <th width="25%">邮件订阅</th>
+                                            <th width="25%">站内信</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="itemContainer">
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">充值</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="paid-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="paid-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="paid-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="paid-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="paid-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="paid-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">提款</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="withdraw-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="withdraw-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="withdraw-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="withdraw-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="withdraw-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="withdraw-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">结算洗码</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="settle-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="settle-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="settle-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="settle-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="settle-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="settle-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">最新优惠</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="offer-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="offer-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="offer-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="paid-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="offer-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="offer-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">修改基本资料</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="basicInfo-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="basicInfo-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="basicInfo-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="basicInfo-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="basicInfo-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="basicInfo-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">修改银行资料</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="bank-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="bank-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="bank-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="bank-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="bank-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="bank-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">修改密码</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="pass-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="pass-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="pass-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="pass-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="pass-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="pass-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">登录</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="login-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="login-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="login-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="login-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="login-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="login-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">网站最新公告</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="newReport-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="newReport-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="newReport-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="newReport-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="newReport-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="newReport-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-darkGreen">
+                                            <td class="tl pl20 text-yellow4">网站问候</td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="greeting-message" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="greeting-message" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="greeting-email" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="greeting-email" value="no">否
+                                            </td>
+                                            <td class="text-littleGreen3">
+                                                <input class="radio radio02 mr10" type="radio" name="greeting-letter" value="yes" checked>是
+                                                <input class="radio radio02 ml15 mr10" type="radio" name="greeting-letter" value="no">否
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> 
                         </div>     
                     </div> 
                 </div>     

@@ -103,8 +103,9 @@ fieldset{border:0 none;margin:0;padding:0;}
 /*表单样式*/
 .checkbox{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;appearance: none;-webkit-appearance: none;}
 .checkbox:checked{background:url(../images/icon_checked.png) no-repeat 2px 3px;}
-input[type="radio"]{width:12px;height:12px;border:1px solid #ffee25;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;appearance: none;-webkit-appearance: none;}
-input[type="radio"]:checked{background:url(../images/icon_radio_checked.png) no-repeat 2px 2px;}
+.radio{width:12px;height:12px;border:1px solid #ffee25;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;appearance: none;-webkit-appearance: none;}
+.radio:checked{background:url(../images/icon_radio_checked.png) no-repeat 2px 2px;}
+.radio02:checked{background:url(../images/icon_radio_checked2.png) no-repeat 1px 1px;}
 .checkbox02{width:12px;height:12px;border:1px solid #ba9e26;}
 .checkbox02:checked{background-position:0 1px;}
 .withdrawTitle{width:110px;height:36px;line-height:36px;}
