@@ -1,7 +1,25 @@
-@charset "utf-8";
+@charset "utf-8"; /*开心大道*/
 
+/*顶部导航*/
+.nav-box{ background:url("../images/nav_bg.png") repeat-x 0 0;}
+.nav a{width:16.66%;height:54px;margin-top:-1px;float:left;display: table;text-shadow:#000 1px 1px 1px;}
+.nav a.active{background-color:#00422e;border-bottom:2px solid #f4dc00;color:#fff;}
+.nav a span{display: table-cell; vertical-align: middle;}
 
+/*底部*/
+.bottom-nav {color:#458876;}
+.bottom-nav a {color:#458876;}
+.bottom-nav em {padding:0 10px;}
+.bottom-nav span{padding:0 20px;}
+.friend-link ul li {width:12.5%; float: left;height:34px;line-height:34px;padding:5px 0;}
+.friend-link ul li img {max-height: 34px;vertical-align: middle;}
 
+.index-l {width:710px;}
+.index-r {width:240px;}
 
-
-
+/*首页焦点图*/
+.index-hotpic {padding:6px;}
+.index-hotpic img {float:left;}
+.pagination-index {z-index: 99; background-color:#017a5b;margin-bottom:6px; display: inline-block; line-height:1;padding:5px; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
+.swiper-pagination-switch { display: inline-block; width: 9px; height: 9px; border-radius: 9px; background: #0b4029; margin: 0 5px; cursor: pointer; }
+.swiper-active-switch { background: #ffd101; }
