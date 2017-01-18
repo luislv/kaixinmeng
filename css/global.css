@@ -38,12 +38,17 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bor-left-yellow{border-left:solid 1px #ffee25;}
 .bor-right-yellow{border-right:solid 1px #ffee25;}
 .bor-left-green{border-left:solid 1px #2f6b59;}
+.bor-right-green2{border-right:solid 1px #202f28;}
 .bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;}
-.lh1 {line-height:100% }
-.lh2 {line-height:125% }
-.lh3 {line-height:150% }
-.lh4 {line-height:175% }
-.lh5 {line-height:200% }
+.lh1{line-height:100%;}
+.lh2{line-height:125%;}
+.lh3{line-height:150%;}
+.lh4{line-height:175%;}
+.lh5{line-height:200%;}
+.fullwidth{width:100%;}
+.halfwidth{width:50%;}
+.thirdwidth{width:33.3%;}
+.thirdwidth-t{width:32.9%;}
 .left {left:0;}
 .right {right:0;}
 .top {top:0;}
@@ -62,6 +67,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .h100{height:100px;}
 .h750{height:750px;}
 .mt1{margin-top:1px;}
+.mt3{margin-top:3px;}
 .mt30{margin-top:30px !important;}
 .mt60{margin-top:60px;}
 .ml25{margin-left:25px;}
@@ -70,6 +76,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .ml5-m{margin-left:-5px;}
 .ml10-m{margin-left:-10px;}
 .mr300{margin-right:300px;}
+.mr1-m{margin-right:-1px;}
 .mr5-m{margin-right:-5px;}
 .mr10-m{margin-right:-10px;}
 .mb3-m{margin-bottom:-3px;}
@@ -127,6 +134,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .withdrawCon2{width:160px;}
 .withdrawTitle3{width:300px;height:24px;line-height:24px;}
 .withdrawCon3{width:140px;height:24px;line-height:24px;}
+.withdrawTitle4{width:70px;height:36px;line-height:36px;}
 .submitWrap2{margin-left:60px;}
 .textarea01{width:280px;height:70px;border:none;}
 .textarea02{width:200px;height:75px;border:none;margin-left:308px;}

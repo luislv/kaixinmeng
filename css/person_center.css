@@ -21,3 +21,18 @@
 .dl-recharge01 dt{width:130px;}
 .recharge-list span.active{background-color:#ffee25;color:#212121;}
 .mt175{margin-top:175px;}
+
+/*个人中心-转账*/
+.list-transfer li{width:93px;}
+
+/*个人中心-提款*/
+.fs34{font-size:34px;}
+.progressBar-item{height:33px;}
+.progressBar-item p{height:6px;background-color:#937d20;}
+.progressBar-button{left:-14px;top:0;}
+.progressBar-button .btn{width:20px;height:20px;border:1px solid #937d20;border-radius:11px;-webkit-border-radius:11px;-moz-border-radius:11px;}
+.progressBar-button .btn-checked{margin-top:3px;width:14px;height:14px;background-color:#937d20;border-radius:7px;-webkit-border-radius:7px;-moz-border-radius:7px;}
+.progressBar-item-last{top:0;right:-10px;}
+.progressBar .active p, .progressBar .active .progressBar-button .btn-checked{background-color:#ffee25;}
+.progressBar .active .progressBar-button .btn{border:1px solid #ffee25;}
+.list-selectCard li{width:355px;}
