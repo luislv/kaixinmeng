@@ -127,27 +127,27 @@
                                 <p class=""></p>
                                 <div class="progressBar-button pa tc">
                                     <span class="btn inblo tc bg-green"><span class="btn-checked inblo"></span></span>
-                                    <b class="block mt5 lh1 fs14 text-yellow">提交</b>
+                                    <b class="status block mt5 lh1 fs14 text-yellow">提交</b>
                                 </div>
                             </li>
                             <li class="progressBar-item thirdwidth-t pt8 pr inblo">
                                 <p class=""></p>
                                 <div class="progressBar-button pa tc">
                                     <span class="btn inblo tc bg-green"><span class="btn-checked inblo"></span></span>
-                                    <b class="block mt5 lh1 fs14 text-yellow">审核</b>
+                                    <b class="status block mt5 lh1 fs14 text-yellow">审核</b>
                                 </div>
                             </li>
                             <li class="progressBar-item thirdwidth-t pt8 pr inblo">
                                 <p class=""></p>
                                 <div class="progressBar-button pa tc">
                                     <span class="btn inblo tc bg-green"><span class="btn-checked inblo"></span></span>
-                                    <b class="block mt5 lh1 fs14 text-yellow">出款</b>
+                                    <b class="status block mt5 lh1 fs14 text-yellow">出款</b>
                                 </div>
                             </li>
                             <li class="progressBar-item progressBar-item-last inblo pa">
                                 <div class="progressBar-button tc">
                                     <span class="btn inblo tc bg-green"><span class="btn-checked inblo"></span></span>
-                                    <b class="block mt5 lh1 fs14 text-yellow">到账</b>
+                                    <b class="status block mt5 lh1 fs14 text-yellow">到账</b>
                                 </div>
                             </li>
                         </ul>
@@ -155,23 +155,21 @@
                     <div class="line4"></div>
                     <div class="pt10 pb20">
                         <ul class="list-selectCard ml10-m mr10-m cf">
-                            <li class="fl mt10 ml10 mr10 bg-darkGreen bor4 pt20 pb20 fs16 lh1 text-yellow4 tc">
+                            <li class="fl mt10 ml10 mr10 bg-darkGreen bor4 pt20 pb20 fs16 lh1 text-yellow4 tc hand">
                                 <input type="checkbox" class="checkbox vm">
                                 <span class="ml10 inblo lh1 fs16">姓名:王 X X</span>
                                 <span class="ml10 inblo lh1 fs16">中国工商银行</span>
                                 <span class="ml10 inblo lh1 fs16">尾号:0948</span>
                             </li>
-                            <li class="fl mt10 ml10 mr10 bg-darkGreen bor4 pt20 pb20 fs16 lh1 text-yellow4 tc">
+                            <li class="fl mt10 ml10 mr10 bg-darkGreen bor4 pt20 pb20 fs16 lh1 text-yellow4 tc hand">
                                 <input type="checkbox" class="checkbox vm">
                                 <span class="ml10 inblo lh1 fs16">姓名:王 X X</span>
                                 <span class="ml10 inblo lh1 fs16">中国工商银行</span>
                                 <span class="ml10 inblo lh1 fs16">尾号:0948</span>
                             </li>
-                            <li class="fl mt10 ml10 mr10 bg-darkGreen bor4 pt20 pb20 fs16 lh1 text-yellow4 tc">
-                                <input type="checkbox" class="checkbox vm">
-                                <span class="ml10 inblo lh1 fs16">姓名:王 X X</span>
-                                <span class="ml10 inblo lh1 fs16">中国工商银行</span>
-                                <span class="ml10 inblo lh1 fs16">尾号:0948</span>
+                            <li class="fl mt10 ml10 mr10 bg-darkGreen bor4 pt20 pb20 fs16 lh1 text-yellow4 tc hand">
+                                <i class="iconfont text-yellow mr10 fs20">&#xe607;</i>
+                                添加银行卡
                             </li>
                         </ul>    
                     </div>
@@ -181,28 +179,35 @@
                             <fieldset>
                                 <legend class="hide">转账</legend>
                                 <p class="pb10">
-                                    <label for="moneyIn" class="withdrawTitle4 inblo tr fs14 text-yellow4 pr5">转入</label>
+                                    <label for="money" class="withdrawTitle4 w90 inblo tr fs14 text-yellow4 pr5">提款金额：</label>
                                     <span class="inblo bg-darkGreen bor4 p8">
-                                        <input type="text" id="moneyIn" name="moneyIn" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
-                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                        <input type="text" id="securityQues" name="securityQues" class="withdrawCon5 fs16 bg-darkGreen bor4 inblo text-white">
+                                        <i class="text-yellow4 fs12 vt">人民币</i>
                                     </span>
+                                    <span class="ml15 text-yellow4">单笔最低提款金额为 100元</span>
                                 </p>
                                 <p class="pb10">
-                                    <label for="moneyOut" class="withdrawTitle4 inblo tr fs14 text-yellow4 pr5">转出</label>
+                                    <label for="accountPass" class="withdrawTitle4 w90 inblo tr fs14 text-yellow4 pr5">账户密码：</label>
+                                    <input type="text" id="accountPass" name="accountPass" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
+                                </p>
+                                <p class="pb10">
+                                    <label for="securityQues" class="withdrawTitle4 w90 inblo tr fs14 text-yellow4 pr5">密保问题：</label>
                                     <span class="inblo bg-darkGreen bor4 p8">
-                                        <input type="text" id="moneyOut" name="moneyOut" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
+                                        <input type="text" id="securityQues" name="securityQues" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
                                         <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
                                     </span>
+                                    <span class="inblo fs12 lh1 bor4 bg-littleGreen3 text-darkGreen ml15 pt5 pb5 pl10 pr10 hand">立即设置密保问题</span>
                                 </p> 
                                 <p class="pb10">
-                                    <label for="money" class="withdrawTitle4 inblo tr fs14 text-yellow4 pr5">金额</label>
-                                    <input type="text" id="money" name="money" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
+                                    <label for="securityAns" class="withdrawTitle4 w90 inblo tr fs14 text-yellow4 pr5">密保答案：</label>
+                                    <input type="text" id="securityAns" name="securityAns" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
                                 </p>
-                                <p class="mt20 ml50">
+                                <p class="mt20 ml30">
                                     <input type="submit" name="pointSubmit" value="转账" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl80 pr80 lh1 hand">
                                 </p>     
                             </fieldset>
                         </form>
+                        <p class="mt110 fs12 text-yellow4 tc lh1">如有支付成功但未到账情况，请联系我们的在线客服!</p>
                     </div>                  
                 </div>     
             </div>
