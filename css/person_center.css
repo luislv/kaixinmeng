@@ -38,3 +38,9 @@
 .progressBar .active .progressBar-button .btn{border:1px solid #ffee25;}
 .active .status{color:#ffee25;}
 .list-selectCard li{width:355px;}
+
+/*个人中心-催账*/
+.bar{width:9px;height:18px;border-top:solid 1px #72e3c4;}
+
+/*个人中心-自助反水*/
+.ml25-m{margin-left:-25px;}

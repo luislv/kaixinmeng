@@ -57,8 +57,10 @@ fieldset{border:0 none;margin:0;padding:0;}
 .w15{width:15px;}
 .w30{width:30px;}
 .w60{width:60px;}
+.w70{width:70px;}
 .w90{width:90px !important;}
 .w120{width:120px;}
+.w125{width:125px;}
 .w130{width:130px;}
 .w150{width:150px;}
 .w300{width:300px !important;}
@@ -72,12 +74,14 @@ fieldset{border:0 none;margin:0;padding:0;}
 .mt60{margin-top:60px;}
 .mt110{margin-top:110px;}
 .ml25{margin-left:25px;}
+.ml60{margin-left:60px;}
 .ml90{margin-left:90px;}
 .ml3-m{margin-left:-3px;}
 .ml5-m{margin-left:-5px;}
 .ml10-m{margin-left:-10px;}
 .mr300{margin-right:300px;}
 .mr1-m{margin-right:-1px;}
+.mr3-m{margin-right:-3px;}
 .mr5-m{margin-right:-5px;}
 .mr10-m{margin-right:-10px;}
 .mb3-m{margin-bottom:-3px;}
@@ -137,6 +141,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .withdrawCon3{width:140px;height:24px;line-height:24px;}
 .withdrawTitle4{width:70px;height:36px;line-height:36px;}
 .withdrawCon5{width:144px;}
+.withdrawCon6{width:75px;height:36px;line-height:36px;}
 .submitWrap2{margin-left:60px;}
 .textarea01{width:280px;height:70px;border:none;}
 .textarea02{width:200px;height:75px;border:none;margin-left:308px;}
