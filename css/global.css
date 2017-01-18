@@ -28,6 +28,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .text-littleGreen, a.text-littleGreen{color:#07a67e;}
 .text-littleGreen2, a.text-littleGreen2{color:#64c8ac;}
 .text-littleGreen3, a.text-littleGreen3{color:#72e3c4 !important;}
+.text-littleGreen4, a.text-littleGreen4{color:#377765 !important;}
+.text-littleGreen5, a.text-littleGreen5{color:#458876 !important;}
 .text-littleYellw, a.text-littleYellow{color:#b89e11;}
 .text-gray1, a.text-gray1{color:#202f28;}
 .text-darkYellow, a.text-darkYellow{color:#7d6b1e;}
@@ -39,6 +41,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bor-right-yellow{border-right:solid 1px #ffee25;}
 .bor-left-green{border-left:solid 1px #2f6b59;}
 .bor-right-green2{border-right:solid 1px #202f28;}
+.bor2{border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;}
 .bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;}
 .lh1{line-height:100%;}
 .lh2{line-height:125%;}
@@ -116,11 +119,13 @@ fieldset{border:0 none;margin:0;padding:0;}
 /*按钮*/
 
 /*分割线*/
+.line{border-top: 1px solid #01523c;border-bottom: 1px solid #03936e;}
 .line1{border-top:2px outset #01aa7f;box-shadow:0 1px 0 rgba(0,0,0,.2) inset,0 -1px 0 rgba(255,255,255,.2) inset;}
 .line2{border-top:1px solid #062d23;opacity:0.6;filter:alpha(opacity=60);}
 .line3{border-top:1px solid #044f39;}
 .line4{border-top:1px solid #202f28;}
-.line5{border-top:1px solid #024936;}	
+.line5{border-top:1px solid #024936;}
+.line6{border-top: 1px solid #333;border-bottom: 1px solid #03936e;}
 
 /*表单样式*/
 .checkbox{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;appearance: none;-webkit-appearance: none;}
@@ -142,11 +147,11 @@ fieldset{border:0 none;margin:0;padding:0;}
 .textarea02{width:200px;height:75px;border:none;margin-left:308px;}
 .btn_upload{width:235px;height:100px;background:#212121 url(../images/bg_creditCard.png) no-repeat right top;}
 .btn_upload2{width:235px;height:100px;background:#212121 url(../images/bg_alipay.png) no-repeat right top;}
-.btn_upload_filePrew{width: 235px;height:100px;font-size: 100px;/* 增大不同浏览器的可点击区域*/opacity: 0;filter:alpha(opacity=0);} 
+.btn_upload_filePrew{width: 235px;height:100px;font-size: 100px;/* 增大不同浏览器的可点击区域*/opacity: 0;filter:alpha(opacity=0);}
 
 /*公共头部*/
-.header{position:fixed;top:0;z-index:999;}
-.header-t{height:140px;}
+/*.header{position:fixed;top:0;z-index:999;}*/
+/*.header-t{height:140px;}*/
 
 /*导航*/
 .nav01{width:170px;}
