@@ -24,6 +24,24 @@
 .swiper-pagination-switch { display: inline-block; width: 9px; height: 9px; border-radius: 9px; background: #0b4029; margin: 0 5px; cursor: pointer; }
 .swiper-active-switch { background: #ffd101; }
 
+/*首页图片列表*/
+.index-pic-list {padding:10px 0;}
+.index-pic-list li {float:left;margin:0 5px;position:relative;}
+.index-pic-list li img {float:left;}
+.index-pic-list li .float-cell { background-color:#2d2d2d;position:absolute;bottom:0;width:100%;z-index:2}
+.index-pic-list li .float-cell h3 {color:#fff;text-align: center;height:30px;line-height:30px;}
+.index-pic-list li .float-cell span { display: none}
+
+.index-pic-list .active .bg{position:absolute;width:100%;height:100%;background:#000;opacity: 0.5;z-index:1;}
+.index-pic-list .active .float-cell{ background:none;height:100%;}
+.index-pic-list .active .float-cell h3{padding:45px 0 11px 0;}
+.index-pic-list .active .float-cell span{ display: inline-block;margin:11px 0 0 29px;width:110px;height:28px;line-height:28px; text-align: center; -webkit-border-radius:28px; -moz-border-radius:28px; border-radius:28px;}
+.index-pic-list .active .float-cell span a{color:#fff;}
+
+.index-price-list {padding:9px 0 12px 0;}
+.index-price-list li {border-bottom: 1px dashed #3cc39b;line-height:1.7;padding:3px 0 4px 0;}
+
+
 /*注册页面*/
 .w-main{width:640px;}
 .w-aside{width:260px;}

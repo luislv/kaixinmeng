@@ -19,6 +19,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bg-yellow3{background-color:#f4dc00;}
 .bg-white{background-color: #fff;}
 .bg-gray{background-color: #dbdbdb;}
+.bg-orange{background-color: #f54118;}
 .text-white, a.text-white{color:#fff !important;}
 .text-yellow, a.text-yellow{color:#ffee25;}
 .text-yellow2, a.text-yellow2{color:#ffd100;}
@@ -36,6 +37,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .text-littleGreen5, a.text-littleGreen5{color:#458876 !important;}
 .text-littleYellw, a.text-littleYellow{color:#b89e11;}
 .text-gray1, a.text-gray1{color:#202f28;}
+.text-gray2, a.text-gray2{color:#717673;}
 .text-darkYellow, a.text-darkYellow{color:#7d6b1e;}
 .bor-bottom-yellow{border-bottom:solid 1px #ffee25;}
 .bor-bottom-yellow2{border-bottom:solid 1px #004633;}
