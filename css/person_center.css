@@ -24,6 +24,9 @@
 
 /*个人中心-转账*/
 .list-transfer li{width:93px;}
+.sort{width:12px;height:45px;border:1px solid #13382c;border-left:none;left:278px;top:20px;}
+.sort span{width:16px;height:16px;background:url(../images/icon_sort_bg.png) no-repeat center center;right:-8px;top:14px;}
+.sort i{width:6px;height:8px;background:url(../images/icon_sort.png) no-repeat center center;right:-3px;top:18px;}
 
 /*个人中心-提款*/
 .fs34{font-size:34px;}
@@ -47,3 +50,10 @@
 
 /*个人中心-自助体验金*/
 .bar-progress{border-top:solid 2px #957e1b;width:35px;}
+.ml118{margin-left:118px;}
+
+/*个人中心-自助晋级*/
+.mr370{margin-right:370px;}
+
+/*个人中心-推荐好友*/
+.sponsorURL{width:380px;}

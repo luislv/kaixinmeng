@@ -85,9 +85,9 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">我的资金</p></a>
-                        <ul class="J_list_itemCon nav04 bg-green3">
+                        <ul class="J_list_itemCon nav04 bg-green3 hide">
                             <li><a href="personalCenter_finance_recharge.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">充值</span></a></li>
-                            <li><a href="personalCenter_finance_transfer.html"><span class="active block pl40 text-littleGreen pt10 pb10 fs12 hand">转账</span></a></li>
+                            <li><a href="personalCenter_finance_transfer.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">转账</span></a></li>
                             <li><a href="personalCenter_finance_withdraw.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">提款</span></a></li>
                             <li><a href="personalCenter_finance_remind.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">催账</span></a></li>
                             <li><a href="personalCenter_finance_moneyRecord.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">资金记录</span></a></li>
@@ -97,11 +97,11 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">自助优惠</p></a>
-                        <ul class="J_list_itemCon nav04 bg-green3 hide">
+                        <ul class="J_list_itemCon nav04 bg-green3">
                             <li><a href="personalCenter_coupon_selfservice.html"><span class="block block pl40 text-littleGreen pt10 pb10 fs12 hand">自助优惠</span></a></li>
                             <li><a href="personalCenter_coupon_store.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助存送</span></a></li>
                             <li><a href="personalCenter_coupon_rebate.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助反水</span></a></li>
-                            <li><a href="personalCenter_coupon_experience.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助体验金</span></a></li>
+                            <li><a href="personalCenter_coupon_experience.html"><span class="active block pl40 text-littleGreen pt10 pb10 fs12 hand">自助体验金</span></a></li>
                             <li><a href="personalCenter_coupon_rescue.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助救援金</span></a></li>
                             <li><a href="personalCenter_coupon_premote.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助晋级</span></a></li>
                             <li><a href="personalCenter_coupon_coupon.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">优惠券专区</span></a></li>
@@ -114,90 +114,75 @@
                     <li><a href="javascript:void(0);"><p class="pl40 bg-littleGreen text-white fs16">安全退出</p></a><div class="line3 ml20 mr15"></div></li>
                 </ul>
                 <!-- 内容栏 -->
-                <div class="infoCon bg-green pt20 pl20 pr20">
-                    <ul class="list-transfer ml5-m mr5-m cf">
-                        <li class="p10 fl bg-gray2 mr5 ml5">
-                            <a href="#">
-                                <h2 class="fn fs14 lh1 text-yellow4">中心钱包<i class="iconfont fs14 fr">&#xe632;</i></h2>
-                                <p class="fs14 text-yellow lh1 mt5"><span class="mr5 fs12">￥</span>999,999.00</p>
-                            </a>
-                        </li>
-                        <li class="p10 fl bg-gray2 mr5 ml5">
-                            <a href="#">
-                                <h2 class="fn fs14 lh1 text-yellow4">中心钱包<i class="iconfont fs14 fr">&#xe632;</i></h2>
-                                <p class="fs14 text-yellow lh1 mt5"><span class="mr5 fs12">￥</span>999,999.00</p>
-                            </a>
-                        </li>
-                        <li class="p10 fl bg-gray2 mr5 ml5">
-                            <a href="#">
-                                <h2 class="fn fs14 lh1 text-yellow4">中心钱包<i class="iconfont fs14 fr">&#xe632;</i></h2>
-                                <p class="fs14 text-yellow lh1 mt5"><span class="mr5 fs12">￥</span>999,999.00</p>
-                            </a>
-                        </li>
-                        <li class="p10 fl bg-gray2 mr5 ml5">
-                            <a href="#">
-                                <h2 class="fn fs14 lh1 text-yellow4">中心钱包<i class="iconfont fs14 fr">&#xe632;</i></h2>
-                                <p class="fs14 text-yellow lh1 mt5"><span class="mr5 fs12">￥</span>999,999.00</p>
-                            </a>
-                        </li>
-                        <li class="p10 fl bg-gray2 mr5 ml5">
-                            <a href="#">
-                                <h2 class="fn fs14 lh1 text-yellow4">中心钱包<i class="iconfont fs14 fr">&#xe632;</i></h2>
-                                <p class="fs14 text-yellow lh1 mt5"><span class="mr5 fs12">￥</span>999,999.00</p>
-                            </a>
-                        </li>
-                        <li class="p10 fl bg-gray2 mr5 ml5">
-                            <a href="#">
-                                <h2 class="fn fs14 lh1 text-yellow4">中心钱包<i class="iconfont fs14 fr">&#xe632;</i></h2>
-                                <p class="fs14 text-yellow lh1 mt5"><span class="mr5 fs12">￥</span>999,999.00</p>
-                            </a>
-                        </li>
+                <div class="infoCon bg-green pt20 pl20 pr20" id="tab">
+                    <!-- 导航 -->
+                    <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
+                        <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">自助体验金</li>
                     </ul>
-                    <p class="pt10 pb20 fs12 lh3 text-yellow4">把资金从中心钱包转到不同游戏中，或从游戏转到中心钱包，也可以在不同游戏中相互转账。</p>
-                    <div class="line4"></div>
-                    <div class="mt30 pb20">
-                        <div class="fl halfwidth mr1-m bor-right-green2 pr">
-                            <p class="sort pa">
-                                <span class="inblo hand pa"></span>
-                                <i class="inblo pa"></i>
-                            </p>
-                            <form action="#" method="post">
-                                <fieldset>
-                                    <legend class="hide">转账</legend>
-                                    <p class="pb10">
-                                        <label for="moneyIn" class="withdrawTitle4 inblo tr fs14 text-yellow4 pr5">转入</label>
-                                        <span class="inblo bg-darkGreen bor4 p8">
-                                            <input type="text" id="moneyIn" name="moneyIn" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
-                                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                        </span>
-                                    </p>
-                                    <p class="pb10">
-                                        <label for="moneyOut" class="withdrawTitle4 inblo tr fs14 text-yellow4 pr5">转出</label>
-                                        <span class="inblo bg-darkGreen bor4 p8">
-                                            <input type="text" id="moneyOut" name="moneyOut" class="withdrawCon2 fs16 bg-darkGreen bor4 inblo text-white">
-                                            <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                        </span>
-                                    </p> 
-                                    <p class="pb10">
-                                        <label for="money" class="withdrawTitle4 inblo tr fs14 text-yellow4 pr5">金额</label>
-                                        <input type="text" id="money" name="money" class="withdrawCon fs16 bg-darkGreen bor4 inblo text-white pl10 pr10">
-                                    </p>
-                                    <p class="mt20 ml50">
-                                        <input type="submit" name="pointSubmit" value="转账" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl80 pr80 lh1 hand">
-                                    </p>     
-                                </fieldset>
-                            </form>
-                            <p class="pt30 fs12 text-yellow4">温馨提示：请在户内转账前进行平台激活方可转账成功.</p>
+                    <div id="tabcon">
+                        <!-- 自助体验金 -->
+                        <div class="J_tabcon_item mt20 pb20 hide" style="display:block;">
+                            <ul>
+                                <li class="inblo">
+                                    <span class="icon_serial inblo pr">
+                                        <i class="icon_serial_bg01 inblo"></i>    
+                                        <i class="icon_serial_bg02 inblo pa"></i>
+                                        <b class="icon_serial_text fn text-yellow fs16 lh1 pa">1</b>    
+                                    </span>
+                                    <span class="ml10 inblo text-yellow4 fs18 lh1 vt mt10">姓名资料</span>
+                                    <span class="bar-progress inblo ml10 mr10 mt20 vt"></span>
+                                </li>
+                                <li class="inblo">
+                                    <span class="icon_serial inblo pr">
+                                        <i class="icon_serial_bg01 inblo"></i>    
+                                        <i class="icon_serial_bg02 inblo pa"></i>
+                                        <b class="icon_serial_text fn text-yellow fs16 lh1 pa">2</b>    
+                                    </span>
+                                    <span class="ml10 inblo text-yellow4 fs18 lh1 vt mt10">验证手机号</span>
+                                    <span class="bar-progress inblo ml10 mr10 mt20 vt"></span>
+                                </li>
+                                <li class="inblo">
+                                    <span class="icon_serial inblo pr">
+                                        <i class="icon_serial_bg01 inblo"></i>    
+                                        <i class="icon_serial_bg02 inblo pa"></i>
+                                        <b class="icon_serial_text fn text-yellow fs16 lh1 pa">3</b>    
+                                    </span>
+                                    <span class="ml10 inblo text-yellow4 fs18 lh1 vt mt10">银行卡号验证</span>
+                                    <span class="bar-progress inblo ml10 mr10 mt20 vt"></span>
+                                </li>
+                                <li class="inblo">
+                                    <span class="icon_serial inblo pr">
+                                        <i class="icon_serial_bg01 inblo"></i>    
+                                        <i class="icon_serial_bg02 inblo pa"></i>
+                                        <b class="icon_serial_text fn text-yellow fs16 lh1 pa">4</b>    
+                                    </span>
+                                    <span class="ml10 inblo text-yellow4 fs18 lh1 vt mt10">完成</span>
+                                </li>
+                            </ul>
+                            <div class="line4 mt20"></div>
+                            <div class="mt20 pl20">
+                                <form action="personalCenter_coupon_experience3.html" method="post">
+                                    <fieldset>
+                                        <legend class="hide">自助体验金</legend>
+                                        <p class="pb10">
+                                            <label for="telephone" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">电话号码:</label>
+                                            <input type="text" id="telephone" name="telephone" class="withdrawCon fs12 bg-darkGreen bor4 inblo text-littleGreen3 pl10 pr10">
+                                        </p>
+                                        <p class="pb10">
+                                            <label for="verificationCode" class="withdrawTitle inblo tr fs14 text-yellow4 pr5">输入验证码:</label>
+                                            <span class="withdrawCon w200 inblo bg-darkGreen">
+                                                <input type="text" id="verificationCode" name="verificationCode" class="w100 fs12 bg-darkGreen bor4 inblo text-littleGreen3 pl10 pr10">
+                                                <b class="inblo pt10 pb10 pl8 pr8 fn fs12 lh1 text-yellow4 bg-darkGreen3 ml2-m hand">获取验证码</b>
+                                            </span>   
+                                        </p>
+                                        <p class="mt10 ml60">
+                                            <input type="submit" name="experienceSubmit" value="下一步" class="inblo bg-yellow bor4 tc fs16 text-gray1 fb pt10 pb10 pl80 pr80 lh1 hand">
+                                        </p>     
+                                    </fieldset>
+                                </form>
+                            </div>        
                         </div>
-                        <div class="fr halfwidth">
-                            <h2 class="fn fs16 text-yellow bg-gray1 p10 lh1 ml25">
-                                点卡支付业务费率
-                            </h2>
-                            <p class="tc mt40"><img src="../images/icon_remind.png" alt=""></p>
-                            <p class="mt10 fs14 lh1 text-yellow4 tc">目前有转账优惠哦！</p>
-                            <p class="mt25 fs14 lh1 text-yellow tc"><a href="#" class="text-yellow mr10">了解详情</a>|<a href="#" class="text-yellow ml10">立即申请</a></p>
-                        </div>
-                    </div>         
+                    </div>                     
                 </div>     
             </div>
         </div>

@@ -6,6 +6,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bg-green3{background-color:#036047;}
 .bg-darkGreen{background-color:#13382c;}
 .bg-darkGreen2{background-color:#005a41;}
+.bg-darkGreen3{background-color:#081c15;}
 .bg-littleGreen3{background-color:#72e3c4;}
 .bg-gray1{background-color:#202f28;}
 .bg-gray2{background-color:#212121;}
@@ -59,19 +60,22 @@ fieldset{border:0 none;margin:0;padding:0;}
 .fullwidth{width:100%;}
 .w15{width:15px;}
 .w30{width:30px;}
-.w60{width:60px;}
+.w60{width:60px !important;}
 .w70{width:70px;}
 .w90{width:90px !important;}
 .w120{width:120px;}
 .w125{width:125px;}
 .w130{width:130px;}
 .w150{width:150px;}
+.w200{width:200px !important;}
+.w250{width:250px !important;}
 .w300{width:300px !important;}
 .w355{width:355px;}
 .h90{height:90px;}
 .h100{height:100px;}
 .h750{height:750px;}
 .mt1{margin-top:1px;}
+.mt2{margin-top:2px;}
 .mt3{margin-top:3px;}
 .mt30{margin-top:30px !important;}
 .mt60{margin-top:60px;}
@@ -79,10 +83,12 @@ fieldset{border:0 none;margin:0;padding:0;}
 .ml25{margin-left:25px;}
 .ml60{margin-left:60px;}
 .ml90{margin-left:90px;}
+.ml2-m{margin-left:-2px;}
 .ml3-m{margin-left:-3px;}
 .ml5-m{margin-left:-5px;}
 .ml10-m{margin-left:-10px;}
 .mr300{margin-right:300px;}
+.mr2{margin-right:2px;}
 .mr1-m{margin-right:-1px;}
 .mr3-m{margin-right:-3px;}
 .mr5-m{margin-right:-5px;}
@@ -96,7 +102,9 @@ fieldset{border:0 none;margin:0;padding:0;}
 .pr80{padding-right:80px;}
 .pl3{padding-left:3px;}
 .pl8{padding-left:8px;}
+.pl35{padding-left:35px;}
 .pl80{padding-left:80px;}
+.pr35{padding-right:35px;}
 .pb3{padding-bottom:3px;}
 .pb5{padding-bottom:5px !important;}
 .pb8{padding-bottom:8px;}
@@ -150,12 +158,14 @@ fieldset{border:0 none;margin:0;padding:0;}
 .withdrawTitle4{width:70px;height:36px;line-height:36px;}
 .withdrawCon5{width:144px;}
 .withdrawCon6{width:75px;height:36px;line-height:36px;}
+.withdrawTitle7{width:170px;}
 .submitWrap2{margin-left:60px;}
 .textarea01{width:280px;height:70px;border:none;}
 .textarea02{width:200px;height:75px;border:none;margin-left:308px;}
 .btn_upload{width:235px;height:100px;background:#212121 url(../images/bg_creditCard.png) no-repeat right top;}
 .btn_upload2{width:235px;height:100px;background:#212121 url(../images/bg_alipay.png) no-repeat right top;}
 .btn_upload_filePrew{width: 235px;height:100px;font-size: 100px;/* 增大不同浏览器的可点击区域*/opacity: 0;filter:alpha(opacity=0);}
+.btn_upload_filePrew2{width: 250px;height:36px;font-size: 100px;/* 增大不同浏览器的可点击区域*/opacity: 0;filter:alpha(opacity=0);}
 
 /*公共头部*/
 /*.header{position:fixed;top:0;z-index:999;}*/
@@ -163,9 +173,12 @@ fieldset{border:0 none;margin:0;padding:0;}
 
 /*导航*/
 .nav01{width:170px;}
-.nav02{width:150px;}
 .nav01 li a p, .nav02 li{height:50px;line-height:50px;}
 .nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633 !important;}
+.nav02{width:150px;}
+.nav02 li span{display:none;}
+.nav02 .active{background-color:#004633;}
+.nav02 .active span{display:block;}
 .nav03{height:36px;}
 .nav03 li.active, .nav05 li.active{border:solid 1px #ffee25;border-bottom:none;color:#ffee25;background-color:#004633;}
 .nav04 li a span.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633;}
@@ -178,6 +191,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .commissionTable{color:#07a67e;}
 .commissionTable th{padding-top:10px;padding-bottom:10px;font-weight:normal;}
 .commissionTable td{padding-top:10px;padding-bottom:10px;color:#ba9e26;text-align:center;border-top:1px solid #004633;}
+.commissionTable1 td{padding-top:6px;padding-bottom:6px;}
 .infoTable{}
 .infoTable th{font-weight:normal;font-size:12px;color:#07a67e;padding-bottom:3px;text-align:left;}
 .infoTable td{color:#ffee25;font-size:16px;}
