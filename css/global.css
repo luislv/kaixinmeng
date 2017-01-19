@@ -4,6 +4,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bg-green{background-color:#004633;}
 .bg-green2{background-color:#00563d;}
 .bg-green3{background-color:#036047;}
+.bg-green4{background-color:#017a5b;}
 .bg-darkGreen{background-color:#13382c;}
 .bg-darkGreen2{background-color:#005a41;}
 .bg-darkGreen3{background-color:#081c15;}
@@ -78,6 +79,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .mt2{margin-top:2px;}
 .mt3{margin-top:3px;}
 .mt30{margin-top:30px !important;}
+.mt40{margin-top:40px !important;}
 .mt60{margin-top:60px;}
 .mt110{margin-top:110px;}
 .ml25{margin-left:25px;}
@@ -140,7 +142,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .line3{border-top:1px solid #044f39;}
 .line4{border-top:1px solid #202f28;}
 .line5{border-top:1px solid #024936;}
-.line6{border-top: 1px solid #333;border-bottom: 1px solid #03936e;}
+.line6{border-top:1px solid #333;border-bottom: 1px solid #03936e;}
+.line7{border-top:1px dashed #024936;opacity:0.8;filter:alpha(opacity=80);}
 
 /*表单样式*/
 .checkbox{width:16px;height:16px;border:1px solid #ffee25;border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;appearance: none;-webkit-appearance: none;}
