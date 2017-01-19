@@ -44,3 +44,6 @@
 
 /*个人中心-自助反水*/
 .ml25-m{margin-left:-25px;}
+
+/*个人中心-自助体验金*/
+.bar-progress{border-top:solid 2px #957e1b;width:35px;}
