@@ -26,3 +26,17 @@
 
 /*注册页面*/
 .w-main{width:640px;}
+.w-aside{width:260px;}
+.w-main-line{border-right:1px solid #01aa7f;}
+.form-Line{border-right:1px solid #024936;}
+.checkboxWrap{margin-left:150px;}
+.img-container{width:67px;height:67px;}
+.text-grident{display: inline-block;font-family:'STFangsong';background-image: -webkit-gradient(linear, center top, center bottom, from(#ffee25), color-stop(0.5, rgba(228, 255, 255, 1)), to(#ffee25));-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.text-grident b{font-size:32px;}
+
+/*欢迎页面*/
+.w-welcome{padding:80px 75px 100px;}
+.icon-container{padding-top:14px;}
+.list-welcome{padding-left:45px;margin-right:-50px;}
+.list-welcome li{padding-right:120px;}
+.link{padding-bottom:2px;border-bottom:1px solid #ffee25;}

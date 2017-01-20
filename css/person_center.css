@@ -2,6 +2,7 @@
 
 /*个人中心页面*/
 .pb240{padding-bottom:240px;}
+.startGameList{*width:102%;*margin-right:-10px;/*兼容ie7*/}
 .startGameList-item{width:138px;}
 
 /*个人中心-基本资料页面*/
