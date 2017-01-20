@@ -10,13 +10,13 @@ textarea{resize:none;font-size:12px}
 input[type="text"],input[type="submit"],input[type="button"],textarea{-webkit-appearance:none}
 /*图标库*/
 @font-face {
-  font-family: 'iconfont';  /* project id 217971 */
-  src: url('//at.alicdn.com/t/font_wlkjfujih6txd2t9.eot');
-  src: url('//at.alicdn.com/t/font_wlkjfujih6txd2t9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_wlkjfujih6txd2t9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_wlkjfujih6txd2t9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_wlkjfujih6txd2t9.svg#iconfont') format('svg');
-}
+    font-family: 'iconfont';  /* project id 217971 */
+    src: url('//at.alicdn.com/t/font_00npxoa04csrlik9.eot');
+    src: url('//at.alicdn.com/t/font_00npxoa04csrlik9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_00npxoa04csrlik9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_00npxoa04csrlik9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_00npxoa04csrlik9.svg#iconfont') format('svg');
+    }
 .iconfont{
     font-family:"iconfont";
     font-size:16px;
@@ -59,6 +59,7 @@ input[type="text"],input[type="submit"],input[type="button"],textarea{-webkit-ap
 .fb{font-weight:bold}
 .fn{font-weight:normal}
 .t2{text-indent:2rem}
+.fs12{font-size:10px}
 .fs12{font-size:12px}
 .fs13{font-size:13px}
 .fs14{font-size:14px}
@@ -69,6 +70,7 @@ input[type="text"],input[type="submit"],input[type="button"],textarea{-webkit-ap
 .fs22{font-size:22px}
 .fs24{font-size:24px}
 .fs26{font-size:26px}
+.fs35{font-size:35px}
 .unl{text-decoration:underline}
 .no-unl{text-decoration:none}
 .vm{vertical-align:middle}
