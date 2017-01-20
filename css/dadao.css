@@ -58,3 +58,8 @@
 .list-welcome{padding-left:45px;margin-right:-50px;}
 .list-welcome li{padding-right:120px;}
 .link{padding-bottom:2px;border-bottom:1px solid #ffee25;}
+
+/*vip页面*/
+.list-vip{}
+.list-vip li{width:263px;border:1px solid #ffee25;}
+.tab1-container{padding-bottom:130px}

@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{background-color:#004633;}
 fieldset{border:0 none;margin:0;padding:0;}
-/*.inblo{display:inline-block;*display:inline;*zoom:1;}*/
+.inblo{display:inline-block;*display:inline;*zoom:1;/*兼容ie7*/}
 .bg-green{background-color:#004633;}
 .bg-green2{background-color:#00563d;}
 .bg-green3{background-color:#036047;}
@@ -201,12 +201,15 @@ fieldset{border:0 none;margin:0;padding:0;}
 .nav05 li.active h2, .nav05 li.active p{color:#ffee25;}
 .nav-cover{width:170px;height:400px;}
 .infoCon{margin-left:170px;}
+.jointCon{margin-left:150px;}
+.commissionProject{height:630px;}
 
 /*表格*/
 .commissionTable{color:#07a67e;}
 .commissionTable th{padding-top:10px;padding-bottom:10px;font-weight:normal;}
 .commissionTable td{padding-top:10px;padding-bottom:10px;color:#ba9e26;text-align:center;border-top:1px solid #004633;}
 .commissionTable1 td{padding-top:6px;padding-bottom:6px;}
+.commissionTable2 td{border-right:1px solid #004633;padding-left:8px;padding-right:8px}
 .infoTable{}
 .infoTable th{font-weight:normal;font-size:12px;color:#07a67e;padding-bottom:3px;text-align:left;}
 .infoTable td{color:#ffee25;font-size:16px;}
