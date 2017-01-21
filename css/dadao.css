@@ -66,6 +66,24 @@
 .table-container{margin-right:380px;}
 .tip-container{padding-bottom:150px;}
 
+/*关于我们页面*/
+.magnifier{width:16px;height:16px;background:#000 url(../images/magnifier.png) no-repeat 2px 2px;opacity:0.6;filter:alpha(opacity=60);border-top-left-radius:4px;-webkit-border-top-left-radius:4px;-moz-border-top-left-radius:4px;}
+.list-magnifier{margin-left:-20px;margin-right:-22px;}
+.list-magnifier li{width:345px;border-right:1px solid #017a5b;}
+
+/*手机&下载页面*/
+.download-container{height:515px}
+.list-download{margin-left:-20px;margin-right:-23px;}
+.list-download li{width:210px;border-right:1px solid #13382c;}
+.qrCode-container{width:88px;padding:4px 0;}
+.list-client li{width:167px;}
+.list-client li p{background-color:#012018;color:#d7be1a;line-height:16px;}
+.list-client li p span{color:#012118;padding-top:3px;padding-bottom:3px;border-radius:9px;-webkit-border-radius:9px;-moz-border-radius:9px;}
+
+/*ip限制界面*/
+.ipIcon-container{margin-left:212px;}
+.ipCon-container{margin-left:394px;width:344px;}
+
 /*搜索类*/
 .search-t {height:84px;line-height:84px;padding-left:43px;}
 .search-t a{margin-right:65px;}

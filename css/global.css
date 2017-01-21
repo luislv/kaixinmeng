@@ -49,8 +49,8 @@ fieldset{border:0 none;margin:0;padding:0;}
 .bor-right-yellow{border-right:solid 1px #ffee25;}
 .bor-left-green{border-left:solid 1px #2f6b59;}
 .bor-right-green2{border-right:solid 1px #202f28;}
-.bor2{border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;}
-.bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;}
+.bor2{border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;}
+.bor4{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
 .bor-top-gray {border-top:1px solid #15614b;}
 .bor-bottom-gray {border-bottom:1px solid #15614b;}
 .lh1{line-height:100%;}
@@ -90,6 +90,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .mt3{margin-top:3px;}
 .mt20{margin-top:20px !important;}
 .mt30{margin-top:30px !important;}
+.mt35{margin-top:35px;}
 .mt40{margin-top:40px !important;}
 .mt60{margin-top:60px;}
 .mt110{margin-top:110px;}

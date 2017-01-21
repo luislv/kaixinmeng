@@ -116,7 +116,23 @@
                 </div>
                 <!-- 持有执照 -->
                 <div class="J_tabcon_item commissionProject hide">
-                    <h2 class="fn text-yellow fs14 pb20">持有执照</h2>
+                    <h2 class="fn text-yellow fs14">持有执照</h2>
+                    <ul class="list-magnifier mt15 cf clearfix">
+                        <li class="fl pl20 pr20">
+                            <a href="javascript:void(0);" class="inblo mr10 fl pr layer-photos-demo" id="layer-photos-demo">
+                                <img layer-pid="" layer-src="../images/license_01.png" src="../images/license_thumbnail_01.png" alt="" class="fl"/>
+                                <span class="magnifier inblo pa right bottom"></span>
+                            </a>
+                            <p class="pt10 fs12 lh4 text-littleGreen3">开心大道拥有菲律宾政府颁发博彩牌照NO.CF-174，游戏与经营受菲律宾政府严格监管。我们重视每一个细节上的公信力以及公正力，只有自我要求到最严谨的态度，才能让每一位开心大道的玩家得到最好的公平性和娱乐性。</p>
+                        </li>
+                        <li class="fl pl20 pr20">
+                            <a href="javascript:void(0);" class="inblo mr10 fl pr layer-photos-demo" id="layer-photos-demo2">
+                                <img layer-pid="" layer-src="../images/license_02.png" src="../images/license_thumbnail_02.png" alt="" class="fl"/>
+                                <span class="magnifier inblo pa right bottom"></span>
+                            </a>
+                            <p class="pt10 fs12 lh4 text-littleGreen3">开心大道拥有菲律宾政府颁发博彩牌照NO.CF-174，游戏与经营受菲律宾政府严格监管。我们重视每一个细节上的公信力以及公正力，只有自我要求到最严谨的态度，才能让每一位开心大道的玩家得到最好的公平性和娱乐性。</p>
+                        </li>
+                    </ul>
                 </div>
                 <!-- 联系我们 -->
                 <div class="J_tabcon_item commissionProject hide">
@@ -169,12 +185,25 @@
 <!-- 底部 end-->
 <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?ak=5k3PCWnFOd4GYvGlzWC6wkVvGrj2fzI3&v=2.0"></script>
+<script src="../js/layer/layer.js"></script>
 <script src="../js/global.js"></script>
 <script type="text/javascript">
     $(function(){
         // tab切换
         new Tab({'root':$('#tab')});
+
+        // 点击图片预览
+        previewImages('layer-photos-demo', 5);
+        previewImages('layer-photos-demo2', 5);
     });
+
+    // 点击预览图片
+    function previewImages(id, index) {
+        layer.photos({
+            photos: '#'+id,
+            anim: index //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+        });
+    }
 
     //创建和初始化地图函数：
     function initMap(){
