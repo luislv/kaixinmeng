@@ -18,8 +18,8 @@
 .index-r {width:240px;}
 
 /*首页焦点图*/
-.index-hotpic {padding:6px;}
-.index-hotpic img {float:left;}
+.index-hotpic {padding:6px;width:698px;height:208px;}
+.index-hotpic img {float:left;width:698px;height:208px;}
 .pagination-index {z-index: 99; background-color:#017a5b;margin-bottom:6px; display: inline-block; line-height:1;padding:5px; -webkit-border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; border-radius:10px 10px 0 0;}
 .swiper-pagination-switch { display: inline-block; width: 9px; height: 9px; border-radius: 9px; background: #0b4029; margin: 0 5px; cursor: pointer; }
 .swiper-active-switch { background: #ffd101; }
@@ -39,7 +39,7 @@
 .index-pic-list .active .float-cell span a{color:#fff;}
 
 .index-price-list {padding:9px 0 12px 0;}
-.index-price-list li {border-bottom: 1px dashed #3cc39b;line-height:1.7;padding:3px 0 4px 0;}
+.index-price-list li {border-bottom: 1px dashed #3cc39b;line-height:1.7;padding:4px 0 5px 0;}
 
 
 /*注册页面*/
