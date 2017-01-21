@@ -4,7 +4,7 @@
 .nav-box{ background:url("../images/nav_bg.png") repeat-x 0 0;}
 .nav a{width:16.66%;height:54px;margin-top:-1px;float:left;display: table;text-shadow:#000 1px 1px 1px;}
 .nav a.active{background-color:#00422e;border-bottom:2px solid #f4dc00;color:#fff;}
-.nav a span{display: table-cell; vertical-align: middle;}
+.nav a span{display: table-cell; vertical-align: middle;*position:relative;*top:15%;}
 
 /*底部*/
 .bottom-nav {color:#458876;}
