@@ -110,7 +110,7 @@
 .game-index-box .game-discript { height: 126px; overflow-y:auto;bottom:15px;left:50%;margin-left:-470px;z-index:2;background-color: rgba(0,0,0,0.5); -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;width:920px;padding:10px;}
 
 /*优惠页面*/
-.favourable-t{border:1px solid #ffd000; background: #202f28;}
+.favourable-t{border:1px solid #ffd000; background: #202f28;*margin-right:-2px;/*兼容IE7*/}
 .favourable-t li{float:left;width:16.66%;text-align:center;}
 .favourable-t li a{color:#ba9e26;height:43px;line-height:43px;}
 .favourable-t li a i{float:left;margin-left:-1px;}
