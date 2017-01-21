@@ -63,6 +63,8 @@
 .list-vip{}
 .list-vip li{width:263px;border:1px solid #ffee25;}
 .tab1-container{padding-bottom:130px}
+.table-container{margin-right:380px;}
+.tip-container{padding-bottom:150px;}
 
 /*搜索类*/
 .search-t {height:84px;line-height:84px;padding-left:43px;}

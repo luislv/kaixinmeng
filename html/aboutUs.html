@@ -18,13 +18,13 @@
     <script src="../js/idangerous.swiper.min.js"></script>
 </head>
 <body>
-    <!-- 头部 start -->
-    <div class="header fullwidth bg-littleGreen">
-        <div class="layout">
-            <div class="pt20 pb10 clearfix">
-                <a class="inblo fl ml10"><img src="../images/meng_logo.png" width="110" height="60" alt="开心盟logo"></a>
-                <img class="fl ml10 mt10" src="../images/meng_description.png" width="290" height="35" alt="开心盟简介">
-                <div class="J_notLogin fr">
+<!-- 头部 start -->
+<div class="header fullwidth bg-littleGreen">
+    <div class="layout">
+        <div class="pt15 pb15 clearfix">
+            <a class="inblo fl ml20"><img src="../images/logo.png" width="104" height="61" alt="开心大道logo"></a>
+            <div class="J_notLogin fr">
+                <div class="tr text-littleGreen2 pb15 lh4"><a class="text-littleGreen2 pl5 pr5" href="#">最新公告</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何游戏</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何提款</a><span class="kf w80 inblo text-littleGreen bg-green pl10 ml5 bor2"><span class="inblo iconfont text-yellow bg-darkGreen ml10 pl3 pr3 fr fs16 bor4">&#xe600;</span>联系客服</span></div>
                     <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4">
                         <label for="account" class="text-littleGreen2">账号:</label>
                         <input type="text" name="account" id="account" class="w100 text-littleGreen3 bg-green2">
@@ -34,36 +34,241 @@
                         <input type="text" name="password" id="password" class="w60 bg-green2 text-littleGreen3">
                         <a href="#" class="text-littleYellow">忘记？</a>
                     </span>
-                    <input type="submit" name="login" value="登录" class="text-green bg-yellow2 ml10 pl10 pr10 pt5 pb5 bor4 hand">
-                    <a href="meng_register.html" class="text-yellow2 ml15 mr10">注册</a>
+                <input type="submit" name="login" value="登录" class="text-green bg-yellow2 ml10 pl10 pr10 pt5 pb5 bor4 hand">
+                <a href="meng_register.html" class="text-green ml15 mr10">免费注册</a>
+            </div>
+            <div class="J_login fr" style="display:none;">
+                <div class="tr text-littleGreen2 pb15 lh4">
+                    <a class="text-littleGreen2 pl5 pr5" href="#">最新公告</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何游戏</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何提款</a>
+                    <span class="kf w80 inblo text-littleGreen bg-green pl10 ml5 bor2">
+                        <span class="inblo iconfont text-yellow bg-darkGreen ml10 pl3 pr3 fr fs16 bor4">&#xe600;</span>联系客服
+                    </span>
                 </div>
-                <div class="J_login fr" style="display:none;">
-                    <span class="inblo text-yellow">
-                        用户名:<br/>
-                        <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
-                    </span>
-                    <span class="inblo text-yellow ml25">
-                        用户名:<br/>
-                        <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
-                    </span>
-                    <a href="#" class="inblo bor-bottom-yellow text-yellow ml30 mr10 mt10 pb3 vt">安全退出</a>
+                <span class="inblo text-yellow">
+                    用户名:<br/>
+                    <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
+                </span>
+                <span class="inblo text-yellow ml25">
+                    用户名:<br/>
+                    <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
+                </span>
+                <a href="#" class="inblo bor-bottom-yellow text-yellow ml30 mr10 mt10 pb3 vt">安全退出</a>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="nav-box layout">
+        <div class="nav clearfix">
+            <a class="inblo tc text-yellow3" href="index.html"><span class=""><strong class="fs14 block">首页</strong><i class="block">Home</i></span></a>
+            <a class="inblo tc text-yellow3" href="computerGames.html"><span class=""><strong class="fs14 block">电子游戏</strong><i class="block">Computer games</i></span></a>
+            <a class="inblo tc text-yellow3" href="fishGames.html"><span class=""><strong class="fs14 block">捕鱼游戏</strong><i class="block">Fish games</i></span></a>
+            <a class="inblo tc text-yellow3" href="mobileDownload.html"><span class=""><strong class="fs14 block">手机&下载</strong><i class="block">Mobile & Download</i></span></a>
+            <a class="inblo tc text-yellow3" href="latestConcessions_list.html"><span class=""><strong class="fs14 block">最新优惠</strong><i class="block">Latest consessions</i></span></a>
+            <a class="inblo tc text-yellow3" href="vip.html"><span class=""><strong class="fs14 block">VIP</strong><i class="block">Vip</i></span></a>
+        </div>
+    </div>
+</div>
+<div class="header-t"></div>
+<!-- 头部 end -->
+<!-- 内容 start -->
+<div class="layout bg-littleGreen mt30">
+    <div class="p20">
+        <h2 class="fs24 lh1 text-yellow pb20">关于我们<span class="ml10 fs20 fn">About us</span></h2>
+        <div class="line5"></div>
+        <div class="pt10" id="tab">
+            <ul class="nav02 fl" id="tabon">
+                <li class="active text-white fs14 hand">
+                    <span class="icon-triangle-right fl mt20 ml10"></span>
+                    <p class="ml25">关于我们</p>
+                </li>
+                <li class="text-white fs14 hand">
+                    <span class="icon-triangle-right fl mt20 ml10"></span>
+                    <p class="ml25">持有执照</p>
+                </li>
+                <li class="text-white fs14 hand">
+                    <span class="icon-triangle-right fl mt20 ml10"></span>
+                    <p class="ml25">联系我们</p>
+                </li>
+            </ul>
+            <div class="jointCon bg-green pt20 pl20 pr20" id="tabcon">
+                <!-- 关于我们 -->
+                <div class="J_tabcon_item commissionProject">
+                    <h2 class="fn text-yellow fs14 pb10">关于我们</h2>
+                    <p class="pb20 fs12 text-littleGreen3 lh3">
+                        开心大道 KXBET.COM 拥有菲律宾政府合法经营执照，依法经营，在众多娱乐城中极力打造专业电子游艺老虎机娱乐平台，不断寻找最受广大会员喜爱的游戏平台，引进PT、MG、TTG、GG，数千种游戏供会员选择，提供最全面的游戏服务。
+                    </p>
+                    <p class="pb20 fs12 text-littleGreen3 lh3">
+                        各项服务深受会员好评：<br>
+                        1. 迅速存款功能<br>
+                        2. 秒提立即取功能<br>
+                        3. 极致完善的自助系统<br>
+                        4. 专业优质的服务团队
+                    </p>
+                    <p class="pb20 fs12 text-littleGreen3 lh3">
+                        开心大道，系欧洲老牌在线博弈集团与亚洲新锐联手打造，是专业的在线电子游戏平台。我们提供您最喜爱的在线娱乐游戏，4大游戏平台数千款游戏供你玩乐，资金安全稳妥。开心大道为你呈现不一样的在线投注体验，让你足不出户享尽世界顶级投注游戏。
+                    </p>
+                    <p class="pb20 fs12 text-littleGreen3 lh3">
+                        创新高效：首创业内秒提、秒存、秒返水，实时自助返水，统一10秒钟到账。<br>
+                        资质公认：获菲律宾政府监管并颁发博彩牌照NO.CF-174。<br>
+                        实力雄厚：与全球最权威公正游戏平台合作，兼容欧洲的公正诚信与亚洲的活力创新。<br>
+                        贴心服务：24小时专业客服妹纸随时恭候，为您解决各种问题。<br>
+                    </p>
+                </div>
+                <!-- 持有执照 -->
+                <div class="J_tabcon_item commissionProject hide">
+                    <h2 class="fn text-yellow fs14 pb20">持有执照</h2>
+                </div>
+                <!-- 联系我们 -->
+                <div class="J_tabcon_item commissionProject hide">
+                    <h2 class="fn text-yellow fs14 pb20">联系我们</h2>
+                    <div id="dituContent" class="h200"></div>
+                    <p class="bossPlan-con pt20 fs14 lh4 text-littleGreen3">
+                        QQ号：89894567<br>
+                        Email：kaixinpr@gmail.com<br>
+                        地址：RCBC Plaza，6819 Ayala Avenue，Makati city, Philippines
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="line1"></div>
-        <div class="layout">
-            <ul class="nav1 clearfix">
-                <li class="fl"><a href="index.html" class="active inblo tc text-yellow3">首页</a></li>
-                <li class="fl"><a href="meng_onlineProject.html" class="inblo tc text-yellow3">在线项目</a></li>
-                <li class="fl"><a href="meng_jointProject.html" class="inblo tc text-yellow3">合营项目</a></li>
-                <li class="fl"><a href="meng_bossPlan.html" class="inblo tc text-yellow3">Boss计划</a></li>
-                <li class="fl"><a href="meng_contactUs.html" class="inblo tc text-yellow3">联系我们</a></li>
-            </ul>
-        </div>
     </div>
-    <div class="header-t"></div>
-    <!-- 头部 end -->
+</div>
+<!-- 内容 end -->
+<!-- 底部 start-->
+<div class="footer layout fs14">
+    <div class="bottom-nav lh4 mt20">
+        <a href="#">关于我们</a><em>|</em><a href="#">持有执照与认证</a><em>|</em><a href="#">合营计划</a><em>|</em><a href="#">新手帮助</a><em>|</em><a href="#">最新公告</a><em>|</em><a href="#">银行业务</a><em>|</em><a href="#">游戏责任</a><em>|</em><a href="#">隐私安全</a><em>|</em><a href="#">公平游戏</a><em>|</em><a href="#">防沉迷游戏</a><em>|</em><a href="#">用户协议</a><em>|</em><a href="#">PT游戏</a><em>|</em><a href="#">MG游戏</a><em>|</em><a href="#">TTG游戏</a><em>|</em><a href="#">GG捕鱼</a><em>|</em><a href="#">手机&下载</a><em>|</em><a href="#">最新优惠</a><em>|</em><a href="#">VIP</a><em>|</em><a href="#">联系我们</a>
+    </div>
+    <div class="bottom-nav lh4 mt10">推荐浏览器与分辨率<span>Chrome</span>|<span>Firefox</span>|<span>IE9</span>|<span>Safari</span>|<span>1024 X 768</span>|<span>清除缓存</span></div>
+    <p class="text-littleGreen4 mt20">开心大道使用浏览器Cookie以保证您得到最佳的游戏体验。为了方便您可持续访问网站，您需要接受这些Cookie的协议。<br />若想了解我们所使用的Cookie软件及如何停止使用，请参阅开心大道的使用条款。</p>
+    <p class="text-littleGreen4 mt20">开心大道，系欧洲老牌在线博弈集团与亚洲新锐联手打造，是专业的在线电子游戏平台。我们提供您最喜爱的在线娱乐游戏，4大游戏平台数千款游戏供你玩乐，资金安全稳妥。开心大道为你呈现不一样的在线投注体验，让你足不出户享尽世界顶级投注游戏。</p>
+    <p class="text-littleGreen5 mt20">FCLRC博彩执照 NO.CF-174</p>
+    <p class="text-littleGreen5">GMT+8&nbsp;&nbsp;&nbsp;&nbsp;2016-11-08&nbsp;&nbsp;20:12:31</p>
+    <p class="text-littleGreen5">开心大道官方网站 Copyright 2013-2018 KXBET.COM Online Gaming. All rights reserved.</p>
+    <div class="friend-link mt20">
+        <div class="layout line6"></div>
+        <ul class="pt10 pb40 cf">
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><span><img src="../images/friend-link03.png" /></span></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+        </ul>
+    </div>
+</div>
+<!-- 底部 end-->
+<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?ak=5k3PCWnFOd4GYvGlzWC6wkVvGrj2fzI3&v=2.0"></script>
+<script src="../js/global.js"></script>
+<script type="text/javascript">
+    $(function(){
+        // tab切换
+        new Tab({'root':$('#tab')});
+    });
 
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.954033,22.561122);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"开心盟科技股份有限公司",content:"一家专门做游戏的网站",point:"113.954145|22.560747",isOpen:1,icon:{w:23,h:25,l:0,t:21,x:9,lb:12}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
 </body>
 </html>
 

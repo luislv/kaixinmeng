@@ -134,6 +134,7 @@ fieldset{border:0 none;margin:0;padding:0;}
 .zx1{z-index:1;}
 .zx2{z-index:2;}
 
+
 /*布局类*/
 .layout{width:960px;margin:0 auto;}
 .layout2{width:400px;margin:0 auto;}
@@ -222,6 +223,9 @@ fieldset{border:0 none;margin:0;padding:0;}
 .sentTit{width:320px;}
 .sentbox{width:370px;height:185px;border:0 none;}
 .sentSubmit{padding-left:85px;padding-right:85px;}
+
+/*文章段落*/
+.p-container{text-indent:2em;}
 
 /*支付方式卡片*/
 .card li{width:230px;background-color:#212121;background-repeat:no-repeat;background-position:98% 5%;}
