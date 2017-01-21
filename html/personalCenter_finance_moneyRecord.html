@@ -11,287 +11,325 @@
     <link rel="apple-touch-icon" href="#"/>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/dadao.css">
     <link rel="stylesheet" href="../css/person_center.css">
 </head>
 <body>
-    <!-- 头部 start -->
-    <div class="header fullwidth bg-littleGreen">
-        <div class="layout">
-            <div class="pt20 pb10 clearfix">
-                <a class="inblo fl ml10"><img src="../images/meng_logo.png" width="110" height="60" alt="开心盟logo"></a>
-                <img class="fl ml10 mt10" src="../images/meng_description.png" width="290" height="35" alt="开心盟简介">
-                <div class="J_notLogin fr" style="display:none;">
-                    <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4">
+<!-- 头部 start -->
+<div class="header fullwidth bg-littleGreen">
+    <div class="layout">
+        <div class="pt15 pb15 clearfix">
+            <a class="inblo fl ml20"><img src="../images/logo.png" width="104" height="61" alt="开心大道logo"></a>
+            <div class="J_notLogin fr">
+                <div class="tr text-littleGreen2 pb15 lh4"><a class="text-littleGreen2 pl5 pr5" href="#">最新公告</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何游戏</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何提款</a><span class="kf w80 inblo text-littleGreen bg-green pl10 ml5 bor2"><span class="inblo iconfont text-yellow bg-darkGreen ml10 pl3 pr3 fr fs16 bor4">&#xe600;</span>联系客服</span></div>
+                    <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4 vm">
                         <label for="account" class="text-littleGreen2">账号:</label>
                         <input type="text" name="account" id="account" class="w100 text-littleGreen3 bg-green2">
                     </span>
-                    <span class="inblo bg-green2 ml10 pl10 pr10 pt5 pb5 bor4">
+                    <span class="inblo bg-green2 ml10 pl10 pr10 pt5 pb5 bor4 vm">
                         <label for="account" class="text-littleGreen2">密码:</label>
                         <input type="text" name="password" id="password" class="w60 bg-green2 text-littleGreen3">
                         <a href="#" class="text-littleYellow">忘记？</a>
                     </span>
-                    <input type="submit" name="login" value="登录" class="text-green bg-yellow2 ml10 pl10 pr10 pt5 pb5 bor4 hand">
-                    <a href="meng_register.html" class="text-yellow2 ml15 mr10">注册</a>
-                </div>
-                <div class="J_login fr">
-                    <span class="inblo text-yellow">
-                        用户名:<br/>
-                        <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
+                <input type="submit" name="login" value="登录" class="text-green bg-yellow2 ml10 pl10 pr10 pt5 pb5 bor4 hand vm">
+                <a href="signup.html" class="text-green ml15 mr10 vm">免费注册</a>
+            </div>
+            <div class="J_login fr" style="display:none;">
+                <div class="tr text-littleGreen2 pb15 lh4">
+                    <a class="text-littleGreen2 pl5 pr5" href="#">最新公告</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何游戏</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何提款</a>
+                    <span class="kf w80 inblo text-littleGreen bg-green pl10 ml5 bor2">
+                        <span class="inblo iconfont text-yellow bg-darkGreen ml10 pl3 pr3 fr fs16 bor4">&#xe600;</span>联系客服
                     </span>
-                    <span class="inblo text-yellow ml25">
-                        用户名:<br/>
-                        <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
-                    </span>
-                    <a href="#" class="inblo bor-bottom-yellow text-yellow ml30 mr10 mt10 pb3 vt">安全退出</a>
                 </div>
+                <span class="inblo text-yellow">
+                    用户名:<br/>
+                    <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
+                </span>
+                <span class="inblo text-yellow ml25">
+                    用户名:<br/>
+                    <b class="text-littleGreen3 fs16 lh3 fn">Haji23112</b>
+                </span>
+                <a href="#" class="inblo bor-bottom-yellow text-yellow ml30 mr10 mt10 pb3 vt">安全退出</a>
             </div>
         </div>
-        <div class="line1"></div>
-        <div class="layout">
-            <ul class="nav1 clearfix">
-                <li class="fl"><a href="index.html" class="inblo tc text-yellow3">首页</a></li>
-                <li class="fl"><a href="meng_onlineProject.html" class="inblo tc text-yellow3">在线项目</a></li>
-                <li class="fl"><a href="meng_jointProject.html" class="inblo tc text-yellow3">合营项目</a></li>
-                <li class="fl"><a href="meng_bossPlan.html" class="inblo tc text-yellow3">Boss计划</a></li>
-                <li class="fl"><a href="meng_contactUs.html" class="inblo tc text-yellow3">联系我们</a></li>
-            </ul>
+    </div>
+    <div class="line"></div>
+    <div class="nav-box layout">
+        <div class="nav clearfix">
+            <a class="inblo tc text-yellow3" href="index.html"><span class=""><strong class="fs14 block">首页</strong><i class="block">Home</i></span></a>
+            <a class="inblo tc text-yellow3" href="computerGames.html"><span class=""><strong class="fs14 block">电子游戏</strong><i class="block">Computer games</i></span></a>
+            <a class="inblo tc text-yellow3" href="fishGames.html"><span class=""><strong class="fs14 block">捕鱼游戏</strong><i class="block">Fish games</i></span></a>
+            <a class="inblo tc text-yellow3" href="mobileDownload.html"><span class=""><strong class="fs14 block">手机&下载</strong><i class="block">Mobile & Download</i></span></a>
+            <a class="inblo tc text-yellow3" href="latestConcessions_list.html"><span class=""><strong class="fs14 block">最新优惠</strong><i class="block">Latest consessions</i></span></a>
+            <a class="inblo tc text-yellow3" href="vip.html"><span class=""><strong class="fs14 block">VIP</strong><i class="block">Vip</i></span></a>
         </div>
     </div>
-    <div class="header-t"></div>
-    <!-- 头部 end -->
-    <!-- 个人中心 start -->
-    <div class="layout bg-littleGreen mt30">
-        <div class="pt20 pr20 pb20">
-            <!-- 个人中心 -->
-            <div class="bg-green clearfix pr">
-                <div class="nav-cover bg-littleGreen pa left bottom zx1"></div>
-                <!-- 导航侧栏 -->
-                <ul class="nav01 fl bg-littleGreen pb240 pr zx2">
-                    <li>
-                        <a href="personalCenter_index.html"><span class="block pl20 pt10 bg-littleGreen text-white fs18">Asdfqwef889</span></a>
-                        <a href="#"><span class="block pl20 pt10 pb20 fs12 text-yellow lh1 bg-littleGreen">【新会员】<i class="iconfont text-yellow fs12">&#xe67a;</i></span></a>
-                        <div class="line3 ml20 mr15"></div>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">我的账户</p></a>
-                        <ul class="J_list_itemCon nav04 bg-green3 hide">
-                            <li><a href="personalCenter_account_basicInfo.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">基本资料</span></a></li>
-                            <li><a href="personalCenter_account_bank.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">银行资料</span></a></li>
-                            <li><a href="personalCenter_account_changePass.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">密码修改</span></a></li>
-                            <li><a href="personalCenter_account_subscription.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">订阅信息</span></a></li>
-                            <li><a href="personalCenter_account_letter.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">站内信</span></a></li>
-                        </ul>
-                        <div class="line3 ml20 mr15"></div>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">我的资金</p></a>
-                        <ul class="J_list_itemCon nav04 bg-green3">
-                            <li><a href="personalCenter_finance_recharge.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">充值</span></a></li>
-                            <li><a href="personalCenter_finance_transfer.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">转账</span></a></li>
-                            <li><a href="personalCenter_finance_withdraw.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">提款</span></a></li>
-                            <li><a href="personalCenter_finance_remind.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">催账</span></a></li>
-                            <li><a href="personalCenter_finance_moneyRecord.html"><span class="active block pl40 text-littleGreen pt10 pb10 fs12 hand">资金记录</span></a></li>
-                            <li><a href="personalCenter_finance_bettingRecord.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">投注记录</span></a></li>
-                        </ul>
-                        <div class="line3 ml20 mr15"></div>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">自助优惠</p></a>
-                        <ul class="J_list_itemCon nav04 bg-green3 hide">
-                            <li><a href="personalCenter_coupon_selfservice.html"><span class="block block pl40 text-littleGreen pt10 pb10 fs12 hand">自助优惠</span></a></li>
-                            <li><a href="personalCenter_coupon_store.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助存送</span></a></li>
-                            <li><a href="personalCenter_coupon_rebate.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助反水</span></a></li>
-                            <li><a href="personalCenter_coupon_experience.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助体验金</span></a></li>
-                            <li><a href="personalCenter_coupon_rescue.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助救援金</span></a></li>
-                            <li><a href="personalCenter_coupon_premote.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助晋级</span></a></li>
-                            <li><a href="personalCenter_coupon_coupon.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">优惠券专区</span></a></li>
-                            <li><a href="personalCenter_coupon_tiger.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">老虎暴走</span></a></li>
-                            <li><a href="personalCenter_coupon_recommend.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">推荐好友</span></a></li>
-                            <li><a href="personalCenter_coupon_prize.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">通关送彩金</span></a></li>
-                        </ul>
-                        <div class="line3 ml20 mr15"></div>
-                    </li>
-                    <li><a href="javascript:void(0);"><p class="pl40 bg-littleGreen text-white fs16">安全退出</p></a><div class="line3 ml20 mr15"></div></li>
-                </ul>
-                <!-- 内容栏 -->
-                <div class="infoCon bg-green pt20 pl20 pr20" id="tab">
-                    <!-- 导航 -->
-                    <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
-                        <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">充值记录</li>
-                        <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">提款记录</li>
-                        <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">转账记录</li>
+</div>
+<div class="header-t"></div>
+<!-- 头部 end -->
+<!-- 个人中心 start -->
+<div class="layout bg-littleGreen mt30">
+    <div class="pt20 pr20 pb20">
+        <!-- 个人中心 -->
+        <div class="bg-green clearfix pr">
+            <div class="nav-cover bg-littleGreen pa left bottom zx1"></div>
+            <!-- 导航侧栏 -->
+            <ul class="nav01 fl bg-littleGreen pb240 pr zx2">
+                <li>
+                    <a href="personalCenter_index.html"><span class="block pl20 pt10 bg-littleGreen text-white fs18">Asdfqwef889</span></a>
+                    <a href="#"><span class="block pl20 pt10 pb20 fs12 text-yellow lh1 bg-littleGreen">【新会员】<i class="iconfont text-yellow fs12">&#xe67a;</i></span></a>
+                    <div class="line3 ml20 mr15"></div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">我的账户</p></a>
+                    <ul class="J_list_itemCon nav04 bg-green3 hide">
+                        <li><a href="personalCenter_account_basicInfo.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">基本资料</span></a></li>
+                        <li><a href="personalCenter_account_bank.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">银行资料</span></a></li>
+                        <li><a href="personalCenter_account_changePass.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">密码修改</span></a></li>
+                        <li><a href="personalCenter_account_subscription.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">订阅信息</span></a></li>
+                        <li><a href="personalCenter_account_letter.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">站内信</span></a></li>
                     </ul>
-                    <div id="tabcon">
-                        <!-- 充值记录 -->
-                        <div class="J_tabcon_item mt20 pb20 hide" style="display:block;">
-                            <div class="pb20">
-                                <span class="inblo text-littleGreen3">
-                                    <label for="startTime" class="fs14 text-yellow4">设定时间:</label>
-                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
-                                        <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                    </div>
-                                    <b class="mr3-m fn">至</b>
-                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
-                                        <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
-                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                    </div>
-                                </span>
-                                <span class="inblo ml15">
-                                    <label for="startTime" class="fs14 text-yellow4">设定时间:</label>
-                                    <div class="inblo bg-darkGreen bor4 ml5 p8">
-                                        <input type="text" id="startTime" class="bg-darkGreen w70 fs12 text-littleGreen3">
-                                        <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
-                                    </div>
-                                </span>
-                                <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml10 pl30 pr30 pt10 pb10 bor4 hand">
+                    <div class="line3 ml20 mr15"></div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">我的资金</p></a>
+                    <ul class="J_list_itemCon nav04 bg-green3">
+                        <li><a href="personalCenter_finance_recharge.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">充值</span></a></li>
+                        <li><a href="personalCenter_finance_transfer.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">转账</span></a></li>
+                        <li><a href="personalCenter_finance_withdraw.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">提款</span></a></li>
+                        <li><a href="personalCenter_finance_remind.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">催账</span></a></li>
+                        <li><a href="personalCenter_finance_moneyRecord.html"><span class="active block pl40 text-littleGreen pt10 pb10 fs12 hand">资金记录</span></a></li>
+                        <li><a href="personalCenter_finance_bettingRecord.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">投注记录</span></a></li>
+                    </ul>
+                    <div class="line3 ml20 mr15"></div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"><p class="J_list_item pl40 bg-littleGreen text-white fs16">自助优惠</p></a>
+                    <ul class="J_list_itemCon nav04 bg-green3 hide">
+                        <li><a href="personalCenter_coupon_selfservice.html"><span class="block block pl40 text-littleGreen pt10 pb10 fs12 hand">自助优惠</span></a></li>
+                        <li><a href="personalCenter_coupon_store.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助存送</span></a></li>
+                        <li><a href="personalCenter_coupon_rebate.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助反水</span></a></li>
+                        <li><a href="personalCenter_coupon_experience.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助体验金</span></a></li>
+                        <li><a href="personalCenter_coupon_rescue.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助救援金</span></a></li>
+                        <li><a href="personalCenter_coupon_premote.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">自助晋级</span></a></li>
+                        <li><a href="personalCenter_coupon_coupon.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">优惠券专区</span></a></li>
+                        <li><a href="personalCenter_coupon_tiger.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">老虎暴走</span></a></li>
+                        <li><a href="personalCenter_coupon_recommend.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">推荐好友</span></a></li>
+                        <li><a href="personalCenter_coupon_prize.html"><span class="block pl40 text-littleGreen pt10 pb10 fs12 hand">通关送彩金</span></a></li>
+                    </ul>
+                    <div class="line3 ml20 mr15"></div>
+                </li>
+                <li><a href="javascript:void(0);"><p class="pl40 bg-littleGreen text-white fs16">安全退出</p></a><div class="line3 ml20 mr15"></div></li>
+            </ul>
+            <!-- 内容栏 -->
+            <div class="infoCon bg-green pt20 pl20 pr20" id="tab">
+                <!-- 导航 -->
+                <ul class="nav03 pl25 bor-bottom-yellow fs16 lh1 clearfix" id="tabon">
+                    <li class="active fl pl20 pr20 pt10 pb10 hand text-yellow4">充值记录</li>
+                    <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">提款记录</li>
+                    <li class="fl pl20 pr20 pt10 pb10 hand text-yellow4">转账记录</li>
+                </ul>
+                <div id="tabcon">
+                    <!-- 充值记录 -->
+                    <div class="J_tabcon_item mt20 pb20 hide" style="display:block;">
+                        <div class="pb20">
+                            <span class="inblo text-littleGreen3">
+                                <label for="startTime" class="fs14 text-yellow4">设定时间:</label>
+                                <div class="inblo bg-darkGreen bor4 ml5 p8 vm">
+                                    <input type="text" id="startTime" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                                    <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                </div>
+                                <b class="mr3-m fn">至</b>
+                                <div class="inblo bg-darkGreen bor4 ml5 p8 vm">
+                                    <input type="text" id="startTime2" class="bg-darkGreen w125 fs12 text-littleGreen3">
+                                    <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                </div>
+                            </span>
+                            <span class="inblo ml15">
+                                <label for="startTime" class="fs14 text-yellow4">设定时间:</label>
+                                <div class="inblo bg-darkGreen bor4 ml5 p8 vm">
+                                    <input type="text" id="startTime3" class="bg-darkGreen w70 fs12 text-littleGreen3">
+                                    <i class="iconfont text-littleGreen3 bor-left-green pl3 vm hand">&#xe611;</i>
+                                </div>
+                            </span>
+                            <input type="button" name="searchBtn" value="查询" class="text-gray1 bg-yellow2 fs14 lh1 ml10 pl30 pr30 pt10 pb10 bor4 hand vm">
+                        </div>
+                        <div class="line4"></div>
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
+                            <caption class="hide">充值记录</caption>
+                            <thead>
+                            <tr>
+                                <th width="18%">时间</th>
+                                <th width="16%">订单号</th>
+                                <th width="16%">金额</th>
+                                <th width="16%">充值方式</th>
+                                <th width="16%">状态</th>
+                                <th width="18%">备注</th>
+                            </tr>
+                            </thead>
+                            <tbody id="itemContainer">
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            <tr class="bg-darkGreen">
+                                <td class="text-littleGreen3">2016-10-10 09:00</td>
+                                <td>JD38238812</td>
+                                <td>￥4859.00</td>
+                                <td>支付宝扫码充值</td>
+                                <td>已完成</td>
+                                <td class="text-littleGreen3">1111</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="mt15">
+                            <div class="fl tr text-yellow4">
+                                <p>本页小计：999,999.03</p>
+                                <p>总计：999,999.03</p>
                             </div>
-                            <div class="line4"></div>
-                            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="commissionTable">
-                                <caption class="hide">充值记录</caption>
-                                <thead>
-                                    <tr>
-                                        <th width="18%">时间</th>
-                                        <th width="16%">订单号</th>
-                                        <th width="16%">金额</th>
-                                        <th width="16%">充值方式</th>
-                                        <th width="16%">状态</th>
-                                        <th width="18%">备注</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="itemContainer">
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                    <tr class="bg-darkGreen">
-                                        <td class="text-littleGreen3">2016-10-10 09:00</td>
-                                        <td>JD38238812</td>
-                                        <td>￥4859.00</td>
-                                        <td>支付宝扫码充值</td>
-                                        <td>已完成</td>
-                                        <td class="text-littleGreen3">1111</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="mt15">
-                                <div class="fl tr text-yellow4">
-                                    <p>本页小计：999,999.03</p>
-                                    <p>总计：999,999.03</p>
-                                </div>
-                                <!-- 分页条 -->
-                                <div class="tr pt15">
-                                    <div class="holder inblo"></div>
-                                </div>
-                            </div>         
+                            <!-- 分页条 -->
+                            <div class="tr pt15">
+                                <div class="holder inblo"></div>
+                            </div>
                         </div>
-                        <!-- 提款记录 -->
-                        <div class="J_tabcon_item mt20 pb20 hide">
-                              
-                        </div>
-                        <!-- 转账记录 -->
-                        <div class="J_tabcon_item mt20 pb20 hide">
-                              
-                        </div>
-                    </div>                     
-                </div>     
+                    </div>
+                    <!-- 提款记录 -->
+                    <div class="J_tabcon_item mt20 pb20 hide">
+
+                    </div>
+                    <!-- 转账记录 -->
+                    <div class="J_tabcon_item mt20 pb20 hide">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- 个人中心 end -->
-    <!-- 底部 start -->
-    <div class="footer pt50 pb30">
-        <p class="text-yellow2 fs14 tc lh1">@2013 - 2016 开心盟 版权所有</p>
+</div>
+<!-- 个人中心 end -->
+<!-- 底部 start-->
+<div class="line6 mt20 layout"></div>
+<div class="footer layout fs14">
+    <div class="bottom-nav lh4 mt20">
+        <a href="#">关于我们</a><em>|</em><a href="#">持有执照与认证</a><em>|</em><a href="#">合营计划</a><em>|</em><a href="#">新手帮助</a><em>|</em><a href="#">最新公告</a><em>|</em><a href="#">银行业务</a><em>|</em><a href="#">游戏责任</a><em>|</em><a href="#">隐私安全</a><em>|</em><a href="#">公平游戏</a><em>|</em><a href="#">防沉迷游戏</a><em>|</em><a href="#">用户协议</a><em>|</em><a href="#">PT游戏</a><em>|</em><a href="#">MG游戏</a><em>|</em><a href="#">TTG游戏</a><em>|</em><a href="#">GG捕鱼</a><em>|</em><a href="#">手机&下载</a><em>|</em><a href="#">最新优惠</a><em>|</em><a href="#">VIP</a><em>|</em><a href="#">联系我们</a>
     </div>
-    <!-- 底部 end -->
-    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="../js/jPages.min.js"></script>
-    <script src="../js/global.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            // tab切换
-            new Tab({'root':$('#tab')});
+    <div class="bottom-nav lh4 mt10">推荐浏览器与分辨率<span>Chrome</span>|<span>Firefox</span>|<span>IE9</span>|<span>Safari</span>|<span>1024 X 768</span>|<span>清除缓存</span></div>
+    <p class="text-littleGreen4 mt20">开心大道使用浏览器Cookie以保证您得到最佳的游戏体验。为了方便您可持续访问网站，您需要接受这些Cookie的协议。<br />若想了解我们所使用的Cookie软件及如何停止使用，请参阅开心大道的使用条款。</p>
+    <p class="text-littleGreen4 mt20">开心大道，系欧洲老牌在线博弈集团与亚洲新锐联手打造，是专业的在线电子游戏平台。我们提供您最喜爱的在线娱乐游戏，4大游戏平台数千款游戏供你玩乐，资金安全稳妥。开心大道为你呈现不一样的在线投注体验，让你足不出户享尽世界顶级投注游戏。</p>
+    <p class="text-littleGreen5 mt20">FCLRC博彩执照 NO.CF-174</p>
+    <p class="text-littleGreen5">GMT+8&nbsp;&nbsp;&nbsp;&nbsp;2016-11-08&nbsp;&nbsp;20:12:31</p>
+    <p class="text-littleGreen5">开心大道官方网站 Copyright 2013-2018 KXBET.COM Online Gaming. All rights reserved.</p>
+    <div class="friend-link mt20">
+        <div class="layout line6"></div>
+        <ul class="pt10 pb40 cf">
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><span><img src="../images/friend-link03.png" /></span></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link01.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link02.png" /></a></li>
+            <li><a href="#"><img src="../images/friend-link03.png" /></a></li>
+        </ul>
+    </div>
+</div>
+<!-- 底部 end-->
+<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="../js/jPages.min.js"></script>
+<script src="../js/global.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // tab切换
+        new Tab({'root':$('#tab')});
 
-            // 点击弹出下拉列表
-            $(".J_list_item").on("click", function() {
-                $(this).parent().parent().siblings().find(".J_list_itemCon").slideUp('slow');
-                $(this).parent().next().slideToggle('slow');
-            });
+        // 点击弹出下拉列表
+        $(".J_list_item").on("click", function() {
+            $(this).parent().parent().siblings().find(".J_list_itemCon").slideUp('slow');
+            $(this).parent().next().slideToggle('slow');
+        });
 
-            // 分页
-            $("div.holder").jPages({
-                containerID  : 'itemContainer',
-                first: '第1页',
-                last: '最后1页',
-                previous: '上一页',
-                next: '下一页',
-                perPage: 2,  // 每页条数
-                startPage: 1,
-                startRange: 0,
-                midRange: 4,
-                endRange: 0,
-                animation: 'wobble',
-                keyBrowse: true,
-                callback: function(pages, items){
-                    $(".holder").find(".jp-last").css("border-right", "none");
-                    if(pages.current == 1) {
-                        $(".jp-previous").addClass("jp-hidden");
-                    }else{
-                        $(".jp-previous").removeClass("jp-hidden");
-                    }
-                    if(pages.current == pages.count) {
-                        $(".jp-next").addClass("jp-hidden");
-                    } else{
-                        $(".jp-next").removeClass("jp-hidden");
-                    }
+        // 分页
+        $("div.holder").jPages({
+            containerID  : 'itemContainer',
+            first: '第1页',
+            last: '最后1页',
+            previous: '上一页',
+            next: '下一页',
+            perPage: 2,  // 每页条数
+            startPage: 1,
+            startRange: 0,
+            midRange: 4,
+            endRange: 0,
+            animation: 'wobble',
+            keyBrowse: true,
+            callback: function(pages, items){
+                $(".holder").find(".jp-last").css("border-right", "none");
+                if(pages.current == 1) {
+                    $(".jp-previous").addClass("jp-hidden");
+                }else{
+                    $(".jp-previous").removeClass("jp-hidden");
                 }
-            });
-        })
-    </script>
+                if(pages.current == pages.count) {
+                    $(".jp-next").addClass("jp-hidden");
+                } else{
+                    $(".jp-next").removeClass("jp-hidden");
+                }
+            }
+        });
+    })
+</script>
 </body>
 </html>
 
