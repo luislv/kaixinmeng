@@ -196,7 +196,7 @@ input[type='submit']{*overflow:visible;}/*兼容ie7*/
 
 /*导航*/
 .nav01{width:170px;}
-.nav01 li{*width:100%;*height:50px;*float:left;}/*兼容ie7*/
+.nav01 li, .nav02 li{*width:100%;*height:50px;*float:left;}/*兼容ie7*/
 .nav01 li a p, .nav02 li{height:50px;line-height:50px;}
 .nav01 li a p.active{border-left:3px solid #202f28;background-color:#ffee25;color:#004633 !important;}
 .nav02{width:150px;}
