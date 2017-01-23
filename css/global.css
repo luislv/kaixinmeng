@@ -257,3 +257,6 @@ input[type='submit']{*overflow:visible;}/*兼容ie7*/
 /*layer弹出层样式*/
 body .demo-class .layui-layer-btn{padding:0;}
 body .demo-class .layui-layer-btn .layui-layer-btn0{display:block;margin:0;padding:20px 0;border-radius:0;font-size:16px;line-height:1;border:none;background-color:#13382c;color:#ffee25;text-align:center;}
+
+/*滚动条自定义样式*/
+.mCSB_dragger_bar{width: 7px;height: 19px;background-color: #000;}

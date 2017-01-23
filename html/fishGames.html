@@ -10,13 +10,19 @@
     <link rel="shortcut icon" href="#"/>
     <link rel="apple-touch-icon" href="#"/>
     <link rel="stylesheet" href="../css/idangerous.swiper.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/dadao.css">
-    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="../js/idangerous.swiper.min.js"></script>
 </head>
+<style>
+    .mCSB_dragger_bar{
+        width: 7px !important;
+        height: 19px !important;
+        background-color: #000 !important;
+    }
+</style>
 <body>
 <!-- 头部 start -->
 <div class="header fullwidth bg-littleGreen">
@@ -74,7 +80,7 @@
 <div class="game-index-box pr">
    <img src="../images/game-index-pic.png" />
     <div class="game-price pa fs12 text-yellow2 pl10 pr10">奖池奖金：￥ <span class="fs20" style="font-family: 'LaoMN-Bold'">999,999,999</span></div>
-    <div class="game-discript pa tl lh4">
+    <div id="content_1" class="J_gameDesc game-discript pa tl lh4">
         <h3 class="text-yellow mt5">玩法介绍</h3>
         <p class="text-white mt5">点击鼠标左键（或键盘空格）发炮，炮弹会射向鼠标所在位置。当炮弹命中鱼，会有明显的打中效果，打中墙壁会反弹。每发出一发子弹，会扣除相关余额，当子弹没有成功打中鱼（场景中没有鱼或者鱼已经死亡），发送子弹的费用将会自动返回到您的账号。如果打中鱼，鱼死亡有明显的金币效果，您可以立刻获得鱼的价值。</p>
         <h3 class="text-yellow mt5">奖金与捕鱼王</h3>
@@ -117,6 +123,81 @@
     </div>
 </div>
 <!-- 底部 end-->
+<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="../js/jquery.mousewheel-3.0.6.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.min.js"></script>
+<script type='text/javascript'>
+    // 自定义滚动条
+    (function($){
+        $(window).load(function(){
+            /*$(".J_gameDesc").mCustomScrollbar({
+                scrollButtons:{
+                    enable:true
+                }
+            });
+            *//* disable *//*
+            $("#disable-scrollbar").click(function(e){
+                e.preventDefault();
+                $("#content_1").mCustomScrollbar("disable",true);
+            });
+            $("#disable-scrollbar-no-reset").click(function(e){
+                e.preventDefault();
+                $("#content_1").mCustomScrollbar("disable");
+            });
+            $("#enable-scrollbar").click(function(e){
+                e.preventDefault();
+                $("#content_1").mCustomScrollbar("update");
+            });
+            *//* destroy *//*
+            $("#destroy-scrollbar").click(function(e){
+                e.preventDefault();
+                $("#content_1").mCustomScrollbar("destroy");
+            });
+            $("#rebuild-scrollbar").click(function(e){
+                e.preventDefault();
+                $("#content_1").mCustomScrollbar({
+                    scrollButtons:{
+                        enable:true
+                    }
+                });
+            });*/
+
+            $(".J_gameDesc").mCustomScrollbar({
+                theme: 'dark',
+                set_width:false,  // 设置你内容的宽度 值可以是像素或者百分比
+                set_height:false,  // 设置你内容的高度 值可以是像素或者百分比
+                horizontalScroll:false,  // 是否创建一个水平滚动条 默认是垂直滚动条 值可为:true(创建水平滚动条) 或 false
+                scrollInertia:550,  // 滚动的惯性值 在毫秒中 使用0可以无滚动惯性 (滚动惯性可以使区块滚动更加平滑)
+                scrollEasing:"easeOutCirc",  // 滚动动作类型 查看 jquery UI easing 可以看到所有的类型
+                mouseWheel:true,  // 鼠标滚动的支持 值为:true.false,像素 默认的情况下 鼠标滚动设置成像素值 填写false取消鼠标滚动功能
+                autoDraggerLength:false,  // 根据内容区域自动调整滚动条拖块的长度
+                mouseWheelPixels:'Integer',  // 鼠标滚动中滚动的像素数目 值为以像素为单位的数值
+                scrollButtons:{
+                    enable:false,  // 是否添加 滚动条两端按钮支持 值:true,false
+                    scrollType:"continuous",  // 滚动按钮滚动类型 值:”continuous”(当你点击滚动控制按钮时断断续续滚动) “pixels”(根据每次点击的像素数来滚动)
+                    scrollSpeed:20,  // 设置点击滚动按钮时候的滚动速度(默认 20) 设置一个更高的数值可以更快的滚动
+                    scrollAmount:40  // 设置点击滚动按钮时候每次滚动的数值 像素单位 默认 40像素
+                },
+                advanced:{
+                    updateOnBrowserResize:true,  // 根据百分比为自适应布局 调整浏览器上滚动条的大小 值:true,false 设置 false 如果你的内容块已经被固定大小
+                    updateOnContentResize:false,  // 自动根据动态变换的内容调整滚动条的大小 值:true,false 设置成 true 将会不断的检查内容的长度并且据此改变滚动条大小 建议除非必要不要设置成 true 如果页面中有很多滚动条的时候 它有可能会产生额外的移出 你可以使用 update 方法来替代这个功能
+                    autoExpandHorizontalScroll:false,  // 自动扩大水平滚动条的长度值
+                    autoScrollOnFocus:true  // 是否自动滚动到聚焦中的对象 例如表单使用类似TAB键那样跳转焦点 值:true false
+                },
+                callbacks:{
+                    onScrollStart:function(){},  // 使用自定义的回调函数在滚动时间开始的时候执行使用自定义的回调函数在滚动时间开始的时候执行
+                    onScroll:function(){},  // 自定义回调函数在滚动中执行
+                    onTotalScroll:function(){},  // 当滚动到底部的时候调用这个自定义回调函数
+                    onTotalScrollBack:function(){},  // 当滚动到顶部的时候调用这个自定义回调函数
+                    onTotalScrollOffset:0,  // 设置到达顶部或者底部的偏移量 像素单位
+                    whileScrolling:false,  // 当用户正在滚动的时候执行这个自定义回调函数
+                    whileScrollingInterval:30  // 设置调用 whileScrolling 回调函数的时间间隔 毫秒单位
+                }
+            });
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
 
