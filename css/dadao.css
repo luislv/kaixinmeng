@@ -6,6 +6,15 @@
 .nav a.active{background-color:#00422e;border-bottom:2px solid #f4dc00;color:#fff;}
 .nav a span{display: table-cell; vertical-align: middle;*position:relative;*top:15%;/*兼容ie7*/}
 
+/*侧边栏-联系方式*/
+.aside-contact{position:fixed;right:0;top:230px;}
+.aside-contact i{font-size:34px;}
+.box-qq{left:-225px;top:-10px;}
+.box-qq input{width:165px;}
+.wrap-qqQRCode{width:100px;margin:15px auto;}
+.triangle{top:30px;right:-20px;width: 0;height: 0;border: 10px solid transparent;border-left-color: #007a5b;}
+.qq:hover .box-qq{display:block;}
+
 /*底部*/
 .bottom-nav {color:#458876;}
 .bottom-nav a {color:#458876;}
