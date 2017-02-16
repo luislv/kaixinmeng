@@ -7,7 +7,7 @@
 .nav a span{display: table-cell; vertical-align: middle;*position:relative;*top:15%;/*兼容ie7*/}
 
 /*侧边栏-联系方式*/
-.aside-contact{position:fixed;right:0;top:230px;}
+.aside-contact{position:fixed;right:0;top:230px;z-index:9999;}
 .aside-contact i{font-size:34px;}
 .box-qq{left:-225px;top:-10px;}
 .box-qq input{width:165px;}
