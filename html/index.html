@@ -23,7 +23,7 @@
     <div class="layout">
         <div class="pt15 pb15 clearfix">
             <a class="inblo fl ml20"><img src="../images/logo.png" width="104" height="61" alt="开心大道logo"></a>
-            <div class="tr text-littleGreen2 lh4"><a class="text-littleGreen2 pl5 pr5" href="#">最新公告</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何游戏</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何提款</a><span class="kf w80 inblo text-littleGreen bg-green pl10 ml5 bor2"><span class="inblo iconfont text-yellow bg-darkGreen ml10 pl3 pr3 fr fs16 bor4">&#xe600;</span>联系客服</span></div>
+            <div class="tr text-littleGreen2 lh4"><a class="text-littleGreen2 pl5 pr5 news" href="#">最新公告</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何游戏</a> | <a class="text-littleGreen2 pl5 pr5" href="#">如何提款</a><span class="kf w80 inblo text-littleGreen bg-green pl10 ml5 bor2"><span class="inblo iconfont text-yellow bg-darkGreen ml10 pl3 pr3 fr fs16 bor4">&#xe600;</span>联系客服</span></div>
             <div class="J_notLogin fr mt15" style="display:none;">
                 <span class="inblo bg-green2 pl10 pr10 pt5 pb5 bor4 vm">
                     <label for="account" class="text-littleGreen2">账号:</label>
@@ -55,11 +55,11 @@
     <div class="nav-box layout">
         <div class="nav clearfix">
             <a class="active inblo tc text-yellow3" href="index.html"><span class=""><strong class="fs14 block">首页</strong><i class="block">Home</i></span></a>
-            <a class="inblo tc text-yellow3" href="computerGames.html"><span class=""><strong class="fs14 block">电子游戏</strong><i class="block">Computer games</i></span></a>
-            <a class="inblo tc text-yellow3" href="fishGames.html"><span class=""><strong class="fs14 block">捕鱼游戏</strong><i class="block">Fish games</i></span></a>
+            <a class="inblo tc text-yellow3" href="computerGames.html"><span class=""><strong class="fs14 block">电子游戏</strong><i class="block">Slot</i></span></a>
+            <a class="inblo tc text-yellow3" href="fishGames.html"><span class=""><strong class="fs14 block">捕鱼游戏</strong><i class="block">Fishing</i></span></a>
             <a class="inblo tc text-yellow3" href="mobileDownload.html"><span class=""><strong class="fs14 block">手机&下载</strong><i class="block">Mobile & Download</i></span></a>
-            <a class="inblo tc text-yellow3" href="latestConcessions_list.html"><span class=""><strong class="fs14 block">最新优惠</strong><i class="block">Latest consessions</i></span></a>
-            <a class="inblo tc text-yellow3" href="vip.html"><span class=""><strong class="fs14 block">VIP</strong><i class="block">Vip</i></span></a>
+            <a class="inblo tc text-yellow3" href="latestConcessions_list.html"><span class=""><strong class="fs14 block">最新优惠</strong><i class="block">Promotion</i></span></a>
+            <a class="inblo tc text-yellow3" href="vip.html"><span class=""><strong class="fs14 block">开心VIP</strong><i class="block">VIP</i></span></a>
         </div>
     </div>
 </div>
@@ -71,11 +71,10 @@
         <div class="index-hotpic pr bg-littleGreen">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="../images/index-ad01.png" width="100%"/></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/index-ad01.png" width="100%"/></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/index-ad01.png" width="100%"/></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/index-ad01.png" width="100%"/></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="../images/index-ad01.png" width="100%"/></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="../images/banner-01.jpg" width="100%"/></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="../images/banner-02.jpg" width="100%"/></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="../images/banner-03.jpg" width="100%"/></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="../images/banner-04.jpg" width="100%"/></a></div>
                 </div>
             </div>
             <div class="pagination-index-box fullwidth tc pa bottom"><div class="pagination-index pr tc"></div></div>
@@ -84,7 +83,7 @@
     <div class="index-r fr">
         <a href="#"><img src="../images/index-r-pic.png" /></a>
         <div class="bg-gray1 mt5 p10">
-            <span class="text-yellow5 fs16 lh1 mt3 block">总彩池</span><span class="text-yellow fs18 block lh1 mt20" style="font-family: 'Songti TC'"><i class="text-yellow5 fs16">¥&nbsp;&nbsp;</i><strong class="fs26">999,999,999</strong></span>
+            <span class="text-yellow5 fs16 lh1 mt3 block">总彩池</span><span class="text-yellow fs18 block lh1 mt20" style="font-family: 'Songti TC'"><i class="text-yellow5 fs16">¥&nbsp;&nbsp;</i><strong class="fs26">999,999,999.99</strong></span>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -189,6 +188,7 @@
     </div>
 </div>
 <!--侧边栏-联系方式 start-->
+<script type="text/javascript" src="../js/layer/layer.js"></script>
 <script type="text/javascript">
     $(function() {
         //焦点
@@ -199,11 +199,111 @@
             paginationClickable: true,
             autoplay: 5000
         });
+        //最新公告
+        $(".news").on("click", function(e) {
+            var e = e || window.event;
+            var target = e.target || e.srcElement;
+            if($(target).closest("li")){
+                layer.config({
+                    skin: 'demo-class'
+                });
+                layer.open({
+                    type: 1,  // 页面层
+                    title: false,  // 隐藏标题
+                    closeBtn: 0,  // 隐藏关闭按钮
+                    shade: 0.6,  // 遮罩层透明度
+                    shadeClose: true,  // 点击遮罩关闭
+                    area: ['910px', 'auto'],  // 弹窗尺寸
+                    // scrollbar: true,
+                    skin: 'demo-class',
+                    content: $('#news'),  // 被调取页面的dom节点
+                    btn: '返回',
+                    yes: function(index, layero){
+                        //do something
+                        layer.close(index); //如果设定了yes回调，需进行手工关闭
+                    }
+                });
+            }
+
+        });
+        //最新公告详情
+        $(".news-list").on("click", function(e) {
+            var e = e || window.event;
+            var target = e.target || e.srcElement;
+            if($(target).closest("li")){
+                layer.config({
+                    skin: 'demo-class'
+                });
+                layer.open({
+                    type: 1,  // 页面层
+                    title: false,  // 隐藏标题
+                    closeBtn: 0,  // 隐藏关闭按钮
+                    shade: 0.6,  // 遮罩层透明度
+                    shadeClose: true,  // 点击遮罩关闭
+                    area: ['910px', 'auto'],  // 弹窗尺寸
+                    // scrollbar: true,
+                    skin: 'demo-class',
+                    content: $('#latestConcession'),  // 被调取页面的dom节点
+                    btn: '返回',
+                    yes: function(index, layero){
+                        //do something
+                        layer.close(index); //如果设定了yes回调，需进行手工关闭
+                    }
+                });
+            }
+
+        });
     });
 </script>
 </body>
 </html>
-
+<!-- 最新公告弹窗 -->
+<div class="letterCon bg-littleGreen hide" id="news">
+    <div class="pt20 pl20 pr20 pb30">
+        <h2 class="pb20 fs20 text-yellow tc fn">最新公告</h2>
+        <div class="line5"></div>
+        <ul class="news-list text-littleGreen2 fs14">
+            <li><strong class="fr">2016-12-09 13:02:02</strong>1、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>2、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>3、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>4、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>5、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>6、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>7、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>8、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>9、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>10、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>11、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            <li><strong class="fr">2016-12-09 13:02:02</strong>12、每天产生的返水将在次日18点自动派发到您的Xbet账号中,无需手动申请,所有VIP会员可随时使用. </li>
+            </ul>
+    </div>
+</div>
+<!-- 最新公告详情弹窗 -->
+<div class="letterCon bg-littleGreen hide" id="latestConcession">
+    <div class="pt20 pl20 pr20 pb30">
+        <h2 class="pb20 fs20 text-yellow tc fn">返水优惠0.7%-1.1%</h2>
+        <div class="line5"></div>
+        <div class="pt20 pb20 fs14 lh3 text-littleGreen3">
+            <h3 class="text-yellow fn">活动时间：</h3>
+            <p class="mt3 pb15">2016-12-31 至 2017-2-28</p>
+            <h3 class="text-yellow fn">活动对象：</h3>
+            <p class="mt3 pb15">开心大道全体会员</p>
+            <h3 class="text-yellow fn">活动内容：</h3>
+            <p class="mt3 pb15">每天产生的返水将在次日18点自动派发到您的Xbet帐号中，无需手动申请。所有VIP会员可使用随时返水功能：请登入『账户中心』中『申请优惠』页面，点击『立即结算返水』即可。（100元以上的返水才可以申请立即结算）。</p>
+            <h3 class="text-yellow fn">申请方式：</h3>
+            <p class="mt3 pb15">每天产生的返水将在次日18点自动派发到您的Xbet帐号中，无需手动申请。所有VIP会员可使用随时返水功能：请登入『账户中心』中『申请优惠』页面，点击『立即结算返水』即可。（100元以上的返水才可以申请立即结算）。</p>
+            <h3 class="text-yellow fn">活动规则：</h3>
+            <p class="mt3 pb15">
+                1. 返水每日结算，无需申请，每日返水将于次日下午18点派发至您账户。<br>
+                1. 返水计算公式： 例如会员A在本日00：00：00到23：59：59有效投注为100万，则会员A返水为：100万*0.8%=8000，并将在明日18点派发到xbet账号余额中。<br>
+                1. 返水计算周期：返水计算周期为每自然日00：00：00-23：59：59(GMT+8北京时间)。<br>
+                1. 返水派发金额最低1人民币或1美金（或等额的欧元、澳元、纽币等）起派发，最高无上限，1倍投注额即可申请提款。<br>
+                1. 本优惠只能投注老虎机或刮刮乐游戏。所有21点游戏，所有轮盘游戏，所有百家乐游戏，所有骰宝游戏，所有视频扑克游戏，所有Pontoon游戏，各种Craps游戏，赌场战争游戏，娱乐场Holdem游戏，牌九游戏，多旋转老虎机(地妖之穴、海洋公主、三倍利润、热带滚筒和部落生活)、老虎机奖金翻倍投注将不计算在内，如投注此类游戏将扣除所有红利以及赢利并还原您的本金。<br>
+                1. 会员参加任何优惠活动都被视为认可并同意遵守这些规则以及本娱乐场准则规定。保留对活动进行修改、最终解释和终止的权力，<br>
+            </p>
+        </div>
+    </div>
+</div>
 
 
 
